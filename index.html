@@ -440,6 +440,8 @@ function banner(kind, html){ const b = $('#banner'); b.className = 'banner ' + k
 function renderAll(){
   $('#date').textContent = new Date(brief.date + 'T00:00:00').toLocaleDateString('en-IN', {weekday:'short', day:'numeric', month:'short', year:'numeric'});
   if (brief.universe) $('#date').textContent += ` · ${brief.universe.name} (${brief.universe.scored} scored)`;
+  if (brief.session) { const lbl = {'pre-open':'Pre-open brief', 'intraday':'Intraday snapshot', 'post-close':'Post-close brief'}[brief.session.state] || brief.session.state;
+    $('#date').textContent += ` · ${lbl} ${brief.session.local_time} IST`; }
   renderRegime(); renderTiles(); renderPicks(); renderAI(); renderList(); renderMarket(); renderFoot();
 }
 
@@ -474,6 +476,7 @@ async function load(){
       else {
         const ageH = (Date.now() - new Date(brief.generated_at).getTime()) / 36e5;
         if (ageH > 72) banner('warn', `<b>Stale brief.</b><span>Generated ${Math.round(ageH/24)} days ago. Check the Actions tab if the schedule should have run.</span>`);
+        else if (brief.session && brief.session.state === 'intraday') banner('warn', `<b>Intraday snapshot (${esc(brief.session.local_time)} IST).</b><span>Today's candle is unfinished: prices are delayed, today's volume is excluded from the scoring, and the picks can change by the close. Treat as a mid-session check, not a signal.</span>`);
         else $('#banner').classList.add('hidden');
       }
       renderAll();

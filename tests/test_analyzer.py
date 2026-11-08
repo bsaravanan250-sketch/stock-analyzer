@@ -280,3 +280,24 @@ class Backtest(unittest.TestCase):
         s = B.summarize(rows)
         self.assertEqual(s["n"], 2); self.assertEqual(s["excess_60d"]["hit_rate"], 50.0); self.assertEqual(s["excess_60d"]["mean"], 0.0)
         self.assertEqual(B.summarize([]), {"n": 0})
+
+
+class Sessions(unittest.TestCase):
+    def test_session_state(self):
+        ist = dt.timezone(dt.timedelta(hours=5, minutes=30))
+        morning = dt.datetime(2026, 11, 9, 8, 45, tzinfo=ist)    # Monday pre-open
+        midday = dt.datetime(2026, 11, 9, 12, 30, tzinfo=ist)
+        evening = dt.datetime(2026, 11, 9, 16, 0, tzinfo=ist)
+        self.assertEqual(A.session_state("IN", "2026-11-06", morning)["state"], "pre-open")
+        s = A.session_state("IN", "2026-11-09", midday)
+        self.assertEqual(s["state"], "intraday"); self.assertTrue(s["partial_bar"]); self.assertEqual(s["local_time"], "12:30")
+        self.assertEqual(A.session_state("IN", "2026-11-09", evening)["state"], "post-close")
+        self.assertEqual(A.session_state("IN", None, morning)["state"], "pre-open")
+
+    def test_partial_bar_withholds_volume_ratio(self):
+        h = A.synthetic_history("P.NS", 300, seed=11)
+        full = A.compute_indicators(h)
+        part = A.compute_indicators(h, partial_last=True)
+        self.assertIsNotNone(full["vol_ratio"]); self.assertIsNone(part["vol_ratio"]); self.assertTrue(part["partial_bar"])
+        sc = A.score_stock({**part, "ret_60d_pct": 1.0}, {"score": 0, "n": 0, "pos": 0, "neg": 0, "neu": 0}, None)
+        self.assertFalse(any(f.startswith("Thin volume") for f in sc["flags"]))

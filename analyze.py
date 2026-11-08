@@ -42,6 +42,31 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 IST = ZoneInfo("Asia/Kolkata")
 
+# NSE regular session; US hours are handled the same way in local time if market == "US".
+SESSIONS = {"IN": (ZoneInfo("Asia/Kolkata"), (9, 15), (15, 30)),
+            "US": (ZoneInfo("America/New_York"), (9, 30), (16, 0))}
+
+
+def session_state(market: str, last_bar_date: str | None, now: dt.datetime) -> dict:
+    """Is the most recent bar a finished day or a half-built one?
+
+    pre-open:   last bar is a previous session -> a clean end-of-day brief.
+    intraday:   last bar is today and the exchange is open -> partial candle; volume is unreliable.
+    post-close: last bar is today and the exchange has closed -> final prices, volume may still be revised."""
+    tz, (oh, om), (ch, cm) = SESSIONS.get(market, SESSIONS["IN"])
+    local = now.astimezone(tz)
+    today = local.date().isoformat()
+    open_t = local.replace(hour=oh, minute=om, second=0, microsecond=0)
+    close_t = local.replace(hour=ch, minute=cm, second=0, microsecond=0)
+    if last_bar_date != today:
+        state = "pre-open"
+    elif open_t <= local < close_t:
+        state = "intraday"
+    else:
+        state = "post-close"
+    return {"state": state, "local_time": local.strftime("%H:%M"), "tz": str(tz), "last_bar": last_bar_date,
+            "partial_bar": state == "intraday"}
+
 
 # --------------------------------------------------------------------------- #
 # HTTP                                                                        #
@@ -232,7 +257,9 @@ def realized_vol(closes: list[float], n: int = 20) -> float | None:
     return math.sqrt(var) * math.sqrt(252) * 100.0
 
 
-def compute_indicators(h: dict) -> dict:
+def compute_indicators(h: dict, partial_last: bool = False) -> dict:
+    """partial_last=True means the final bar is today's unfinished candle: its volume is not
+    comparable with full days, so the volume ratio is withheld rather than misread as 'thin'."""
     c, hi, lo, v = h["close"], h["high"], h["low"], h["volume"]
     n = len(c)
     s20, s50, s200 = sma(c, 20), sma(c, 50), sma(c, 200)
@@ -267,7 +294,8 @@ def compute_indicators(h: dict) -> dict:
         "macd_hist_prev": at(hist, last - 1),
         "atr14": at(a, last),
         "atr_pct": (at(a, last) / c[last] * 100.0) if at(a, last) else None,
-        "vol_ratio": (v[last] / at(v20, last)) if at(v20, last) else None,
+        "vol_ratio": None if partial_last else ((v[last] / at(v20, last)) if at(v20, last) else None),
+        "partial_bar": partial_last,
         "realized_vol_20d": realized_vol(c),
         "high_52w": hi52,
         "low_52w": lo52,
@@ -462,7 +490,7 @@ def score_stock(ind: dict, sent: dict, bench: dict | None) -> dict:
     if ind["realized_vol_20d"] is not None and ind["realized_vol_20d"] > 45:
         flags.append(f"High volatility ({ind['realized_vol_20d']:.0f}% annualised)")
     if ind["change_1d_pct"] is not None and abs(ind["change_1d_pct"]) >= 5:
-        flags.append(f"Moved {ind['change_1d_pct']:+.1f}% yesterday")
+        flags.append(f"Moved {ind['change_1d_pct']:+.1f}% {'today so far' if ind.get('partial_bar') else 'last session'}")
 
     total = round(sum(p[1] for p in parts), 1)
     return {
@@ -722,8 +750,8 @@ def select_picks(stocks: list[dict], regime: dict, cfg: dict, max_picks: int = 5
 
 
 def analyze_symbol(entry: dict, hist: dict, news: list[dict] | None, bench_ind: dict | None,
-                   regime: str, cfg: dict, now: dt.datetime) -> dict:
-    ind = compute_indicators(hist)
+                   regime: str, cfg: dict, now: dt.datetime, partial: bool = False) -> dict:
+    ind = compute_indicators(hist, partial_last=partial)
     sent = sentiment_summary(news or [], now)
     sc = score_stock(ind, sent, bench_ind)
     action, instruction = action_for(sc["score"], sc["flags"], regime)
@@ -815,7 +843,11 @@ def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Pat
 
     print(f"[{today}] prices for {len(entries)} symbols + benchmark ({workers} workers) ...", file=sys.stderr)
     bench_hist = get_hist(cfg["benchmark"]) if cfg.get("benchmark") else None
-    bench_ind = compute_indicators(bench_hist) if bench_hist else None
+    session = session_state(market, bench_hist["dates"][-1] if bench_hist else None, now) if not offline \
+        else {"state": "pre-open", "local_time": now.astimezone(IST).strftime("%H:%M"), "tz": "Asia/Kolkata",
+              "last_bar": None, "partial_bar": False}
+    partial = session["partial_bar"]
+    bench_ind = compute_indicators(bench_hist, partial_last=partial) if bench_hist else None
     vix_level = None
     if cfg.get("volatility_index"):
         vh = get_hist(cfg["volatility_index"])
@@ -834,7 +866,7 @@ def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Pat
     # Pass 1: price-only score for everyone, to decide whose headlines are worth fetching.
     prelim = []
     for sym, h in hists.items():
-        ind = compute_indicators(h)
+        ind = compute_indicators(h, partial_last=partial)
         sc = score_stock(ind, {"score": 0.0, "n": 0, "pos": 0, "neg": 0, "neu": 0}, bench_ind)
         prelim.append((sc["score"], sym))
     prelim.sort(reverse=True)
@@ -855,7 +887,7 @@ def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Pat
     market_news = news.pop("__market__", [])
     market_sent = sentiment_summary(market_news, now)
 
-    stocks = [analyze_symbol(entries[sym], hists[sym], news.get(sym), bench_ind, regime["state"], cfg, now)
+    stocks = [analyze_symbol(entries[sym], hists[sym], news.get(sym), bench_ind, regime["state"], cfg, now, partial)
               for sym in hists]
     stocks.sort(key=lambda s: s["score"], reverse=True)
     for rank, s in enumerate(stocks, 1):
@@ -865,6 +897,7 @@ def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Pat
     brief = {
         "generated_at": now.isoformat(),
         "date": today,
+        "session": session,
         "sample": offline,
         "market": market,
         "config": {k: cfg.get(k) for k in ("benchmark", "volatility_index", "capital",
@@ -909,7 +942,7 @@ def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Pat
         pruned = prune_archives(out_dir, int(cfg.get("keep_archive_days", 60)))
         if pruned:
             print(f"pruned {pruned} old archive(s)", file=sys.stderr)
-    print(f"wrote {target} ({len(stocks)} stocks, {len(picks)} picks, regime {regime['state']}, "
+    print(f"wrote {target} ({session['state']} {session['local_time']}, {len(stocks)} stocks, {len(picks)} picks, regime {regime['state']}, "
           f"{len(errors)} errors, {len(payload) // 1024} KB)", file=sys.stderr)
     return target
 

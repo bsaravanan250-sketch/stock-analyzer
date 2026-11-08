@@ -44,6 +44,24 @@ You can also trigger a run any time from the Actions tab (workflow_dispatch).
 Dated archives are pruned after `keep_archive_days` (default 60) so the repo
 stays small.
 
+### Refresh schedule
+
+Three runs a day on weekdays, set in `.github/workflows/daily-stock-brief.yml`:
+
+| Run | IST | Cron (UTC) | What it is |
+|---|---|---|---|
+| Pre-open | 08:45 | `15 3 * * 1-5` | Previous close plus overnight headlines. The one to plan from. |
+| Intraday | 12:30 | `0 7 * * 1-5` | Mid-session check on a partial candle. Today's volume is excluded from scoring and the page says so. |
+| Post-close | 16:00 | `30 10 * * 1-5` | Final prices for the day. |
+
+To change the cadence, edit, add or delete `- cron:` lines (five fields:
+minute hour day-of-month month day-of-week, in UTC). Hourly during market
+hours would be `"30 4-9 * * 1-5"` (10:00 to 15:00 IST). GitHub's minimum is
+every 5 minutes, but anything under about 30 minutes is pointless here: prices
+are delayed and the inputs barely move. Scheduled runs can start up to an hour
+late when GitHub's queues are busy. Each run overwrites `data/latest.json` and
+that day's archive; the dashboard header shows which session the brief is from.
+
 ## How a stock is scored (0 to 100)
 
 | Component | Max | What earns points |

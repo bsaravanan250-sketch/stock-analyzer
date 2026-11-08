@@ -2,9 +2,11 @@ name: Daily stock brief
 
 on:
   schedule:
-    # 08:45 IST (03:15 UTC) Monday-Friday, 30 minutes before NSE opens.
-    # GitHub cron only fires on the repository's default branch.
-    - cron: "15 3 * * 1-5"
+    # Times are UTC. IST = UTC + 5:30. Add, remove or edit lines to change the cadence;
+    # GitHub may start a scheduled run up to an hour late when its queues are busy.
+    - cron: "15 3 * * 1-5"    # 08:45 IST  pre-open brief (previous close + overnight news)
+    - cron: "0 7 * * 1-5"     # 12:30 IST  intraday snapshot (partial candle, volume excluded)
+    - cron: "30 10 * * 1-5"   # 16:00 IST  post-close brief (final prices for the day)
   workflow_dispatch:
 
 permissions:
