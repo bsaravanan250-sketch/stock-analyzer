@@ -1,36 +1,36 @@
 {
- "generated_at": "2026-11-08T02:35:54.114278+00:00",
+ "generated_at": "2026-11-08T10:12:11.888258+00:00",
  "benchmark": "^NSEI",
  "symbols": 217,
- "observations": 8980,
+ "observations": 8981,
  "from": "2022-11-24",
- "to": "2026-08-10",
+ "to": "2026-08-12",
  "step_days": 21,
  "all": {
-  "n": 8980,
+  "n": 8981,
   "excess_20d": {
    "mean": 1.13,
    "median": 0.37,
    "hit_rate": 52.4,
-   "n": 8980
+   "n": 8981
   },
   "excess_60d": {
    "mean": 3.26,
    "median": 0.89,
    "hit_rate": 53.0,
-   "n": 8980
+   "n": 8981
   },
   "abs_20d": {
    "mean": 1.79,
    "median": 1.08,
    "hit_rate": 55.9,
-   "n": 8980
+   "n": 8981
   },
   "abs_60d": {
    "mean": 5.02,
    "median": 2.56,
-   "hit_rate": 56.8,
-   "n": 8980
+   "hit_rate": 56.9,
+   "n": 8981
   }
  },
  "by_bucket": {
@@ -62,30 +62,30 @@
    }
   },
   "40-54": {
-   "n": 1344,
+   "n": 1345,
    "excess_20d": {
     "mean": 0.57,
     "median": 0.03,
     "hit_rate": 50.1,
-    "n": 1344
+    "n": 1345
    },
    "excess_60d": {
     "mean": 2.93,
-    "median": 0.17,
-    "hit_rate": 50.7,
-    "n": 1344
+    "median": 0.18,
+    "hit_rate": 50.8,
+    "n": 1345
    },
    "abs_20d": {
-    "mean": 1.27,
+    "mean": 1.26,
     "median": 0.79,
-    "hit_rate": 53.6,
-    "n": 1344
+    "hit_rate": 53.5,
+    "n": 1345
    },
    "abs_60d": {
     "mean": 4.89,
-    "median": 2.39,
-    "hit_rate": 55.7,
-    "n": 1344
+    "median": 2.4,
+    "hit_rate": 55.8,
+    "n": 1345
    }
   },
   "55-69": {
