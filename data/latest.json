@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T01:45:48.022881+00:00",
+ "generated_at": "2026-11-08T02:17:30.896353+00:00",
  "date": "2026-11-08",
  "sample": false,
  "market": "IN",
@@ -116,7 +116,14 @@
    "title": "Indian stocks buck global tech rout, post best week in 6 years",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWjNzeFpJV2tDZUlhN19jRzc4UDQ2NUJ2eWNvdnBjdW1Bam5YdE9HUGhfLUZ3Z3FMOVpQMFdId2Z4SlBlMll2Z2dYVXZqamZYdjRMazg3NnZfbzA0WHFNMVNLY0VqQ0dwMkI5RDB2S1ZrNFNGWWpnQmdjUXE2cjcwem9KVzVPYzJMWm5ycGVJaTFWTGRTX3g3T1JIbVAwb3pFUGFXVHBmMWIxdGhOWUtIQm1hWnZsbUhHMVE?oc=5",
    "source": "Reuters",
-   "published": "2026-11-06T02:27:00+00:00",
+   "published": "2026-11-06T11:15:10+00:00",
+   "sentiment": 0.0
+  },
+  {
+   "title": "Market News: Share Market Today, NIFTY, BSE/NSE LIVE, Sensex Today, Latest Share Market News Live Updates",
+   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA2eURra0RNN0hZR0ZxYmMxV00ycGZkVS14M1JaTGFnc2lGeVdLS3NUaDQ0Q0pKSkpLbDcwMUhQN1lwcHJNbmc?oc=5",
+   "source": "Livemint",
+   "published": "2026-11-05T08:00:00+00:00",
    "sentiment": 0.0
   },
   {
@@ -134,13 +141,6 @@
    "sentiment": 0.0
   },
   {
-   "title": "Stock Market Today: Gift Nifty, Oil Prices To Gold Rate; Five Key Factors That May Drive Sensex, Nifty 50 On November 5",
-   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPT1gtTDdacHY2S0ZNemFsQjN6LTBpNTNMVXVPTUxKYVdMVXQyVkxlWWNDaGx2UmlTRFpEZHE1VTN0d24xUGlyeWo1VDlxak81d3VoUXR0WXItUkthX0NxVG85eTBHQVowWlA1S1c5S09QdlJXc214WlJwdWo2cDllTGRfWVlCMVlzU2NEU3JYdTB0VmxfN2ZUQ29QLXRTRXJjN3BfbEJSZlhpNUx1LVF2T1lHLUxIZ1FJWW1OdXhGbTk1cFQ0d2ZfZ2V2Z1d3ekxHTWxEa3NZcFUzRnV3bEU1LTQzaEZDZnhraUFzX2lUd23SAfgBQVVfeXFMT2gxWUhJbDU0YnRaT3BiVnpGX0xRcXhlc0ZJVTZ1MklDZG9pQ0xERWtwVGJXa0dWUklyeDMzT2t1VWJyeEp4ZlpEZHpBbGtQcjc4MHFsWUNPMTVNX1laRDJ3Mk0xb0hhRUhjXzRrZkRmejRKcllfTXdHQTBSY1lla0xLZ3pkTVBhV1RrQW5lRmRPSC1kc1FFajk1TWpXb0c2WGhITDVqaFlGTjNuZS1kM3ZGRjNhWGhNLVJORTkwNjZUSkQ3YW9JaTM2SXZ3TTV6U3BnY0RmY240SnBucW1mZ1BwWUxNTGVoeFR1VGdOT0ZQc0hJSGFKX3E?oc=5",
-   "source": "NDTV Profit",
-   "published": "2026-11-05T01:27:02+00:00",
-   "sentiment": 0.0
-  },
-  {
    "title": "- The HinduBusinessLine",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOOUNNR3RCV2haM1BjdjN3ZGMwV082OVdTU05UTTUyRVJ2VWF4dXFXOWo4eHdvMFktX3FIZ3doYUlESWpad2JjeEd2QzRxOW45MHRkdFREMVJFT3o3eV9VSGZCdVB6aWF1V1ZZSXdLTkhhSVFDeG9BTjVMR04xZDVoX1ZBMTc4WGpOaElQdGVvTko1Z0E4c2dVd05DYVdYU2lwNU5uNHdPUGVRWTRKTWJZdERZN0JueTBTN0ROZkFPZmNZMWtpWjVVZw?oc=5",
    "source": "BusinessLine",
@@ -153,6 +153,13 @@
    "source": "The Times of India",
    "published": "2026-11-06T08:46:00+00:00",
    "sentiment": 0.25
+  },
+  {
+   "title": "Stock Market Today: Gift Nifty, Oil Prices To Gold Rate; Five Key Factors That May Drive Sensex, Nifty 50 On November 5",
+   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPT1gtTDdacHY2S0ZNemFsQjN6LTBpNTNMVXVPTUxKYVdMVXQyVkxlWWNDaGx2UmlTRFpEZHE1VTN0d24xUGlyeWo1VDlxak81d3VoUXR0WXItUkthX0NxVG85eTBHQVowWlA1S1c5S09QdlJXc214WlJwdWo2cDllTGRfWVlCMVlzU2NEU3JYdTB0VmxfN2ZUQ29QLXRTRXJjN3BfbEJSZlhpNUx1LVF2T1lHLUxIZ1FJWW1OdXhGbTk1cFQ0d2ZfZ2V2Z1d3ekxHTWxEa3NZcFUzRnV3bEU1LTQzaEZDZnhraUFzX2lUd23SAfgBQVVfeXFMT2gxWUhJbDU0YnRaT3BiVnpGX0xRcXhlc0ZJVTZ1MklDZG9pQ0xERWtwVGJXa0dWUklyeDMzT2t1VWJyeEp4ZlpEZHpBbGtQcjc4MHFsWUNPMTVNX1laRDJ3Mk0xb0hhRUhjXzRrZkRmejRKcllfTXdHQTBSY1lla0xLZ3pkTVBhV1RrQW5lRmRPSC1kc1FFajk1TWpXb0c2WGhITDVqaFlGTjNuZS1kM3ZGRjNhWGhNLVJORTkwNjZUSkQ3YW9JaTM2SXZ3TTV6U3BnY0RmY240SnBucW1mZ1BwWUxNTGVoeFR1VGdOT0ZQc0hJSGFKX3E?oc=5",
+   "source": "NDTV Profit",
+   "published": "2026-11-05T01:27:02+00:00",
+   "sentiment": 0.0
   },
   {
    "title": "Why Is Stock Market Rising Today? Sensex Reclaims 80,500, Nifty Nears 24,850: Four Reasons Explained",
@@ -188,13 +195,6 @@
    "source": "NDTV Profit",
    "published": "2026-11-05T04:05:34+00:00",
    "sentiment": 0.25
-  },
-  {
-   "title": "Stock market outlook today, 6 Nov: Sensex, Nifty prediction - DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
-   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQOXpMM3AzeW9FNUczQl95V0wtRzNfbV9zdDFUYXZibURYM3dRSjJNUTB4UGF2S3VZMzA3dlI2Nm5JU19Oclp4ZmpFdFpGaDdUZ1hmcC1hZVlTTXNKWFI3Qm4xZDFzM1NfR3NCLUZ3TEJiU2ItM0hLT29OZW1jOHNSSHdNOTJ1dU1BNGhQX1ZlU3NKaDVJZTd5blZ4RjhtYlNfel90bTlMWWstdEt1NGxqTVBYRUJrenppbnY1NDRlZmpkNWZuU283MXYzdFBTOU50RGQzRnN5dUZRVXNHbU4xQUVRS2U2R3JVVmJwbHpEeXVrU2JwOHZvS3lLQmZCNm5qUjFR0gGIAkFVX3lxTE9YSDM4bzJ3Mjl3X2pEc3JUeFBlSzhsQ2dObXFUdFoxRmVJY1lnV2JKOTlqbVFHT1BGc0x1aGJVUWI0dkRXQnRWYU1DalFNT29jVG4tSHVMZGNpdnhmV1VZNVdjaHFYVWpUb0dwRTYwYTZEVHl3cUhMMDk4UkxmU2syNGs4WWxpV0JoYnpUYWFoa29nQ1RSdzBxZzZCUDJLRVJja3IwdUhkaHVKSnpxVldFNEhRbzV5eU52dy1KN3p1blk1SHBpX3hXVklianc0ck55b0MtZHVOV2h1MGNheWphVndxVlc0aXBmQ1RIYm5jMHpvSU1Qc1oxNVd2TW1hSjlsSXBxb0VWQg?oc=5",
-   "source": "Livemint",
-   "published": "2026-11-06T01:14:59+00:00",
-   "sentiment": 0.0
   }
  ],
  "market_sentiment": {
@@ -209,7 +209,7 @@
    "symbol": "ICICIBANK.NS",
    "name": "ICICI Bank",
    "currency": "INR",
-   "score": 79.6,
+   "score": 80.1,
    "action": "Hold / add on dips",
    "instruction": "Strong setup but stretched. Do not chase; buy a pullback to the 20-day average.",
    "components": {
@@ -230,7 +230,7 @@
      "max": 10
     },
     "news": {
-     "points": 11.4,
+     "points": 11.9,
      "max": 20
     }
    },
@@ -273,10 +273,10 @@
    },
    "rel_60d_pct": 7.62,
    "sentiment": {
-    "score": 0.143,
+    "score": 0.187,
     "n": 12,
-    "pos": 5,
-    "neg": 1,
+    "pos": 6,
+    "neg": 0,
     "neu": 6
    },
    "news": [
@@ -358,11 +358,11 @@
      "sentiment": 0.0
     },
     {
-     "title": "Key facts: ICICI Bank $2M Transfer Loss Alleged; Buy Pick; Shares Issued",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPakh6NHF5NTctdXRPTFVJaTVMTVpBbE5ZS0swVnc0cEduQzk3bW1ycU52bEthX3BPQV9TanVxdEhycEozWXdEN0Z1WWszdjd2RjhlSUFkd1F1ajh4RVVvMnFydnJGYjlvbFpUbGNRZVBfM3BYRG5TMmwwWTlfRmg4cXhnUVF6YXlhUkdyTUtRQ0JfX09aNm5BV28zRHNIbDVIS29CS2RocmpoV0VDRFdUMV9pTDlrVGk0aGRPWGNXOUNQZDdJTGNHNnFB?oc=5",
-     "source": "TradingView",
-     "published": "2026-11-06T02:00:00+00:00",
-     "sentiment": -0.25
+     "title": "Diwali stock picks 2026: Reliance Industries, ICICI Bank, Tata Steel, Eternal among 30 stocks to buy for...",
+     "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPREswVEtSYXZ6UFRZbWxPc3NFT2IwRUJDaXBzWGZwOXRNeTJfeC1NSXREY05CMWVTUnlBakhsc1ExcThSTFBpZDA0SGJWWUZVRVI4WDFFcGdQVThlaW1VaFhLZDJQVHhWNm12c0piMHA0eWhGT2huQXlhOGU5NElXVG9HTDhpY1NyRjZUU3J3U21IY1NlSWU4cU1UYlFWMmptd2lDMmpleF9PWVlUZVVFVjV2SlBvTEs3VV9WRVJrWGlGV0RMSVB4Xzh3SkNldWhFcEtzSmdwTDlYdkZjYWZBOWtZZ0ZINTJfalBpbEpMWlg0Wll4NkdDc0xNN0k2dUtqZGZscGhucmo4NW9GZjNMX2dOaVk2M0tISjZhQ1RRLTRLcHZNZHM0UkcyOXByblF0b3fSAbcCQVVfeXFMTUNuaXd2MHRzbEJpSTRnUEZSVEpkbG13TjBjSWVoc0ZITEI2WUJLM2phbzIxTFpnV09mbTJrbWhqa2Nvb0ZDUldyQy11Uzl3bmo2TXRudkVvN2oyXzlTWk5ZbGhxTnBMZjRtWlFrWDJ3eTRDa0xlQ2h1Y09LNjZMT3JHNGdQbjV3bXh6TV9UdGVXMlkyd1VPZUxnc3hhSGlrc3JuMnpuWmRSMlU1NURRWG5WZEM1WEV1enFocnRYc2lxQ05XSkh2U0FwOHF3LThaWHBfUVFVajFkVkpGZmJQc0ZFQU50blRNZF9GM1N3MkcwUFNoeC1DYmdRRGR4czE1ZWdXNXVPQW03MnlpTjVnYmhFMklVbmlEbVFsbGRyWHpfZ1lMaE5sX0prcEZSZ2Jad05PeTlsOTQ?oc=5",
+     "source": "Moneycontrol.com",
+     "published": "2026-11-05T08:16:48+00:00",
+     "sentiment": 0.25
     }
    ],
    "position": {
@@ -925,6 +925,13 @@
      "sentiment": -0.25
     },
     {
+     "title": "Top 12 Bank Stocks To Buy In India November 2026",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVTJGTjNBTndCWnlCMVF4am9OclFTVEN0clJWVXBKc3BWX0E4bDhwTUxlVWFKd0xReUJWSVl6T0M3UnExVHowUHZHdkExQ016S1MtX1lJdjNKYUNoRzBpM19fbTZYeTNOVGpNY0NPMTQydUdvWDZWMGFveE12Umh4eVRkVC02b1FMYVJhZQ?oc=5",
+     "source": "Samco",
+     "published": "2026-11-04T06:51:00+00:00",
+     "sentiment": 0.25
+    },
+    {
      "title": "Kotak Mahindra Bank gets CCI nod for Deutsche Bank retail business acquisition",
      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd01LWFV4bExHNXRDUzQ2SVU4TDNkQVhjSE9ReU5WbW8xdVV2SnJNZm5ESGlWczdVZGNROG5WSlY5V3pFdGFDN1NzY2stYmJicGw1M3lmNi12SXdnSWdJUmZ4N3pNaU5MeFJ6WUttY2VzZXo1Qlg0dWFaX2RRNTg2TzlkdXpwNWkyTlVwYTUzWUpkOHFpbVdGdmU2OTVvaE1mUHNzeEduNjhsa2JOSG5ycXFHejhLRE15THRZ?oc=5",
      "source": "scanx.trade",
@@ -937,13 +944,6 @@
      "source": "The Economic Times",
      "published": "2026-11-06T15:25:18+00:00",
      "sentiment": 0.5
-    },
-    {
-     "title": "Top 12 Bank Stocks To Buy In India November 2026",
-     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVTJGTjNBTndCWnlCMVF4am9OclFTVEN0clJWVXBKc3BWX0E4bDhwTUxlVWFKd0xReUJWSVl6T0M3UnExVHowUHZHdkExQ016S1MtX1lJdjNKYUNoRzBpM19fbTZYeTNOVGpNY0NPMTQydUdvWDZWMGFveE12Umh4eVRkVC02b1FMYVJhZQ?oc=5",
-     "source": "Samco",
-     "published": "2026-11-04T06:51:00+00:00",
-     "sentiment": 0.25
     },
     {
      "title": "Muhurat trading 2026: Top 3 Samvat 2083 stock picks by Sumeet Bagadia \u2014 Adani Ports, Sun Pharma, Kotak Bank; targets, SL",
@@ -1446,7 +1446,7 @@
    },
    "rel_60d_pct": 5.84,
    "sentiment": {
-    "score": 0.197,
+    "score": 0.198,
     "n": 12,
     "pos": 7,
     "neg": 0,
@@ -1676,7 +1676,7 @@
    "symbol": "TITAN.NS",
    "name": "Titan Company",
    "currency": "INR",
-   "score": 71.8,
+   "score": 71.6,
    "action": "Hold / add on dips",
    "instruction": "Strong setup but stretched. Do not chase; buy a pullback to the 20-day average.",
    "components": {
@@ -1697,7 +1697,7 @@
      "max": 10
     },
     "news": {
-     "points": 12.9,
+     "points": 12.7,
      "max": 20
     }
    },
@@ -1740,13 +1740,20 @@
    },
    "rel_60d_pct": -4.78,
    "sentiment": {
-    "score": 0.292,
+    "score": 0.267,
     "n": 12,
-    "pos": 7,
+    "pos": 6,
     "neg": 0,
-    "neu": 5
+    "neu": 6
    },
    "news": [
+    {
+     "title": "Titan Company Share Price",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLaEdJb1pERXM5Z3lpRHpvd0FueUNpN2V0VGsxc2p6bkhJVmpaaEFHUklFc1dOSUJiMkVBd1RkcmVXQW03aThSdktIMjgwaGtPUGRrWGJDMVN6c0tldTlSc09USm1sRjR0dFE1Ng?oc=5",
+     "source": "Upstox",
+     "published": "2026-11-06T13:21:45+00:00",
+     "sentiment": 0.0
+    },
     {
      "title": "Titan shares gain 2% after Q2 results; brokerages remain largely bullish",
      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRTFXVXdObk1ZZTliZ3JicWtYZ21WZjlrLWdNdV9LV0F2LWJKbFpCeW1KTlRBVWVnSEV4T0VJbkIyRXBpV3dmV2ZEWFU4MkRxc3l6NmtXejByb1pPR2M5UDQ3RkhKQ3N1ZGppT0txRWx2UjhaWnVxcGF2LTI0UzU2ak1YWjgxMjdnWEF4VEY5b3llR0x0MGxXWV9Jdkw4STNHdkxjNEdRczJkV0c4T1lOUWhxTWRSbDNRUzVEWmk5SU54cWtPQWY1bWFRUHdtYXp0V0Fv0gHYAUFVX3lxTE1lc0hkaVRYcUE4WHZSZUVrVnRDZkVfRnozMmVxNnBwb0xjZFZteEUzTnAtWUdnRVRCdk1sSzRYaDlDWW1wY2NITE9MRFJvd2tHMzRwRE9UemY4b1dsUFZjYndFNVlRekkyb29RLVN5X1VMQktfX0NhWmQ4dlExUGZuRmNGbFJaeU5EQXV3V3RvYmlqcnVUMXJneVNqTWMwVHFXbW5Nd3R2QTl3aXJEb3hfdm5Pb3V0a0NhQkhrVFhpMkpDZHVxZ0FsODlFNURMT19BZ2g4UnZoUA?oc=5",
@@ -1774,13 +1781,6 @@
      "source": "CNBC TV18",
      "published": "2026-11-06T04:30:34+00:00",
      "sentiment": 0.0
-    },
-    {
-     "title": "Titan Q2 results: Net profit likely to jump up to 26% YoY aided by strong growth in jewellery business",
-     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQaEUzSXRjSEtHLTdnM1N3UjdjT2hLalN5MTVDU1ZnT2ltN3pKYlM0V3phN2VUR2MwM0NPNTk4QmVaTm5vZDY3R3VJaHEyaGE3dHk4MlByaEhmWFlObUpsSWFQQ0lNbjRFdGt4ZUctSWptdEtvQVNudFp4VGx5NG5GaUhxeGEzY09ORFdBV2g2NmRrV2pIQ2FqTWF6cExQd1o5SmgwTUtUTERkSXlFZlIyWEJSUmRwaTFJVC1PRnJfdVloRW9PcW9KeURmVzVRdzFSc3c5LTBLcU1GaUhHQ1NJMnltTnFMS1ZHcWVrTnR6Z3FHZlZL?oc=5",
-     "source": "Upstox",
-     "published": "2026-11-05T04:31:34+00:00",
-     "sentiment": 0.5
     },
     {
      "title": "Accumulate Titan Company; target of Rs 5330: Prabhudas Lilladher",
@@ -1811,18 +1811,18 @@
      "sentiment": 0.0
     },
     {
+     "title": "Titan Q2 results: Net profit likely to jump up to 26% YoY aided by strong growth in jewellery business",
+     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQaEUzSXRjSEtHLTdnM1N3UjdjT2hLalN5MTVDU1ZnT2ltN3pKYlM0V3phN2VUR2MwM0NPNTk4QmVaTm5vZDY3R3VJaHEyaGE3dHk4MlByaEhmWFlObUpsSWFQQ0lNbjRFdGt4ZUctSWptdEtvQVNudFp4VGx5NG5GaUhxeGEzY09ORFdBV2g2NmRrV2pIQ2FqTWF6cExQd1o5SmgwTUtUTERkSXlFZlIyWEJSUmRwaTFJVC1PRnJfdVloRW9PcW9KeURmVzVRdzFSc3c5LTBLcU1GaUhHQ1NJMnltTnFMS1ZHcWVrTnR6Z3FHZlZL?oc=5",
+     "source": "Upstox",
+     "published": "2026-11-05T04:31:34+00:00",
+     "sentiment": 0.5
+    },
+    {
      "title": "Noel Tata to retire as vice chairman of Titan Company on November 12",
      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdWl6MlY2Z0VYVzJmTmZGN0dNMlh6Q3ZEbEpjQ3JJY2pfWUMzUzdCZ0FQWUlqNTZnX2xSU2xPeVVYVjNKVWhRZU90S1ZMVEdFUmxYUUd5V0thMDVFS1JVRzRDTXVHaFoxZVp4Qld1MS01bTFVQ09yTFlXNjVTRGtUX1JXb3ZwNDd4WmZsQUc4VHNFYlNxLXRzblNtZ2E3RHIzbHNTNlhFOF9QVkhGRlRmaWtaeVhJTk5nVWRtVldVVWlFT2E4YXFEVHUtUVQyZ3PSAdQBQVVfeXFMTWIyRXItZGI2OHE1OEFCTFBZR1pucl9lRmtPbHBBMnR3cUJSQWhDT0pyS3VKcHV3NmdxT0pXU3U5SnVxN0ZPNEpsQXl1bWxic3hVMktBYzZrazRIekpkamtaZ1BCcW0zb2xpTzNLS2l1enk1NGFNdHRsemMwZk5YS3ZzU0ZPaUNYVzRxYTlacEF5MWRMejY2ZmdJblhZX2xxS05pRmdqampVWHNtQkdvckNtTUZOblpQZHlSdFpubDJoemtBem9WYkJMOXFwR0JOMHJ1am4?oc=5",
      "source": "Business Standard",
      "published": "2026-11-05T15:00:52+00:00",
      "sentiment": 0.0
-    },
-    {
-     "title": "Titan Company Q2 results: Net profit doubles over to \u20b92,393 crore YoY; board approves \u20b92,500 crore fundraising plans",
-     "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNR2lMaGN4ZHlJWVB5QVBxWnBVcS0tY2RrTmt6WXNLQ3dLUkl6amljenlYeXNtV3lkdFJOZEMtVFJ4TFVCa2plOEdYclFZR25fQ3JLakxHMUFENjJWN2V4ejUxYkVjdTdtMlNPRy1QNXpTLVRhRU1GdEZXYkFEM1NHSlNWN2w4bjNkTUFLX19TM3p4R3BKQ3N6QWQzTmgtTjZPRzBXWmdIeE5ld3c1VWRqU3JUSW56aTNJZ3JVZ3N6cXdrOGtDVG9XTG9HY2pxeEplUmdIN3FKR21VMHR6MzR3bi1zdXJzbkZ6VjdnbGxfV0lFYUx6ejRBazZ1b1psdw?oc=5",
-     "source": "Upstox",
-     "published": "2026-11-05T12:35:52+00:00",
-     "sentiment": 0.25
     },
     {
      "title": "Trade Spotlight: How should you trade HCL Technologies, Titan Company, Kotak Mahindra Bank, Persistent...",
@@ -2556,7 +2556,7 @@
    "symbol": "HCLTECH.NS",
    "name": "HCL Technologies",
    "currency": "INR",
-   "score": 67.6,
+   "score": 67.4,
    "action": "Hold / add on dips",
    "instruction": "Constructive. Hold existing positions; add only on a dip with the stop intact.",
    "components": {
@@ -2577,7 +2577,7 @@
      "max": 10
     },
     "news": {
-     "points": 11.7,
+     "points": 11.5,
      "max": 20
     }
    },
@@ -2614,18 +2614,18 @@
    },
    "rel_60d_pct": 3.18,
    "sentiment": {
-    "score": 0.174,
+    "score": 0.151,
     "n": 12,
-    "pos": 7,
+    "pos": 6,
     "neg": 1,
-    "neu": 4
+    "neu": 5
    },
    "news": [
     {
      "title": "HCL Technologies Share Price - Live NSE: HCLTECH Stock Price & Chart",
      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5VakFpRExUYldXMkNsOENVSHQ2NUIyNDhRZklKbjVtZGJBMzFsSXpfRGJyVzdQWkxCb0oyYnZIMTRBblBmZl9WRmlRVTZ3Qm8tR1dJS21pQkl6WGpWOWJ0dllEMVpKZEJTaE8w?oc=5",
      "source": "Upstox",
-     "published": "2026-11-07T08:06:48+00:00",
+     "published": "2026-11-07T00:05:05+00:00",
      "sentiment": 0.0
     },
     {
@@ -2643,10 +2643,10 @@
      "sentiment": 0.0
     },
     {
-     "title": "HCL Technologies rallies Thursday, underperforms competitors",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbm9weGdLSy0zZHNtczRyX1RwT1pvZkZ2Sy1SdU5USEg0WGJXQ05TMlZfLUtISnV1eUs0WWEtc1hhbzJ2WjlIYlNjenRXamlzOXZlREsxTUY3S08yVWpHWUlDa2czTW1iX1FXM05qc0E0cGpTUnhfWlFBZEtxZUEwQkRJbE9qeEthU2xscnA1Snc5NmhqMDhZTWxEcmZDSzZBNUJsUkJQQW1ldlEwYkk2cE5HRGFlY0RxaWo2bElfV0lSd2V5M2NOX0NCNnBJdw?oc=5",
+     "title": "HCL Technologies rallies Tuesday, underperforms market",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRmNIai11YW9SMW1GbEVhUDV4Zlp2aWZFdURYQTJpUHJDNGt4aW9kVWpKaUU5UWk0cWRGdVpmc2lOa3ozaktpWFRjSmlkcGhFR2l6cHJRSVFJSkJxTGJZdFJZeFc3bjJldHB1NGpwYXNTYTVnM1o4U0s3N00yX05IWHFPOVotMmNRWXpPNUFMQmtfMGdKakFMWThUbHA4cE9YZjY5U2FfMjVwLUdvTng3aS0wYUR6ZnJ2UGtONzJLR05XTjFHcUE?oc=5",
      "source": "MarketWatch",
-     "published": "2026-11-05T10:33:00+00:00",
+     "published": "2026-11-03T10:33:00+00:00",
      "sentiment": 0.25
     },
     {
@@ -2678,13 +2678,6 @@
      "sentiment": 0.25
     },
     {
-     "title": "HCL Technologies rallies Tuesday, underperforms market",
-     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQXJ4ZW9yTy11OFl3dlo4RW1VTzljaWhsYjhPbVJXRWpuRzQ3bHdvcWRKU1FIbnJWUllwM0VSbHp4UTVBaXNJVWZIZW0yVjdGekZhY3Q4c0tDZ3Z3UUhWY0VLUVJ3MTVrOWZhNWtHT2traW9QaE5VQnQxSF91cDJIcno4NjYzTTIxNjBBaGJIem1sQ0R1RV96M3gzRTlJZjEwekpEeXc4VEF2Tjk2R0loVWtZRWhGOTRsdndiazFmYnBoTTFFanRQRXpTcw?oc=5",
-     "source": "MarketWatch",
-     "published": "2026-11-03T10:33:00+00:00",
-     "sentiment": 0.25
-    },
-    {
      "title": "IT Stocks Rally! Nifty IT hits 9-month high; Why are Mphasis, HCLTech, TCS & others rising?",
      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPaXpWNWMyVVJxVHNSWkRtQ0E3akd6dHlKUU9ZMTlUZG9aNm1wOEVEQmRqR1JBRDV0c0xkNHZwcUpCSUZvMTlPSFJSX2k5OFg0dWVsc1dsRDdYSFVpbHRfRGNMRm84Z2dXV0Z2UVJjVVZFNm42SEs0NDFobjVmd0Z3TWhrZzFFdll4dHp5dnFhTTMxR2w1MHNYNWg2UlNOaWRYSFZreHRqdFhYenE1TzA4ZElfNy1vNWZPLXFrVXh5Wm15THFORXlYQ0t6bw?oc=5",
      "source": "Zee Business",
@@ -2704,6 +2697,13 @@
      "source": "The Economic Times",
      "published": "2026-11-06T13:40:16+00:00",
      "sentiment": 0.5
+    },
+    {
+     "title": "Diwali stock picks 2026: Infosys, Airtel, SBI, BEL, Vedanta Aluminium among 31 recommendations for Samvat...",
+     "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQLUNUY3lHVVAzUVNGVEJGVnZjbWRWYXM0WkUxdVRXS3dwdHdzVWZ0TFJSbUpjZEozNnE1cGs5d0dzMHVqQzBCa3NmQW5XUEZHSEtXdDZuQjNxdFFraGZsU0tROE10TlBnODZfMzBwTGR5NjFtTHlSWk9DZTd0SU1ZNzJlNU9hMDVyWHNpNmJjZ3I5czB6dTlKYkZiY2NTamo2Rm5MRlRYdThjZHlGUnJ0UVpqaE5yUFYySXk4SHA0OFZjMG5hUHptY3ExT0loSWJZcjI0ZWw0eVI0dWRaMloxd21kay1IVzdjNDRQQTZncEZWTUFDbnBuNnhTX0NLZjFqUTNMdXhfRlIzUV9TaEo4TWR5MUFlRDZFQ2FIRmxTQVBmTGlRQUxCetIBrgJBVV95cUxObENmWFMxSmd5aHpTc05PdU55YW9sNW1JbTlyU2JyVkNyU08zNXpWcUNyNDdSbTdzZXRYOGNnLWxlR0p1aVZubmphVWFyUEZLZzZxZmw1cXE3QjJGeHN0bkRHZkRFT2dSTFBNc0lkSENwUWtGY3dGQjB3U0lURGxFRC1ob21YWUNDbUhFa0pPM1NNcTd6SExFS3BMLVBHRXp0YXE5dUVvMjREelRsVTU0dnF4d3lVbWs2N0VWZmR1cmZaOEg5WHFBRDRwWkZkbV8zOU1icEZoZnl6NjlOQ1RwOG5pdkxpaFBwZE0tTXRXbGh4QWR6U2hYdC1EOWwzcllGQ2RKQVc3OFU0OVJtd0NGdWlMM1BjSjNRMGd6eERPNmVCNFdZVEpsWEtsREt0QQ?oc=5",
+     "source": "Moneycontrol.com",
+     "published": "2026-11-07T08:54:11+00:00",
+     "sentiment": 0.0
     }
    ],
    "position": {
@@ -3134,6 +3134,302 @@
    "rank": 10
   },
   {
+   "symbol": "M&M.NS",
+   "name": "Mahindra & Mahindra",
+   "currency": "INR",
+   "score": 64.5,
+   "action": "Hold / add on dips",
+   "instruction": "Constructive. Hold existing positions; add only on a dip with the stop intact.",
+   "components": {
+    "trend": {
+     "points": 25.0,
+     "max": 30
+    },
+    "momentum": {
+     "points": 15.0,
+     "max": 25
+    },
+    "relative_strength": {
+     "points": 2.0,
+     "max": 15
+    },
+    "volume": {
+     "points": 10,
+     "max": 10
+    },
+    "news": {
+     "points": 12.5,
+     "max": 20
+    }
+   },
+   "reasons_up": [
+    "Above 50-day average",
+    "Above 200-day average (long-term uptrend)",
+    "MACD positive",
+    "Volume 3.0x average on an up day"
+   ],
+   "reasons_down": [
+    "RSI 76: overbought, chase risk",
+    "Lagged the index by 7.3% over 60 days"
+   ],
+   "flags": [
+    "Overbought (RSI 76)",
+    "Extended 5.0 ATR above 20DMA",
+    "Moved +5.1% yesterday"
+   ],
+   "indicators": {
+    "close": 3287.2,
+    "prev_close": 3127.5,
+    "change_1d_pct": 5.11,
+    "ret_5d_pct": 15.73,
+    "ret_20d_pct": 19.48,
+    "ret_60d_pct": -5.0,
+    "sma20": 2901.81,
+    "sma50": 3004.95,
+    "sma200": 3187.26,
+    "sma20_slope_pct": 1.81,
+    "rsi14": 75.59,
+    "macd_hist": 49.83,
+    "macd_hist_prev": 33.09,
+    "atr14": 77.71,
+    "atr_pct": 2.36,
+    "vol_ratio": 2.96,
+    "realized_vol_20d": 30.99,
+    "high_52w": 3802.4,
+    "low_52w": 2751.2,
+    "pos_52w_pct": 50.99,
+    "bars": 249,
+    "ext_atr": 4.96
+   },
+   "rel_60d_pct": -7.28,
+   "sentiment": {
+    "score": 0.249,
+    "n": 12,
+    "pos": 6,
+    "neg": 0,
+    "neu": 6
+   },
+   "news": [
+    {
+     "title": "Mahindra & Mahindra Limited (M&M.NS) Stock Price, News, Quote & History",
+     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE53a0xXcVFSOUxob2lfODVpVjVJZFBBTG9GcENweUFDcGZhZTdIQnI1WnNudzdoVlN3dmZ1SExXZFJKSWI4ZnFCWUg1LW1DMUZTZW1IcWlWSQ?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "published": "2026-11-05T08:00:00+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "Why is Mahindra & Mahindra stock rallying 4% today? By Investing.com",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYzRDYWp2aXNjTWZZal9sZXgtMGhIbnNOWUlIUnpONHdBcEM4TmRIRWltM2dYOUI2eC1ibl82N3JwUVRjMl9vaTNVWGRKM3RHSUJzU1Ewa2ZZVjBJcWNEUld1OHF5SXBzZGxHblFJaGt5enVRS2h6eTA3TWRST2g4Q25FdnB4MkcyUGlLU2NKeno2T2FRVDl5Z0YtbkNDLU5vUjFselRaTElQbTRmaEE?oc=5",
+     "source": "Investing.com India",
+     "published": "2026-11-06T11:03:38+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "Mahindra & Mahindra shares jump 5% for second day after Q2 show; what\u2019s powering the auto stock?",
+     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQQ3lrUHJzb3daLURqdk1PMGt6R1NqbzBDc3FrQm8yUzVrQmFLbEZYRUJCcnNnVkU4d3A3OGdSMTBYWmU2REFmZ1lacmx6clMyMmp2UnhvLUdHQ3Naa2xXaTE0eWtBXzRZQ05WdXhyX2pMVXVRaWQxR0F3WnIxcUNuVzdvLVRzcW8zc19DVGRkME1zYm5vNlQ5VjVCNmVWMlI5RVpqaFBaV0xFdWtfVnZIT01BeW84QTdoVzVHUWZLSUtxbWhKWUhMRnYyM2JhTjc4VWhzcDF4dS05c05CcGV5cU81c1l5YXc3VkFNRw?oc=5",
+     "source": "Upstox",
+     "published": "2026-11-06T07:55:02+00:00",
+     "sentiment": 0.25
+    },
+    {
+     "title": "Mahindra & Mahindra shares gain 3% after Q2 profit jumps 25% to Rs 4,588 crore, revenue grows 25%",
+     "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOQXp4MnhuckFEUE5rN0dLUEFvNlB0Z3FaOExpa0ZlbXF4OXE5U1RZbmlYZ2FHS1RJYW53UGFHOVZFMTh3WUtGSGNJd05SVkphd2xvZ1VoekJWTHE5RTI5blhtTkVWV3A0NE5saEdza3pxU2E3MUQtLXRuNk5pWE1uaF9oTThrQmt4SVBtdFV0aVNlejlkcVhUa0ZKczFJbGdNQ2JNek5Ya04zempZcEFEeUJJYmVHN2ZEUlV5N080Vm1sMHhuWEpNaVBQQXdXWDRYTWpOZlpIbXdlZnVpTHVaUzBMamlTSi05aXFmc21aUzlxVmxCRlpmbEZpNVpmS1N1MDNN0gH8AUFVX3lxTFBJVWNRbUNvdG11S3k4LWFQWG9qak8weUpPTlZ0NDFCQTdaYWJSaHhUQXc4WDdVOVFMazJNenhXNjl3UjhxdFVjUlZCakFDYUFNUmwwX2ppYVNNUkI3czJ3Ujc3cG54bWpTNVRsQ0Z5UmlUZG1WTnVUNjJzc3lWdVM1LUVoZXpSY0o0QlRUN0FkaEF2MGZPLW5Zbmg2SXV1c21DWlcxdktwVGhvV1pUWGo5V3dUUTN0cmhTZXUzaTA0Qjd0Q3dTMmQ4T0FTVkZleHJpOHZ6MHVzZFBFRVZoMTJ6dGlLMFhCZDBDNHpFeUFtSGVQRmxLLUlfV0RyaA?oc=5",
+     "source": "The Economic Times",
+     "published": "2026-11-06T05:27:34+00:00",
+     "sentiment": 0.5
+    },
+    {
+     "title": "M&M Q2 results: Consolidated profit rises 25% to Rs 4,588 crore, revenue jumps 25%; shares gain nearly...",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNkZkTmlCLVV4X0N4NFhZV0xMeFhvZDY5ZlQ3Z1hwNWgyUzIwSHJqbFh6T2F5LTJDaWlTeko3Zlh5Y0dhYktjYzkwVHphbXUxUmtWanJNc0xnMHJYbzVnOTN1NGlZMGRSandyQlV0WDFkUExBVFVoNE1vVlV2QWh3NFFfdE43SEx0dHhCZ1NfSmxDT2PSAZgBQVVfeXFMT1BvLWNtVEdCYmpsN1JjcmpTRHZDMlJ6aklpSlg1dlhRMXFUYnFWMFM1TzNWYXVHZG16eVZHS2Z4eVozc1lnZ1EwQ0tubzgyZFZJZEVRSWNjZDMwMVZIWThPRmM1TXlod2dvNk9ob3NfLUpTaFNabE5kM0ZlNnVHWW9YTlVzRzBadWR0cFNGcngxbW05MjJETGo?oc=5",
+     "source": "Moneycontrol.com",
+     "published": "2026-11-05T07:35:40+00:00",
+     "sentiment": 0.5
+    },
+    {
+     "title": "Mahindra & Mahindra stock in focus after CARE reaffirms ratings on bank facilities",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaUQ3OHdsbjRUZTFqVmlqQV9SMGc5VHYxQWI2R0JWeEszVlRrZlBfNFhDOV9TRXNPc19JR19PbXdHWkc1bzZLUTJ3ZldpcWhrZzBmQVdkMHNCOXlLSnMyUkp1MHF3VkxTZmpRNWdrdG9Id3ZFZThDRUloZ0hUV0kzUmR4TXV3ZDNGM2F2QVR1b0J0ZUhEX0FTcm9Eemw2T3hFSXJheDhKam5SMDVuWHVNX1ZkTklKOU5rdXRiUDl6LUJDTUVXZ3IzV3haS1RnNnJLaEHSAdcBQVVfeXFMT1RyelJrNzZXbnNsdGVlV0czTG4tbjQ5aUF2X1ZQTE1xZ3NoNGs1b0tVV1FsU0w3WGhYZk5tQkZVcnJmUk1oRWQzaFdDTUw0cW5RcUxVcGllV0VsakNSaXhwa1hsSDlERTYyTC1OdVUtYjFxMDNiS21MWnRmNWZwTkVfTGFod0c2QzN4bS1LN0V4bldyYjJTUlFaUjRQZ3NaV0I2LWoyUEJ3UnBCc0FzVTZMRHc3S29ibkZ6UTkyZkZrbnlxN1JLTFlJM1RwUlF3dmk1X0liLWc?oc=5",
+     "source": "Business Today",
+     "published": "2026-11-05T03:44:04+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "India's Mahindra & Mahindra rises as SUV demand offsets tractor slowdown worries",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNalZqc2V1NDRjUl9ndFh5ZU4ta2ROaTNNZ2ZuemdWby0zTkx3TGlJS3hURWw1NnY0WWN6Qk5MLVJFSWZjd2NTTmFrdFkxbWhYS1VEVG9GZzlrQmJHdklpNnZlZXNUR3NXeXVxc2xlaU1wSk1FWHZtU1pianRyWTBYQVJldU1UMzNqbWVtZ0Ryc013SmNad2M0SHQ1NlEtQWtXNUh4NDhfVHNWZHFvRkwzUW93TE1xYzNKT2VoRjhn?oc=5",
+     "source": "Reuters",
+     "published": "2026-11-06T03:58:00+00:00",
+     "sentiment": 0.25
+    },
+    {
+     "title": "REG - Mahindra & Mahindra - Half-year Financial Report",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNN2loRGJjaExwc0pHekppa1VFWGdMald3c1NxLWF4bjR4czNkdTVCM1ZGV2lWODNXZVBrQUVMMHVibWhCdkhfU0htOExCYnRuTXRkS3dQUDlHNU9Kc0hpYUFYV214X3h0akJGUThqcHo0U1F5cTNvWU1kQVozY0dwS2JlclFqTTdXaThJdGJ3QlExSi05SEk1WEk2WjVNUXhpRGxnTmRUbTlTS25fMDE3SndSUDJsbWpVdVJEc2NtUFJJUQ?oc=5",
+     "source": "TradingView",
+     "published": "2026-11-06T15:42:22+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "M&M Shares Jump 6% As Q2 Profit Beats Estimates; What Drove The Rally?",
+     "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNSGdmc096eGp1YjlqcWo4N3hHUktGekFaa01YbUZMU1ZoVFdRTmNCQkdKVHRnUVhYVF9XX3g2djdsVV9WS3JPbzVEQVVodHNOeWZWWXVaY0VLaXFBc2lCU3V2eVJ6bmdNZ1F6UW5FVDFCMFBvYTZBczA2ZkQ2b2JEckRZT24ybGp2blJuVjZIZHNqV0NfeE04NG96N0JpLTUzdHFKODJhdWx4bHZCY2FjeFN5ejdVSU1Fa29ISWQyQzdOWGxjdTBxVVBxLWswOWY2MVc5OFF5VEplSzVWUWVucnNYVjBxdDhxLUd5OG44TUZWNnlodkFIemJtdTNObFVVTlVZTUQ3NHdNMTTSAZMCQVVfeXFMTk1HWERuMEVYNExwemV2RE5lYm5sZEpfdmQ1dWhxc2hnOU9FZ2FjT1RraWVNa3lkd2paWDJhWUNCSXFqaXY4X3BkYUJXdFVDTENlSmtyOEQzQmxXOFRIMGJWU2tIdmZqcDdvOUsyMy1lclp3X09VMm5PQ2xiQlh3dFRoR19lWDBqR20wcm45ODhpVzBKTlVOeXdfZ1ZDanllNW5OUU55cGdjOTJ4UmJMODQ2dlhJUi1sc0djVnJfNVFyY1FGLUJyLV9zUzF0M2VBempyazc3UU5Gd2tOWVEzZkNacVliV2NaelFpeVAtbHk5Vi1lNG9vTlV0aGtrdDZvTUd4ZS1ZZmJOR2Fia2NjeGZzaEE?oc=5",
+     "source": "NDTV Profit",
+     "published": "2026-11-05T08:08:19+00:00",
+     "sentiment": 0.62
+    },
+    {
+     "title": "Mahindra & Mahindra (NSEI:M&M) Stock Forecast & Analyst Predictions",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVnA5MEFleVUyYVBVN19jazZPbUxuU1dmTUJYRmdjREd2a1BQbTV6WTlKTUdNMEVNbjk2Zy0yN2F3anl0ak9scFF1NU9wcGVPX2NSaVpEcF9FVDRPM1ZaLTUwakJyTEVXNXRXeWlEZXRURlBjUl9QRWp1MFJJb2ZwYm81ZVJLMVdIc3Nr?oc=5",
+     "source": "Simply Wall St",
+     "published": "2026-11-02T08:00:00+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "M&MFIN Share Price Today - M&M Financial Services on NSE/BSE",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1LbnBjVVRfaWVvbWcwSmt4cDhUNmtnZVhkOGY3VldKRDBXUlVRWTNzVnhGVzNuVExoYWsxa3kzXzdYcmRPY3F3U0tNMFRXSnNEeUs3WXA4OTRFWUZzZ1E2Qk9waE94YkpXUnpyX2xRWXhRX1BCVU04?oc=5",
+     "source": "scanx.trade",
+     "published": "2026-11-05T22:22:10+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "Mahindra Mahindra shares jump over 6 pc market valuation surges Rs 23 751 cr after Q2 earnings",
+     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPcFB4RWlIbklNbjY5SGZYbmhCbmNtRGJOc1V2OTR6YkhWdFhMcjlramU0WDBvSjJwUHlvWFpqLUhxNXk4aHVBc1V1U2RHUXgxV3BXZEUzM3Y0SWpEaS1VTDRNOWt1NERWOVpmWXJBbkgwQlBPbzRYNGZGUFlZbnN1V0d5WUhVRWtpRG9KR3BvRGswOEFLU1R0Y1RWVDNpVmRobUx4cTF6N3E2eGhhVmdZc29kSTlLMzR4MGE5dno0Q1Mxdld3ZGs2TEtXRG9FbU1yR25tTzFFY0ctYmozNUc0TkwwYU1VOFdxSHphZXh4NU3SAfABQVVfeXFMT3BQeEVpSG5JTW42OUhmWG5oQm5jbURiTnNVdjk0emJIVnRYTHI5a2plNFgwb0oycFB5b1haai1IcTV5OGh1QXNVdVNkR1F4MVdwV2RFMzN2NElqRGktVUw0TTlrdTREVjlaZllyQW5IMEJQT280WDRmRlBZWW5zdVdHeVlIVUVraURvSkdwb0RrMDhBS1NUdGNUVlQzaVZkaG1MeHExejdxNnhoYVZnWXNvZEk5SzM0eDBhOXZ6NENTMXZXd2RrNkxLV0RvRW1NckdubU8xRWNHLWJqMzVHNE5MMGFNVThXcUh6YWV4eDVN?oc=5",
+     "source": "The Week",
+     "published": "2026-11-06T11:58:10+00:00",
+     "sentiment": 0.75
+    }
+   ],
+   "position": {
+    "stop": 3131.78,
+    "stop_pct": -4.73,
+    "qty": 15,
+    "value": 49308.0,
+    "risk_amount": 2331.3,
+    "target_1r": 3598.04
+   },
+   "spark": [
+    3403.6,
+    3428.2,
+    3428.3,
+    3390.4,
+    3421.5,
+    3415.0,
+    3424.8,
+    3412.2,
+    3414.1,
+    3443.0,
+    3398.2,
+    3330.0,
+    3334.0,
+    3282.0,
+    3259.0,
+    3190.0,
+    3150.0,
+    3170.0,
+    3160.0,
+    3160.0,
+    3150.0,
+    3123.8,
+    3107.0,
+    3029.5,
+    3070.0,
+    3076.5,
+    3052.0,
+    3055.3,
+    3044.5,
+    3035.0,
+    2982.7,
+    3035.0,
+    2995.0,
+    2947.8,
+    2950.0,
+    2860.0,
+    2857.6,
+    2855.0,
+    2800.0,
+    2751.2,
+    2796.2,
+    2813.0,
+    2864.4,
+    2793.7,
+    2861.7,
+    2920.9,
+    2907.0,
+    2889.0,
+    2864.1,
+    2861.2,
+    2853.1,
+    2858.4,
+    2869.9,
+    2890.0,
+    2840.3,
+    2868.8,
+    2908.0,
+    2961.9,
+    3127.5,
+    3287.2
+   ],
+   "spark_dates": [
+    "2026-08-12",
+    "2026-08-13",
+    "2026-08-14",
+    "2026-08-17",
+    "2026-08-18",
+    "2026-08-19",
+    "2026-08-20",
+    "2026-08-21",
+    "2026-08-24",
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28",
+    "2026-08-31",
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30",
+    "2026-10-01",
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-12",
+    "2026-10-13",
+    "2026-10-14",
+    "2026-10-15",
+    "2026-10-16",
+    "2026-10-19",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-23",
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06"
+   ],
+   "rank": 11
+  },
+  {
    "symbol": "SBIN.NS",
    "name": "State Bank of India",
    "currency": "INR",
@@ -3363,302 +3659,6 @@
     979.0,
     1006.4,
     1018.5
-   ],
-   "spark_dates": [
-    "2026-08-12",
-    "2026-08-13",
-    "2026-08-14",
-    "2026-08-17",
-    "2026-08-18",
-    "2026-08-19",
-    "2026-08-20",
-    "2026-08-21",
-    "2026-08-24",
-    "2026-08-25",
-    "2026-08-26",
-    "2026-08-27",
-    "2026-08-28",
-    "2026-08-31",
-    "2026-09-01",
-    "2026-09-02",
-    "2026-09-03",
-    "2026-09-04",
-    "2026-09-07",
-    "2026-09-08",
-    "2026-09-09",
-    "2026-09-10",
-    "2026-09-11",
-    "2026-09-15",
-    "2026-09-16",
-    "2026-09-17",
-    "2026-09-18",
-    "2026-09-21",
-    "2026-09-22",
-    "2026-09-23",
-    "2026-09-24",
-    "2026-09-25",
-    "2026-09-28",
-    "2026-09-29",
-    "2026-09-30",
-    "2026-10-01",
-    "2026-10-05",
-    "2026-10-06",
-    "2026-10-07",
-    "2026-10-08",
-    "2026-10-09",
-    "2026-10-12",
-    "2026-10-13",
-    "2026-10-14",
-    "2026-10-15",
-    "2026-10-16",
-    "2026-10-19",
-    "2026-10-21",
-    "2026-10-22",
-    "2026-10-23",
-    "2026-10-26",
-    "2026-10-27",
-    "2026-10-28",
-    "2026-10-29",
-    "2026-10-30",
-    "2026-11-02",
-    "2026-11-03",
-    "2026-11-04",
-    "2026-11-05",
-    "2026-11-06"
-   ],
-   "rank": 11
-  },
-  {
-   "symbol": "M&M.NS",
-   "name": "Mahindra & Mahindra",
-   "currency": "INR",
-   "score": 64.2,
-   "action": "Hold / add on dips",
-   "instruction": "Constructive. Hold existing positions; add only on a dip with the stop intact.",
-   "components": {
-    "trend": {
-     "points": 25.0,
-     "max": 30
-    },
-    "momentum": {
-     "points": 15.0,
-     "max": 25
-    },
-    "relative_strength": {
-     "points": 2.0,
-     "max": 15
-    },
-    "volume": {
-     "points": 10,
-     "max": 10
-    },
-    "news": {
-     "points": 12.2,
-     "max": 20
-    }
-   },
-   "reasons_up": [
-    "Above 50-day average",
-    "Above 200-day average (long-term uptrend)",
-    "MACD positive",
-    "Volume 3.0x average on an up day"
-   ],
-   "reasons_down": [
-    "RSI 76: overbought, chase risk",
-    "Lagged the index by 7.3% over 60 days"
-   ],
-   "flags": [
-    "Overbought (RSI 76)",
-    "Extended 5.0 ATR above 20DMA",
-    "Moved +5.1% yesterday"
-   ],
-   "indicators": {
-    "close": 3287.2,
-    "prev_close": 3127.5,
-    "change_1d_pct": 5.11,
-    "ret_5d_pct": 15.73,
-    "ret_20d_pct": 19.48,
-    "ret_60d_pct": -5.0,
-    "sma20": 2901.81,
-    "sma50": 3004.95,
-    "sma200": 3187.26,
-    "sma20_slope_pct": 1.81,
-    "rsi14": 75.59,
-    "macd_hist": 49.83,
-    "macd_hist_prev": 33.09,
-    "atr14": 77.71,
-    "atr_pct": 2.36,
-    "vol_ratio": 2.96,
-    "realized_vol_20d": 30.99,
-    "high_52w": 3802.4,
-    "low_52w": 2751.2,
-    "pos_52w_pct": 50.99,
-    "bars": 249,
-    "ext_atr": 4.96
-   },
-   "rel_60d_pct": -7.28,
-   "sentiment": {
-    "score": 0.222,
-    "n": 12,
-    "pos": 6,
-    "neg": 0,
-    "neu": 6
-   },
-   "news": [
-    {
-     "title": "Why is Mahindra & Mahindra stock rallying 4% today? By Investing.com",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYzRDYWp2aXNjTWZZal9sZXgtMGhIbnNOWUlIUnpONHdBcEM4TmRIRWltM2dYOUI2eC1ibl82N3JwUVRjMl9vaTNVWGRKM3RHSUJzU1Ewa2ZZVjBJcWNEUld1OHF5SXBzZGxHblFJaGt5enVRS2h6eTA3TWRST2g4Q25FdnB4MkcyUGlLU2NKeno2T2FRVDl5Z0YtbkNDLU5vUjFselRaTElQbTRmaEE?oc=5",
-     "source": "Investing.com India",
-     "published": "2026-11-06T11:03:38+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "Mahindra & Mahindra shares jump 5% for second day after Q2 show; what\u2019s powering the auto stock?",
-     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQQ3lrUHJzb3daLURqdk1PMGt6R1NqbzBDc3FrQm8yUzVrQmFLbEZYRUJCcnNnVkU4d3A3OGdSMTBYWmU2REFmZ1lacmx6clMyMmp2UnhvLUdHQ3Naa2xXaTE0eWtBXzRZQ05WdXhyX2pMVXVRaWQxR0F3WnIxcUNuVzdvLVRzcW8zc19DVGRkME1zYm5vNlQ5VjVCNmVWMlI5RVpqaFBaV0xFdWtfVnZIT01BeW84QTdoVzVHUWZLSUtxbWhKWUhMRnYyM2JhTjc4VWhzcDF4dS05c05CcGV5cU81c1l5YXc3VkFNRw?oc=5",
-     "source": "Upstox",
-     "published": "2026-11-06T07:55:02+00:00",
-     "sentiment": 0.25
-    },
-    {
-     "title": "Mahindra & Mahindra shares gain 3% after Q2 profit jumps 25% to Rs 4,588 crore, revenue grows 25%",
-     "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOQXp4MnhuckFEUE5rN0dLUEFvNlB0Z3FaOExpa0ZlbXF4OXE5U1RZbmlYZ2FHS1RJYW53UGFHOVZFMTh3WUtGSGNJd05SVkphd2xvZ1VoekJWTHE5RTI5blhtTkVWV3A0NE5saEdza3pxU2E3MUQtLXRuNk5pWE1uaF9oTThrQmt4SVBtdFV0aVNlejlkcVhUa0ZKczFJbGdNQ2JNek5Ya04zempZcEFEeUJJYmVHN2ZEUlV5N080Vm1sMHhuWEpNaVBQQXdXWDRYTWpOZlpIbXdlZnVpTHVaUzBMamlTSi05aXFmc21aUzlxVmxCRlpmbEZpNVpmS1N1MDNN0gH8AUFVX3lxTFBJVWNRbUNvdG11S3k4LWFQWG9qak8weUpPTlZ0NDFCQTdaYWJSaHhUQXc4WDdVOVFMazJNenhXNjl3UjhxdFVjUlZCakFDYUFNUmwwX2ppYVNNUkI3czJ3Ujc3cG54bWpTNVRsQ0Z5UmlUZG1WTnVUNjJzc3lWdVM1LUVoZXpSY0o0QlRUN0FkaEF2MGZPLW5Zbmg2SXV1c21DWlcxdktwVGhvV1pUWGo5V3dUUTN0cmhTZXUzaTA0Qjd0Q3dTMmQ4T0FTVkZleHJpOHZ6MHVzZFBFRVZoMTJ6dGlLMFhCZDBDNHpFeUFtSGVQRmxLLUlfV0RyaA?oc=5",
-     "source": "The Economic Times",
-     "published": "2026-11-06T05:27:34+00:00",
-     "sentiment": 0.5
-    },
-    {
-     "title": "M&M Q2 results: Consolidated profit rises 25% to Rs 4,588 crore, revenue jumps 25%; shares gain nearly...",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNkZkTmlCLVV4X0N4NFhZV0xMeFhvZDY5ZlQ3Z1hwNWgyUzIwSHJqbFh6T2F5LTJDaWlTeko3Zlh5Y0dhYktjYzkwVHphbXUxUmtWanJNc0xnMHJYbzVnOTN1NGlZMGRSandyQlV0WDFkUExBVFVoNE1vVlV2QWh3NFFfdE43SEx0dHhCZ1NfSmxDT2PSAZgBQVVfeXFMT1BvLWNtVEdCYmpsN1JjcmpTRHZDMlJ6aklpSlg1dlhRMXFUYnFWMFM1TzNWYXVHZG16eVZHS2Z4eVozc1lnZ1EwQ0tubzgyZFZJZEVRSWNjZDMwMVZIWThPRmM1TXlod2dvNk9ob3NfLUpTaFNabE5kM0ZlNnVHWW9YTlVzRzBadWR0cFNGcngxbW05MjJETGo?oc=5",
-     "source": "Moneycontrol.com",
-     "published": "2026-11-05T07:35:40+00:00",
-     "sentiment": 0.5
-    },
-    {
-     "title": "Mahindra & Mahindra stock in focus after CARE reaffirms ratings on bank facilities",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaUQ3OHdsbjRUZTFqVmlqQV9SMGc5VHYxQWI2R0JWeEszVlRrZlBfNFhDOV9TRXNPc19JR19PbXdHWkc1bzZLUTJ3ZldpcWhrZzBmQVdkMHNCOXlLSnMyUkp1MHF3VkxTZmpRNWdrdG9Id3ZFZThDRUloZ0hUV0kzUmR4TXV3ZDNGM2F2QVR1b0J0ZUhEX0FTcm9Eemw2T3hFSXJheDhKam5SMDVuWHVNX1ZkTklKOU5rdXRiUDl6LUJDTUVXZ3IzV3haS1RnNnJLaEHSAdcBQVVfeXFMT1RyelJrNzZXbnNsdGVlV0czTG4tbjQ5aUF2X1ZQTE1xZ3NoNGs1b0tVV1FsU0w3WGhYZk5tQkZVcnJmUk1oRWQzaFdDTUw0cW5RcUxVcGllV0VsakNSaXhwa1hsSDlERTYyTC1OdVUtYjFxMDNiS21MWnRmNWZwTkVfTGFod0c2QzN4bS1LN0V4bldyYjJTUlFaUjRQZ3NaV0I2LWoyUEJ3UnBCc0FzVTZMRHc3S29ibkZ6UTkyZkZrbnlxN1JLTFlJM1RwUlF3dmk1X0liLWc?oc=5",
-     "source": "Business Today",
-     "published": "2026-11-05T03:44:04+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "India's Mahindra & Mahindra rises as SUV demand offsets tractor slowdown worries",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNalZqc2V1NDRjUl9ndFh5ZU4ta2ROaTNNZ2ZuemdWby0zTkx3TGlJS3hURWw1NnY0WWN6Qk5MLVJFSWZjd2NTTmFrdFkxbWhYS1VEVG9GZzlrQmJHdklpNnZlZXNUR3NXeXVxc2xlaU1wSk1FWHZtU1pianRyWTBYQVJldU1UMzNqbWVtZ0Ryc013SmNad2M0SHQ1NlEtQWtXNUh4NDhfVHNWZHFvRkwzUW93TE1xYzNKT2VoRjhn?oc=5",
-     "source": "Reuters",
-     "published": "2026-11-06T03:58:00+00:00",
-     "sentiment": 0.25
-    },
-    {
-     "title": "REG - Mahindra & Mahindra - Half-year Financial Report",
-     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNN2loRGJjaExwc0pHekppa1VFWGdMald3c1NxLWF4bjR4czNkdTVCM1ZGV2lWODNXZVBrQUVMMHVibWhCdkhfU0htOExCYnRuTXRkS3dQUDlHNU9Kc0hpYUFYV214X3h0akJGUThqcHo0U1F5cTNvWU1kQVozY0dwS2JlclFqTTdXaThJdGJ3QlExSi05SEk1WEk2WjVNUXhpRGxnTmRUbTlTS25fMDE3SndSUDJsbWpVdVJEc2NtUFJJUQ?oc=5",
-     "source": "TradingView",
-     "published": "2026-11-06T15:42:22+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "M&M Shares Jump 6% As Q2 Profit Beats Estimates; What Drove The Rally?",
-     "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNSGdmc096eGp1YjlqcWo4N3hHUktGekFaa01YbUZMU1ZoVFdRTmNCQkdKVHRnUVhYVF9XX3g2djdsVV9WS3JPbzVEQVVodHNOeWZWWXVaY0VLaXFBc2lCU3V2eVJ6bmdNZ1F6UW5FVDFCMFBvYTZBczA2ZkQ2b2JEckRZT24ybGp2blJuVjZIZHNqV0NfeE04NG96N0JpLTUzdHFKODJhdWx4bHZCY2FjeFN5ejdVSU1Fa29ISWQyQzdOWGxjdTBxVVBxLWswOWY2MVc5OFF5VEplSzVWUWVucnNYVjBxdDhxLUd5OG44TUZWNnlodkFIemJtdTNObFVVTlVZTUQ3NHdNMTTSAZMCQVVfeXFMTk1HWERuMEVYNExwemV2RE5lYm5sZEpfdmQ1dWhxc2hnOU9FZ2FjT1RraWVNa3lkd2paWDJhWUNCSXFqaXY4X3BkYUJXdFVDTENlSmtyOEQzQmxXOFRIMGJWU2tIdmZqcDdvOUsyMy1lclp3X09VMm5PQ2xiQlh3dFRoR19lWDBqR20wcm45ODhpVzBKTlVOeXdfZ1ZDanllNW5OUU55cGdjOTJ4UmJMODQ2dlhJUi1sc0djVnJfNVFyY1FGLUJyLV9zUzF0M2VBempyazc3UU5Gd2tOWVEzZkNacVliV2NaelFpeVAtbHk5Vi1lNG9vTlV0aGtrdDZvTUd4ZS1ZZmJOR2Fia2NjeGZzaEE?oc=5",
-     "source": "NDTV Profit",
-     "published": "2026-11-05T08:08:19+00:00",
-     "sentiment": 0.62
-    },
-    {
-     "title": "Kotak Mahindra Bank Limited (KOTAKBANK.NS) stock price, news, quote and history",
-     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4ydDcwaWg5Y2NVd2psSkFKQktrTVNnZTF3TmloQWQ5Q1c0TFRMR1NtM2syWEhya2RoSDFmV282OWJiTkgxbENmRjlwd0xkT2dxbFhuY3NEZ09DRW9G?oc=5",
-     "source": "Yahoo Finance Singapore",
-     "published": "2026-11-06T00:33:09+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "Mahindra & Mahindra (NSEI:M&M) Stock Forecast & Analyst Predictions",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVnA5MEFleVUyYVBVN19jazZPbUxuU1dmTUJYRmdjREd2a1BQbTV6WTlKTUdNMEVNbjk2Zy0yN2F3anl0ak9scFF1NU9wcGVPX2NSaVpEcF9FVDRPM1ZaLTUwakJyTEVXNXRXeWlEZXRURlBjUl9QRWp1MFJJb2ZwYm81ZVJLMVdIc3Nr?oc=5",
-     "source": "Simply Wall St",
-     "published": "2026-11-02T08:00:00+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "Mahindra & Mahindra Q2 results: Farm equipment revenue grows Vs fears of decline; Numbers in-line",
-     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWmZTMHk4UUs3RVVFdkJZQXFHcmt1TEE4bjdQS3F2NjNoX09QNmdhWUFiUWk2Um52bUg3SXNrbTJQVnJPLU5RRmQ0TlBXWGpSazFYclFyY3JTVUtvMHVfRG5sam1vbHY3SlhwMWJHNjdkV1N1a3AxMXFjNzNEckEtejZDOG1xX0V5dm1xbDlRYUJpX1hUdjA3X0cyaW9TZ1JjcDBYUnVKaVFRN3ZfdjZVNVVMYzV4LVB6OHBabDB3cm9tY2lCOXM2NS1QM01RQXVoVlNaS0psc1BxRVVHVUHSAeMBQVVfeXFMTVV4ejVkbnEwSXBYcjRkRXJoZkhnZVVQeUNXMjZORTc4SDBGQlJNTEw4WkFxRWpHTndteVZDUHJOZFpldy1zd0RPMTRpRFlmVlJpWHdwMG53a1EtdWhORG5zaVl2dUtHQ2Rma0NvdkZLY04xMWtTZTdBVzU1SzZQSG5EWV9Tb3Z0c1NBbDRYN3JYU0dGT3dwbUZUQ3JkRVA0STlILXZsZWZTZzVNUmgyUlV4Z1FtU0x0WUlHblE1RGx2ZTJ5aGV3U3R0U0tVblB5VHloblo1VTNFRnZCWEdnaVFGdzg?oc=5",
-     "source": "CNBC TV18",
-     "published": "2026-11-05T07:41:44+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "M&M Share Price: Stock rallies after strong Q2 show; check what JP Morgan, Nomura, CLSA and others recommend",
-     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOOEctM2Y0UHBwTmdaSGJ0enY5bTFaWG9hNE1XZGl0OUJaTlRsNTM3ZTdKcUhZdFp2LXVubk9raDV1d2I1OXlGZkswcFhUeXhlaWFuaXlYejJMVElzV1RFcXdBMmFGaVljNFppX1Q1bjNxTGZMRGd0Z0M5RXBpMnBzSkpWT3NhY0NReXFDUEh3RDE2d1U5ZHBaZnBya2xSZkVaWllPdjhRQ3hjdUh6eWlTWWZ3bjd6SkxvX29Jal9QUzZ0OWd4Rl9xRlEya3o4NHFZRTlzNFM4NFhWYjZJajFrQXZQMGQ?oc=5",
-     "source": "Zee Business",
-     "published": "2026-11-06T05:24:20+00:00",
-     "sentiment": 0.5
-    }
-   ],
-   "position": {
-    "stop": 3131.78,
-    "stop_pct": -4.73,
-    "qty": 15,
-    "value": 49308.0,
-    "risk_amount": 2331.3,
-    "target_1r": 3598.04
-   },
-   "spark": [
-    3403.6,
-    3428.2,
-    3428.3,
-    3390.4,
-    3421.5,
-    3415.0,
-    3424.8,
-    3412.2,
-    3414.1,
-    3443.0,
-    3398.2,
-    3330.0,
-    3334.0,
-    3282.0,
-    3259.0,
-    3190.0,
-    3150.0,
-    3170.0,
-    3160.0,
-    3160.0,
-    3150.0,
-    3123.8,
-    3107.0,
-    3029.5,
-    3070.0,
-    3076.5,
-    3052.0,
-    3055.3,
-    3044.5,
-    3035.0,
-    2982.7,
-    3035.0,
-    2995.0,
-    2947.8,
-    2950.0,
-    2860.0,
-    2857.6,
-    2855.0,
-    2800.0,
-    2751.2,
-    2796.2,
-    2813.0,
-    2864.4,
-    2793.7,
-    2861.7,
-    2920.9,
-    2907.0,
-    2889.0,
-    2864.1,
-    2861.2,
-    2853.1,
-    2858.4,
-    2869.9,
-    2890.0,
-    2840.3,
-    2868.8,
-    2908.0,
-    2961.9,
-    3127.5,
-    3287.2
    ],
    "spark_dates": [
     "2026-08-12",
@@ -4015,6 +4015,298 @@
    "rank": 13
   },
   {
+   "symbol": "INFY.NS",
+   "name": "Infosys",
+   "currency": "INR",
+   "score": 61.1,
+   "action": "Hold / add on dips",
+   "instruction": "Constructive. Hold existing positions; add only on a dip with the stop intact.",
+   "components": {
+    "trend": {
+     "points": 15.0,
+     "max": 30
+    },
+    "momentum": {
+     "points": 25.0,
+     "max": 25
+    },
+    "relative_strength": {
+     "points": 5.2,
+     "max": 15
+    },
+    "volume": {
+     "points": 5.0,
+     "max": 10
+    },
+    "news": {
+     "points": 10.9,
+     "max": 20
+    }
+   },
+   "reasons_up": [
+    "Above 50-day average",
+    "RSI 61: healthy momentum, not stretched",
+    "MACD positive"
+   ],
+   "reasons_down": [
+    "Below 200-day average"
+   ],
+   "flags": [
+    "Below 200DMA"
+   ],
+   "indicators": {
+    "close": 1181.4,
+    "prev_close": 1167.4,
+    "change_1d_pct": 1.2,
+    "ret_5d_pct": -0.3,
+    "ret_20d_pct": 18.5,
+    "ret_60d_pct": -0.78,
+    "sma20": 1132.01,
+    "sma50": 1088.1,
+    "sma200": 1203.87,
+    "sma20_slope_pct": 3.32,
+    "rsi14": 60.65,
+    "macd_hist": 1.74,
+    "macd_hist_prev": 1.0,
+    "atr14": 40.53,
+    "atr_pct": 3.43,
+    "vol_ratio": 0.91,
+    "realized_vol_20d": 37.9,
+    "high_52w": 1689.8,
+    "low_52w": 985.3,
+    "pos_52w_pct": 27.84,
+    "bars": 249,
+    "ext_atr": 1.22
+   },
+   "rel_60d_pct": -3.06,
+   "sentiment": {
+    "score": 0.086,
+    "n": 12,
+    "pos": 5,
+    "neg": 1,
+    "neu": 6
+   },
+   "news": [
+    {
+     "title": "Infosys Share Price - Live NSE: INFY Stock Price & Chart",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BbEJTdmZNbE5BN0ZRWWZpd2tZZnRCZWV0MFdhYW5nQ2NSSTgzUlI4TjVPaU5BV1FxQkpYUnFWa05Fb09uMkxlNDhUWVpvV2JLWGIxUmh3SUFKSzEwUHZpX1IyTVM?oc=5",
+     "source": "Upstox",
+     "published": "2026-11-07T07:04:00+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "Infosys Limited (INFY.NS) Stock Price, News, Quote & History",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qSFdlY3hSZ25GUmxrZmtVMHdua1AxMGRoVzVyZjEwb2JxYzdWanBWQzA4dzhJVVVQYUFTbHlNdmEydXRNX2hCNDJDcmY4alI1VHFTWWpR?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "published": "2026-11-06T19:51:27+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "Infosys dividend 2026: Record date tomorrow | Know dividend payout, yield, history, returns",
+     "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPTldJTUJoV0R2WldCZUxrLXVTV2hjaFY1WnBzcXR5d05zNHdEQV9FUi1CeE9qeEYzYWkxSDhWOVh6WEI3b1RyTzFiY1RTSkNremFGUUFyVDdxZFRzeEF4SzB3aW8xT3JJakNla19Ka1JnaWQxb2c4OVR0NUFuOW96SXRubFZ0UER6R2RMMzdUU2g3VW9tNDM2ZzlZY3JCMHZ3TzBNYnQ5YzB3alpYaWVFTXM1V3k5TU5IdGpvczByZk82bGRneC0ta2J0MEtraENxN052Nzd5b1Y1MmpXRVQtNGRnYzJEM0ZfSHZN0gHwAUFVX3lxTE9kaEpJeDhJS0N2NFUwQXFyeFVLc0k2bEJIdk93Y2tPaUdOT2lXa2dBVlYzazVfMVM1OWdqM283aFhId3B0ZnRHMVJCenFiV3puSU5LR21JeFQ0NWh0N3cxYi1QQm5UVkRjVVhaRzRNaHBBLUVKZkhRSXVOeVdOT3dYMFo2SEctTERoVElIblZ5WDlBU3VieEctakNoQ0htYjZOcDlLam1OTHd1UEdkNExXdXg5a3JUTkJZUXl6Z25Rek42dmwtZUJHRGh5eHFmckM4RVI5MTRfeUd0VkJ4bmh5M3Bta01PVlBwVEhPbDB5Xw?oc=5",
+     "source": "Livemint",
+     "published": "2026-11-02T02:55:47+00:00",
+     "sentiment": 0.5
+    },
+    {
+     "title": "Bonus issues, stock splits, dividends: Infosys, Asian Paints among over 40 stocks turning ex-date this wee",
+     "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQNlE3SXVrOFJtVWxCMEFBRkViZmZnWGdCQ2p0Y1VkbmJGaVVaaktGWUxyMUo1eWE2SnFueU5WdFc0dV9acktZM3dlcF9YRTFPRWZmLVdqTnhwN2RXNGktMDBhNnhMRWE4Y2xlSEN6SElLMElzM2g5N0Z1S1MyYXBPN1c2eXJTbXJPUjAwYkJtR0ZBejhWY2tSb3V5RlpXcVVrY19vTXN3TW9zYWFDenMyQTd5VUlkNl9WdmFMLW5pWXNIQWI4dkJIOTNaSi1kX3dOWGoxODl2Ti1Uand0N000QnRmQ3MtQmJCSHMzYU94cF8tc3doc2NPTmhiZVhzbjdLTVduaHRLazTSAY4CQVVfeXFMTm5DNU1aTFlLeFV1VUtYYTVPSEhCNmdPclU1b1pGcnFwU3YwR0ZMcWFCSFFSbHhsWjEyZGNEdmV5VWtsdDk3SHE5MElveGlPU3k0UUpGNi1abk5GNmJoLU5VbHl1Y0xibUozOGxKbkQwMnRaeUF4M2dTbVVhSWVDdC1fR3V0WGdfeElPelF1elVzNXg1ekRsSWJfdWF1Um82SWx3a28zMWd5dDdJazFXWWNPYWRZT25iRi1yM1gxeFpmZUI2ZnRiVExIYkdZUlhyOWZKMU1hRm55Z2V3SXd0cy1SZzR4a3lLVXBpb0pEWVNTNGVDMmoxWHVOZXNuUEoyMEE0c1pqN2dHX0V4U21R?oc=5",
+     "source": "The Economic Times",
+     "published": "2026-11-01T05:04:32+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "Infosys shares slide over 2%; Hyderabad campus expansion fails to lift sentiment",
+     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNX0F0OWtrWXBBT0JIT2wwdUo3R3V2QXctX1NMWjVVaEtwOS02Tnc0MmNCR1k0YkRTR0M1dFhzSnNmdURaLThtZUhSaERzWmFhQ09uU0hHUWVDYUlZRXoxdlVOZHdvSFZ0c2dlaVFOM2NFWXlYX2dQNmtmanFzUTRPeWZZOWszbm8tN3o4a21mR2VUZnV3TWZXR2dxZFZzTldIX2F3TUdtWV9qdldsb0ozN2UxX2Nqc05KR3k1OWtSSmN2RGdGY0FuZk40ZE8zd1ZnV19uQUtoa3VvdW03Wm51RzgzcC1ZQXNiZmxVcVRn0gH0AUFVX3lxTE5Kalc3QUlBc3paaFRzRU13bjZDV1pfVVgxejBLdU5pTVlvcVJ4THk2R3hTOGhQN0ZJMTlFUEJvdEgtN1UxSGE0Vm1zTWFMN01xajNqMGx2eUhIZUxSMXNxY1QwTmtZRVhwcHVCbldFUkRsUDlUUHB0RkFoQ0tRWGotOF9hcWF6SjVNTzdhRUZ0dF9PRGZvOGxyLXBGVXdyT3VlUnZscDVrU19ySDRURHloR3B3VkZmeDktQjBvbTIwQWpwaFVzd3Z4RFZ0UXdwLWpTLTVGWkNvQTRYS19CNHBueHlEM3BoVW1XWWF6UXJka01udng?oc=5",
+     "source": "BusinessLine",
+     "published": "2026-11-02T07:54:14+00:00",
+     "sentiment": -0.33
+    },
+    {
+     "title": "Infosys, Asian Paints & Around 40 Firms To Trade Dividend, Bonus Issue, Stock Split, Rights Issue Next Week",
+     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPLU04cmVsNF9xOHVoaEQtTFZZeEpQMUIxa0xGM0lCekpVMzUtcVVnSTlRNzlOTmlpNHpSbkJTbmwtaE4wME4tSUtFcWdZRUFIZkZMblVtLXRvVXY1ZkZxZDB1Rm1LMHlrY3psRTlnR1JKLUdkVlJad2ZRZWd4ek1yRzZkc055ZTlhRVoyU1JOZDF4Z0RXMFNuN0Iyb3JXSlZTTG53MzFiTVpFZTBPbFQ5NHBYX0EtSlJGNnRaWjdUOEpkMWNCYWN6RVFkUmdGU2JnNXh0Z21PX2J6cVpCOXc?oc=5",
+     "source": "Goodreturns",
+     "published": "2026-11-01T08:38:39+00:00",
+     "sentiment": 0.25
+    },
+    {
+     "title": "Diwali stock picks 2026: Infosys, Airtel, SBI, BEL, Vedanta Aluminium among 31 recommendations for Samvat...",
+     "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQLUNUY3lHVVAzUVNGVEJGVnZjbWRWYXM0WkUxdVRXS3dwdHdzVWZ0TFJSbUpjZEozNnE1cGs5d0dzMHVqQzBCa3NmQW5XUEZHSEtXdDZuQjNxdFFraGZsU0tROE10TlBnODZfMzBwTGR5NjFtTHlSWk9DZTd0SU1ZNzJlNU9hMDVyWHNpNmJjZ3I5czB6dTlKYkZiY2NTamo2Rm5MRlRYdThjZHlGUnJ0UVpqaE5yUFYySXk4SHA0OFZjMG5hUHptY3ExT0loSWJZcjI0ZWw0eVI0dWRaMloxd21kay1IVzdjNDRQQTZncEZWTUFDbnBuNnhTX0NLZjFqUTNMdXhfRlIzUV9TaEo4TWR5MUFlRDZFQ2FIRmxTQVBmTGlRQUxCetIBrgJBVV95cUxObENmWFMxSmd5aHpTc05PdU55YW9sNW1JbTlyU2JyVkNyU08zNXpWcUNyNDdSbTdzZXRYOGNnLWxlR0p1aVZubmphVWFyUEZLZzZxZmw1cXE3QjJGeHN0bkRHZkRFT2dSTFBNc0lkSENwUWtGY3dGQjB3U0lURGxFRC1ob21YWUNDbUhFa0pPM1NNcTd6SExFS3BMLVBHRXp0YXE5dUVvMjREelRsVTU0dnF4d3lVbWs2N0VWZmR1cmZaOEg5WHFBRDRwWkZkbV8zOU1icEZoZnl6NjlOQ1RwOG5pdkxpaFBwZE0tTXRXbGh4QWR6U2hYdC1EOWwzcllGQ2RKQVc3OFU0OVJtd0NGdWlMM1BjSjNRMGd6eERPNmVCNFdZVEpsWEtsREt0QQ?oc=5",
+     "source": "Moneycontrol.com",
+     "published": "2026-11-07T08:54:11+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "Indian stock market rally has a catch: Why TCS, Infosys and HCL Tech were among the top laggards",
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNRDJneEFUV0ZIcXVjR1dwTzVKSDhPb2J2M2ZYcWhXdlJQQWhQTWpnTmo2UVh0emc2R0liMER6WTB2bUlTb1R4azVDLUh6Y2V5cE9jelZwRWIzVlE2VmRSeGJ6QkdmNXdVdmFteGFoNXpOYzJjVXFLTHFWbGlRN2doX2lZblJKbDZTY1lnNHRkTExZSm83TGcxaU1RT0h3S0g0S2d0dmpmMm41TlpLbDVzZ0VZM3d4U3A3UkthVGFCTHlLd2lTYmQ1OGFVNTJhUmZIZ2Z5cUs2UnhMYW90eUd30gHkAUFVX3lxTE1DS0tvZG1WTWhSY002V0RES1BYaE80emk2Q1ROZm5PRWRQOThoLUFxdDl5WTJNaldDN2htZjVhcEk3UU1HVHJoY2Z4eEVBMmJHb0I1Rmd6UEZ0cnlIWGRqTW1mSmNyeTNhWmMyRkw1QVdmMThOTVNEMUdDR1pjUE5ySzd2emtlZmZXcV9sdzJ5Q0pNY1Q0MTd5SFBUTUN3VnFRMTF6NUVsc2RBaVFFeERKSlY4UVlLVXdrZ0tEZHdCZS10dnBtQ2tmLVVGZUc0ZU00LUc0NEJCS1NiTTZMS1lpaFlpYg?oc=5",
+     "source": "The Week",
+     "published": "2026-11-04T11:32:53+00:00",
+     "sentiment": 0.25
+    },
+    {
+     "title": "Infosys, Wipro, TCS and other IT stocks rise up to 3% as US AI rout deepens; is the bubble bursting?",
+     "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQMTVEdXdzRVJSTE1vUHhIcHRkZ3hjSnZpYmlkak8wdVF1OUUzWkJQZ2x2T01yMmF3N2hLM0QyNHp2RG4xWmFfUVJfa0VtUWQ1NW0weGMxNUlCMkpibE1NejVGUFluaElxMzZKejF6ZDc5cVJNZU1MMTh1dHBnUkFncGZQQm1MeXlzU3VqQ0ZPMUFzdWk4YXFEbnhzOFVXNmdHbmkzVkdHMk1aYU5rUHJNZVdVSWc3NlE1dnBtRy1qYWhXVmRQdDg1Rm9TY3hXcmNrWXUxcm50akZkUzlodWtRLXJrN3NYV1Z6blNoN3dIYllTclZKMGJLLUpLczd6SXBkR3h5OUVoNGUxWjI2TDR2WkJjZ2JzaElub29NN01kc2nSAaYCQVVfeXFMTkVYc1hiV0ZSc2NLSnhpajB3bGJ3N2s4Wkd0REtHRmw2U1RVSnp3eDdERERUOGc5QzVCTHVVYkpQSEJtY19CSDhtWnNiV2JWM3ZVVzBlMUJiY2RGZWFJOVRhU3M5R0tIMmtITHA4STVyeExHQ1cwNFdOOWpKbFNJQk9TU1d5TmdTNy04UXJJVFZDbm83UGJod0FDYkZJdFBEX3JVLWpkT2pYdWxfcHdFbXVOLUhta3FGSWRpTnN3ZkdyandlVEhIZXRYRGE2MEFMN3FsWHdpcWFkME45Tnl1ZkNtVUE1UlF1THZqZ0dUN3kyc2lwdm9ZT3BlYWc0Nkh1U2llelR5eVZXQ0pHUW1XcWtlRGkzbzc0TjFpaTR6XzBzSGxidHZn?oc=5",
+     "source": "The Economic Times",
+     "published": "2026-11-06T03:48:39+00:00",
+     "sentiment": 0.25
+    },
+    {
+     "title": "Why are IT shares falling despite Democratic sweep in US adding to AI worries? Check what analysts say",
+     "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNRlRIYmw4WllDeDNIdzJFeU96VHVvNko4SE1Wdmt4bm04MVYzbTVjSEpOSFhJT3pGLUl0bkdnREFRU1BsY25yTTVlbEQ3ZFJaN2EtSk1XaE41RGhiZkZwNnRGV2lKT3EwZ18weWIyQXJHQnU2NkZZNHhFakNWS1NGak9IQnNqeTk4NlFsMFdnOG13bGtXbl9lRmplRlpEbkU0dm81dFJjLUVXVDNaUjJqMnB1TmcyX0xaTnN2dUJzT1dpQmF2NUg4TFVnTWh5UmFhenctZ3N4R2V6c1c1ODBTVWxPZnpCaGJuNmVzclVBZkttRTJnMmFYdDRR0gH_AUFVX3lxTE0zUWN5UEtIR2RBeHItVFg5S1BWazVlbmk5VFdKX2dtZkRnaVBfR25MRTVUc1RsN1RsZWszZXR3WnEyWmFMVGIyczF1cXRQa2dfeEJia1VDTFlOVDFtSHppajJQcmo4ZVdDRUR1U1lTNjdTWGltS3pHcW9FZTh3UWxLTmVlUlJLLUpDTkVPNU5tZUJjbDd4azBWMlRRWmI3S1l4VTdQc2FldzM5VHNCOUVxQ0dIT0FfR0o5cy1FUGVaV1N1VnZMX0xJNVJqNGxTTW5wVGprcllaS3hZeG5JOFdOR2ZmaV9EN0tEbHFFMkthMnh2M2tNV01IUEVxZ3lOdw?oc=5",
+     "source": "Moneycontrol.com",
+     "published": "2026-11-04T08:04:09+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "Infosys: 3 Key Takeaways for Long-Term Investors",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVi1kXzNSVm1fMjkwRl9ObWp3c2NGUGgxMS1XQnk4MWhuNGtwVkYtSnFxWENsVTliVVg0ck1ZS3gzUHBpck1EREhncDMwclhxTTJNdGtraVI3dGRid0taSmY4WnN4ak91cmplTUdlWWhyVkFUMndneFJfbXY4Vm1RTnpvY25icGNhYll5V3JYZ2hySkI2czlXcA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-05T01:52:00+00:00",
+     "sentiment": 0.0
+    },
+    {
+     "title": "Indian IT stocks reverse early gains: NIFTY IT slips into red; Infosys, Wipro shares decline",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNVVA0bnA1TUhTb0F3WmNyMjBSODRzVnRhR2tMa0llUFFaMTlhVEtYTl9WUngtelVrQTY5b1NtbzhoU2RYUHBaakRMbGFlbWMxUHBCbzdiemh5YlowTnZpdXc4R2Y4RXktd2VUVUprVEwyMEt2d2tfcWpZbHl0VmFDMWRQMFlGYnlCVkZmYzZnalg4M0dGNllMRno4UHMwWXIwWDQ2NlVDRzVXbnNkYlE1bms1ZEdob1V6WHhpN3FUcHFsY1B4cmQ1a0ZmTFFlR2E4MWtQV3ZSalFnUzFMbV9lVHdR?oc=5",
+     "source": "Upstox",
+     "published": "2026-11-06T04:05:44+00:00",
+     "sentiment": 0.25
+    }
+   ],
+   "position": {
+    "stop": 1100.33,
+    "stop_pct": -6.86,
+    "qty": 42,
+    "value": 49618.8,
+    "risk_amount": 3404.94,
+    "target_1r": 1343.54
+   },
+   "spark": [
+    1176.1,
+    1175.0,
+    1169.2,
+    1139.9,
+    1115.0,
+    1119.8,
+    1130.0,
+    1121.0,
+    1130.0,
+    1144.0,
+    1120.0,
+    1110.8,
+    1144.0,
+    1133.8,
+    1156.0,
+    1140.0,
+    1130.3,
+    1130.0,
+    1087.5,
+    1082.0,
+    1035.0,
+    1036.5,
+    1037.7,
+    1077.0,
+    1060.0,
+    1058.6,
+    1051.4,
+    1038.5,
+    1029.4,
+    1020.5,
+    1014.5,
+    1000.2,
+    1003.2,
+    1015.4,
+    994.1,
+    1035.0,
+    1020.5,
+    1013.85,
+    992.0,
+    997.0,
+    1023.4,
+    1020.0,
+    1062.1,
+    1088.0,
+    1110.0,
+    1161.2,
+    1130.7,
+    1168.0,
+    1153.35,
+    1153.8,
+    1166.0,
+    1163.0,
+    1123.15,
+    1146.5,
+    1185.0,
+    1161.0,
+    1148.1,
+    1128.2,
+    1167.4,
+    1181.4
+   ],
+   "spark_dates": [
+    "2026-08-12",
+    "2026-08-13",
+    "2026-08-14",
+    "2026-08-17",
+    "2026-08-18",
+    "2026-08-19",
+    "2026-08-20",
+    "2026-08-21",
+    "2026-08-24",
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28",
+    "2026-08-31",
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30",
+    "2026-10-01",
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-12",
+    "2026-10-13",
+    "2026-10-14",
+    "2026-10-15",
+    "2026-10-16",
+    "2026-10-19",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-23",
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06"
+   ],
+   "rank": 14
+  },
+  {
    "symbol": "RELIANCE.NS",
    "name": "Reliance Industries",
    "currency": "INR",
@@ -4131,18 +4423,18 @@
      "sentiment": 0.25
     },
     {
-     "title": "Why is Reliance Industries stock surging today?",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcjlKNjNrM3h4NzU0bFlwcWJEcnVObTdjemRtS2NqcHJkSC1wbjhfZDRVbTNtblhwNXpNWGlSamRxMzFPOEVseVV5cVdmQW9sNXFncGZwS2dVSHVodlR3UGJwazlRb0hvTDdmTUREMHpncl9pV0Zrb3JjXzF6dFlPMFVpNzZUdDVxVklYblE2eUVZaWlxbXV1eW1zY05TdmdhRldzb2hnLWFhVjV0?oc=5",
-     "source": "Investing.com",
-     "published": "2026-11-02T04:35:47+00:00",
-     "sentiment": 0.0
-    },
-    {
      "title": "Reliance shares: After massive 12% surge, Mukesh Ambani's RIL stock slips from biggest single-day rally since 2020; buy?",
      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPQ1FtMUNDSi1YSzY1MUd2TGl5UkRXSnZPd25IeDhwZFptWU5QVjBqekFPa3NCS3Z4MUY4cXlsUlY4cTZQSlNET29FVy13UVVnV0tmcGFKc09GWGpHRzhOSDgwUUF1R0I2SElMWWRiSjA5enlCZDEwREZpX2U2SDBYMXR1N1BXZDRVT2YxYXM4N2dhZ0Q0MFlXR3NuWklLenprd1JpTy15Q2lxQnZKcTdIY2hmb09BSFN4cEZseURuLWh5Ri1hcnNtVjY1ajZ4VlZzZkhyM2xGUnJ6OEVUZTBFSDdER2ktdTduNnJjVGFfRmxjRDg5dl91ck4xRnBRcE83V1E?oc=5",
      "source": "TradingView",
      "published": "2026-11-03T09:52:13+00:00",
      "sentiment": 0.67
+    },
+    {
+     "title": "Why is Reliance Industries stock surging today?",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcjlKNjNrM3h4NzU0bFlwcWJEcnVObTdjemRtS2NqcHJkSC1wbjhfZDRVbTNtblhwNXpNWGlSamRxMzFPOEVseVV5cVdmQW9sNXFncGZwS2dVSHVodlR3UGJwazlRb0hvTDdmTUREMHpncl9pV0Zrb3JjXzF6dFlPMFVpNzZUdDVxVklYblE2eUVZaWlxbXV1eW1zY05TdmdhRldzb2hnLWFhVjV0?oc=5",
+     "source": "Investing.com",
+     "published": "2026-11-02T04:35:47+00:00",
+     "sentiment": 0.0
     },
     {
      "title": "RIL shares jump 6%, add Rs 86,400 crore in m-cap; Goldman Sachs sets highest target, sees 58% upside",
@@ -4305,305 +4597,13 @@
     "2026-11-05",
     "2026-11-06"
    ],
-   "rank": 14
-  },
-  {
-   "symbol": "INFY.NS",
-   "name": "Infosys",
-   "currency": "INR",
-   "score": 60.9,
-   "action": "Hold / add on dips",
-   "instruction": "Constructive. Hold existing positions; add only on a dip with the stop intact.",
-   "components": {
-    "trend": {
-     "points": 15.0,
-     "max": 30
-    },
-    "momentum": {
-     "points": 25.0,
-     "max": 25
-    },
-    "relative_strength": {
-     "points": 5.2,
-     "max": 15
-    },
-    "volume": {
-     "points": 5.0,
-     "max": 10
-    },
-    "news": {
-     "points": 10.7,
-     "max": 20
-    }
-   },
-   "reasons_up": [
-    "Above 50-day average",
-    "RSI 61: healthy momentum, not stretched",
-    "MACD positive"
-   ],
-   "reasons_down": [
-    "Below 200-day average"
-   ],
-   "flags": [
-    "Below 200DMA"
-   ],
-   "indicators": {
-    "close": 1181.4,
-    "prev_close": 1167.4,
-    "change_1d_pct": 1.2,
-    "ret_5d_pct": -0.3,
-    "ret_20d_pct": 18.5,
-    "ret_60d_pct": -0.78,
-    "sma20": 1132.01,
-    "sma50": 1088.1,
-    "sma200": 1203.87,
-    "sma20_slope_pct": 3.32,
-    "rsi14": 60.65,
-    "macd_hist": 1.74,
-    "macd_hist_prev": 1.0,
-    "atr14": 40.53,
-    "atr_pct": 3.43,
-    "vol_ratio": 0.91,
-    "realized_vol_20d": 37.9,
-    "high_52w": 1689.8,
-    "low_52w": 985.3,
-    "pos_52w_pct": 27.84,
-    "bars": 249,
-    "ext_atr": 1.22
-   },
-   "rel_60d_pct": -3.06,
-   "sentiment": {
-    "score": 0.069,
-    "n": 12,
-    "pos": 4,
-    "neg": 1,
-    "neu": 7
-   },
-   "news": [
-    {
-     "title": "Infosys Limited (INFY) Stock Price, News, Quote & History",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zVTBfd1BXNDZZLWNrVTQySDYwME0wN2dYRENjeU9TZDBWZGg1SGpRZnUyWHJqcHFiRlpLd21tMXk0RFN0eG95dEFGeU9WMDA1V0E?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "published": "2026-11-06T22:51:30+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "Infosys Share Price - Live NSE: INFY Stock Price & Chart",
-     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BbEJTdmZNbE5BN0ZRWWZpd2tZZnRCZWV0MFdhYW5nQ2NSSTgzUlI4TjVPaU5BV1FxQkpYUnFWa05Fb09uMkxlNDhUWVpvV2JLWGIxUmh3SUFKSzEwUHZpX1IyTVM?oc=5",
-     "source": "Upstox",
-     "published": "2026-11-07T07:04:00+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "Infosys dividend 2026: Record date tomorrow | Know dividend payout, yield, history, returns",
-     "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPTldJTUJoV0R2WldCZUxrLXVTV2hjaFY1WnBzcXR5d05zNHdEQV9FUi1CeE9qeEYzYWkxSDhWOVh6WEI3b1RyTzFiY1RTSkNremFGUUFyVDdxZFRzeEF4SzB3aW8xT3JJakNla19Ka1JnaWQxb2c4OVR0NUFuOW96SXRubFZ0UER6R2RMMzdUU2g3VW9tNDM2ZzlZY3JCMHZ3TzBNYnQ5YzB3alpYaWVFTXM1V3k5TU5IdGpvczByZk82bGRneC0ta2J0MEtraENxN052Nzd5b1Y1MmpXRVQtNGRnYzJEM0ZfSHZN0gHwAUFVX3lxTE9kaEpJeDhJS0N2NFUwQXFyeFVLc0k2bEJIdk93Y2tPaUdOT2lXa2dBVlYzazVfMVM1OWdqM283aFhId3B0ZnRHMVJCenFiV3puSU5LR21JeFQ0NWh0N3cxYi1QQm5UVkRjVVhaRzRNaHBBLUVKZkhRSXVOeVdOT3dYMFo2SEctTERoVElIblZ5WDlBU3VieEctakNoQ0htYjZOcDlLam1OTHd1UEdkNExXdXg5a3JUTkJZUXl6Z25Rek42dmwtZUJHRGh5eHFmckM4RVI5MTRfeUd0VkJ4bmh5M3Bta01PVlBwVEhPbDB5Xw?oc=5",
-     "source": "Livemint",
-     "published": "2026-11-02T02:55:47+00:00",
-     "sentiment": 0.5
-    },
-    {
-     "title": "Bonus issues, stock splits, dividends: Infosys, Asian Paints among over 40 stocks turning ex-date this wee",
-     "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQNlE3SXVrOFJtVWxCMEFBRkViZmZnWGdCQ2p0Y1VkbmJGaVVaaktGWUxyMUo1eWE2SnFueU5WdFc0dV9acktZM3dlcF9YRTFPRWZmLVdqTnhwN2RXNGktMDBhNnhMRWE4Y2xlSEN6SElLMElzM2g5N0Z1S1MyYXBPN1c2eXJTbXJPUjAwYkJtR0ZBejhWY2tSb3V5RlpXcVVrY19vTXN3TW9zYWFDenMyQTd5VUlkNl9WdmFMLW5pWXNIQWI4dkJIOTNaSi1kX3dOWGoxODl2Ti1Uand0N000QnRmQ3MtQmJCSHMzYU94cF8tc3doc2NPTmhiZVhzbjdLTVduaHRLazTSAY4CQVVfeXFMTm5DNU1aTFlLeFV1VUtYYTVPSEhCNmdPclU1b1pGcnFwU3YwR0ZMcWFCSFFSbHhsWjEyZGNEdmV5VWtsdDk3SHE5MElveGlPU3k0UUpGNi1abk5GNmJoLU5VbHl1Y0xibUozOGxKbkQwMnRaeUF4M2dTbVVhSWVDdC1fR3V0WGdfeElPelF1elVzNXg1ekRsSWJfdWF1Um82SWx3a28zMWd5dDdJazFXWWNPYWRZT25iRi1yM1gxeFpmZUI2ZnRiVExIYkdZUlhyOWZKMU1hRm55Z2V3SXd0cy1SZzR4a3lLVXBpb0pEWVNTNGVDMmoxWHVOZXNuUEoyMEE0c1pqN2dHX0V4U21R?oc=5",
-     "source": "The Economic Times",
-     "published": "2026-11-01T05:04:32+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "Infosys shares slide over 2%; Hyderabad campus expansion fails to lift sentiment",
-     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNX0F0OWtrWXBBT0JIT2wwdUo3R3V2QXctX1NMWjVVaEtwOS02Tnc0MmNCR1k0YkRTR0M1dFhzSnNmdURaLThtZUhSaERzWmFhQ09uU0hHUWVDYUlZRXoxdlVOZHdvSFZ0c2dlaVFOM2NFWXlYX2dQNmtmanFzUTRPeWZZOWszbm8tN3o4a21mR2VUZnV3TWZXR2dxZFZzTldIX2F3TUdtWV9qdldsb0ozN2UxX2Nqc05KR3k1OWtSSmN2RGdGY0FuZk40ZE8zd1ZnV19uQUtoa3VvdW03Wm51RzgzcC1ZQXNiZmxVcVRn0gH0AUFVX3lxTE5Kalc3QUlBc3paaFRzRU13bjZDV1pfVVgxejBLdU5pTVlvcVJ4THk2R3hTOGhQN0ZJMTlFUEJvdEgtN1UxSGE0Vm1zTWFMN01xajNqMGx2eUhIZUxSMXNxY1QwTmtZRVhwcHVCbldFUkRsUDlUUHB0RkFoQ0tRWGotOF9hcWF6SjVNTzdhRUZ0dF9PRGZvOGxyLXBGVXdyT3VlUnZscDVrU19ySDRURHloR3B3VkZmeDktQjBvbTIwQWpwaFVzd3Z4RFZ0UXdwLWpTLTVGWkNvQTRYS19CNHBueHlEM3BoVW1XWWF6UXJka01udng?oc=5",
-     "source": "BusinessLine",
-     "published": "2026-11-02T07:54:14+00:00",
-     "sentiment": -0.33
-    },
-    {
-     "title": "Diwali stock picks 2026: Infosys, Airtel, SBI, BEL, Vedanta Aluminium among 31 recommendations for Samvat...",
-     "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQLUNUY3lHVVAzUVNGVEJGVnZjbWRWYXM0WkUxdVRXS3dwdHdzVWZ0TFJSbUpjZEozNnE1cGs5d0dzMHVqQzBCa3NmQW5XUEZHSEtXdDZuQjNxdFFraGZsU0tROE10TlBnODZfMzBwTGR5NjFtTHlSWk9DZTd0SU1ZNzJlNU9hMDVyWHNpNmJjZ3I5czB6dTlKYkZiY2NTamo2Rm5MRlRYdThjZHlGUnJ0UVpqaE5yUFYySXk4SHA0OFZjMG5hUHptY3ExT0loSWJZcjI0ZWw0eVI0dWRaMloxd21kay1IVzdjNDRQQTZncEZWTUFDbnBuNnhTX0NLZjFqUTNMdXhfRlIzUV9TaEo4TWR5MUFlRDZFQ2FIRmxTQVBmTGlRQUxCetIBrgJBVV95cUxObENmWFMxSmd5aHpTc05PdU55YW9sNW1JbTlyU2JyVkNyU08zNXpWcUNyNDdSbTdzZXRYOGNnLWxlR0p1aVZubmphVWFyUEZLZzZxZmw1cXE3QjJGeHN0bkRHZkRFT2dSTFBNc0lkSENwUWtGY3dGQjB3U0lURGxFRC1ob21YWUNDbUhFa0pPM1NNcTd6SExFS3BMLVBHRXp0YXE5dUVvMjREelRsVTU0dnF4d3lVbWs2N0VWZmR1cmZaOEg5WHFBRDRwWkZkbV8zOU1icEZoZnl6NjlOQ1RwOG5pdkxpaFBwZE0tTXRXbGh4QWR6U2hYdC1EOWwzcllGQ2RKQVc3OFU0OVJtd0NGdWlMM1BjSjNRMGd6eERPNmVCNFdZVEpsWEtsREt0QQ?oc=5",
-     "source": "Moneycontrol.com",
-     "published": "2026-11-07T08:54:11+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "Indian stock market rally has a catch: Why TCS, Infosys and HCL Tech were among the top laggards",
-     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNRDJneEFUV0ZIcXVjR1dwTzVKSDhPb2J2M2ZYcWhXdlJQQWhQTWpnTmo2UVh0emc2R0liMER6WTB2bUlTb1R4azVDLUh6Y2V5cE9jelZwRWIzVlE2VmRSeGJ6QkdmNXdVdmFteGFoNXpOYzJjVXFLTHFWbGlRN2doX2lZblJKbDZTY1lnNHRkTExZSm83TGcxaU1RT0h3S0g0S2d0dmpmMm41TlpLbDVzZ0VZM3d4U3A3UkthVGFCTHlLd2lTYmQ1OGFVNTJhUmZIZ2Z5cUs2UnhMYW90eUd30gHkAUFVX3lxTE1DS0tvZG1WTWhSY002V0RES1BYaE80emk2Q1ROZm5PRWRQOThoLUFxdDl5WTJNaldDN2htZjVhcEk3UU1HVHJoY2Z4eEVBMmJHb0I1Rmd6UEZ0cnlIWGRqTW1mSmNyeTNhWmMyRkw1QVdmMThOTVNEMUdDR1pjUE5ySzd2emtlZmZXcV9sdzJ5Q0pNY1Q0MTd5SFBUTUN3VnFRMTF6NUVsc2RBaVFFeERKSlY4UVlLVXdrZ0tEZHdCZS10dnBtQ2tmLVVGZUc0ZU00LUc0NEJCS1NiTTZMS1lpaFlpYg?oc=5",
-     "source": "The Week",
-     "published": "2026-11-04T11:32:53+00:00",
-     "sentiment": 0.25
-    },
-    {
-     "title": "Infosys Limited (INFY.NS) Stock Price, News, Quote & History",
-     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qSFdlY3hSZ25GUmxrZmtVMHdua1AxMGRoVzVyZjEwb2JxYzdWanBWQzA4dzhJVVVQYUFTbHlNdmEydXRNX2hCNDJDcmY4alI1VHFTWWpR?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "published": "2026-11-06T19:51:27+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "Infosys, Wipro, TCS and other IT stocks rise up to 3% as US AI rout deepens; is the bubble bursting?",
-     "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQMTVEdXdzRVJSTE1vUHhIcHRkZ3hjSnZpYmlkak8wdVF1OUUzWkJQZ2x2T01yMmF3N2hLM0QyNHp2RG4xWmFfUVJfa0VtUWQ1NW0weGMxNUlCMkpibE1NejVGUFluaElxMzZKejF6ZDc5cVJNZU1MMTh1dHBnUkFncGZQQm1MeXlzU3VqQ0ZPMUFzdWk4YXFEbnhzOFVXNmdHbmkzVkdHMk1aYU5rUHJNZVdVSWc3NlE1dnBtRy1qYWhXVmRQdDg1Rm9TY3hXcmNrWXUxcm50akZkUzlodWtRLXJrN3NYV1Z6blNoN3dIYllTclZKMGJLLUpLczd6SXBkR3h5OUVoNGUxWjI2TDR2WkJjZ2JzaElub29NN01kc2nSAaYCQVVfeXFMTkVYc1hiV0ZSc2NLSnhpajB3bGJ3N2s4Wkd0REtHRmw2U1RVSnp3eDdERERUOGc5QzVCTHVVYkpQSEJtY19CSDhtWnNiV2JWM3ZVVzBlMUJiY2RGZWFJOVRhU3M5R0tIMmtITHA4STVyeExHQ1cwNFdOOWpKbFNJQk9TU1d5TmdTNy04UXJJVFZDbm83UGJod0FDYkZJdFBEX3JVLWpkT2pYdWxfcHdFbXVOLUhta3FGSWRpTnN3ZkdyandlVEhIZXRYRGE2MEFMN3FsWHdpcWFkME45Tnl1ZkNtVUE1UlF1THZqZ0dUN3kyc2lwdm9ZT3BlYWc0Nkh1U2llelR5eVZXQ0pHUW1XcWtlRGkzbzc0TjFpaTR6XzBzSGxidHZn?oc=5",
-     "source": "The Economic Times",
-     "published": "2026-11-06T03:48:39+00:00",
-     "sentiment": 0.25
-    },
-    {
-     "title": "Why are IT shares falling despite Democratic sweep in US adding to AI worries? Check what analysts say",
-     "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNRlRIYmw4WllDeDNIdzJFeU96VHVvNko4SE1Wdmt4bm04MVYzbTVjSEpOSFhJT3pGLUl0bkdnREFRU1BsY25yTTVlbEQ3ZFJaN2EtSk1XaE41RGhiZkZwNnRGV2lKT3EwZ18weWIyQXJHQnU2NkZZNHhFakNWS1NGak9IQnNqeTk4NlFsMFdnOG13bGtXbl9lRmplRlpEbkU0dm81dFJjLUVXVDNaUjJqMnB1TmcyX0xaTnN2dUJzT1dpQmF2NUg4TFVnTWh5UmFhenctZ3N4R2V6c1c1ODBTVWxPZnpCaGJuNmVzclVBZkttRTJnMmFYdDRR0gH_AUFVX3lxTE0zUWN5UEtIR2RBeHItVFg5S1BWazVlbmk5VFdKX2dtZkRnaVBfR25MRTVUc1RsN1RsZWszZXR3WnEyWmFMVGIyczF1cXRQa2dfeEJia1VDTFlOVDFtSHppajJQcmo4ZVdDRUR1U1lTNjdTWGltS3pHcW9FZTh3UWxLTmVlUlJLLUpDTkVPNU5tZUJjbDd4azBWMlRRWmI3S1l4VTdQc2FldzM5VHNCOUVxQ0dIT0FfR0o5cy1FUGVaV1N1VnZMX0xJNVJqNGxTTW5wVGprcllaS3hZeG5JOFdOR2ZmaV9EN0tEbHFFMkthMnh2M2tNV01IUEVxZ3lOdw?oc=5",
-     "source": "Moneycontrol.com",
-     "published": "2026-11-04T08:04:09+00:00",
-     "sentiment": 0.0
-    },
-    {
-     "title": "Indian IT stocks reverse early gains: NIFTY IT slips into red; Infosys, Wipro shares decline",
-     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNVVA0bnA1TUhTb0F3WmNyMjBSODRzVnRhR2tMa0llUFFaMTlhVEtYTl9WUngtelVrQTY5b1NtbzhoU2RYUHBaakRMbGFlbWMxUHBCbzdiemh5YlowTnZpdXc4R2Y4RXktd2VUVUprVEwyMEt2d2tfcWpZbHl0VmFDMWRQMFlGYnlCVkZmYzZnalg4M0dGNllMRno4UHMwWXIwWDQ2NlVDRzVXbnNkYlE1bms1ZEdob1V6WHhpN3FUcHFsY1B4cmQ1a0ZmTFFlR2E4MWtQV3ZSalFnUzFMbV9lVHdR?oc=5",
-     "source": "Upstox",
-     "published": "2026-11-06T04:05:44+00:00",
-     "sentiment": 0.25
-    },
-    {
-     "title": "US Midterm Election results impact on oil and IT shares: Reliance, Indian Oil, TCS, Infosys - 10 stocks from experts",
-     "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQQzk4dWFmZDlMazh5X2oySzdtQTZwbURTWTJVZnAxdmRFYmVEOFlzV2gyRjFPOWF1RmtmMGJSeUZPcXcwOXRFWXFLbjFpbHRMTkZQSWwwWjVXbWpCTVhnY3pIcUQxNXktWkRnVW81VG9BLUdDanlHaUkzYUpQM3BYbFNFTUl6NGZoU25PUmtSdXVic0VlZnQ4R2sycDJuOXVBRG1MLWI0ZlJuUzA0ZjhzM0ozNm8xaFpyNEFQMWFmTjlRdF96Ulh4c2U0blRmVGUxWXhzS0tHRFRDc0FvNTN0SGhtTjUzZnYwSzhFcUZPVGd4SHcxVEZDbzJIeDZONUZ6Z1hteExvM3ZOeE1t0gGSAkFVX3lxTE03VlowTmEtc0JEU3RhREZIclFCTmRvZ090YU00YVVKd011bFZJRktzNlI4NEdlQmFZMlJWdDNMY09IQzNjam1vR3E2MW9ZbWctd2U5V1dITnYyN0FiRGp4MEgzN0kzTldMN1ZkODRaY1R2Q3BPRmkyRlRIZ3pSSnM1Zm9kRzNWNUVEb3VhZnNhcmRjejVIdUVjR1JXbENHMFk4V3FaMjJieUF1b2ZKZklRRmYtSk5Cd25zUXJMNWJtOGJ1ajJndWNuVUNxeUh1cjBWM3N1OTBhVXZvbGFsWWlrR1pzNTNKRlNFdmlSR0FwcWUwQ19HRGJFM1BrM3E0bmF2Q245UHhIaVZzRmkydVRhekE?oc=5",
-     "source": "Livemint",
-     "published": "2026-11-05T05:32:48+00:00",
-     "sentiment": 0.0
-    }
-   ],
-   "position": {
-    "stop": 1100.33,
-    "stop_pct": -6.86,
-    "qty": 42,
-    "value": 49618.8,
-    "risk_amount": 3404.94,
-    "target_1r": 1343.54
-   },
-   "spark": [
-    1176.1,
-    1175.0,
-    1169.2,
-    1139.9,
-    1115.0,
-    1119.8,
-    1130.0,
-    1121.0,
-    1130.0,
-    1144.0,
-    1120.0,
-    1110.8,
-    1144.0,
-    1133.8,
-    1156.0,
-    1140.0,
-    1130.3,
-    1130.0,
-    1087.5,
-    1082.0,
-    1035.0,
-    1036.5,
-    1037.7,
-    1077.0,
-    1060.0,
-    1058.6,
-    1051.4,
-    1038.5,
-    1029.4,
-    1020.5,
-    1014.5,
-    1000.2,
-    1003.2,
-    1015.4,
-    994.1,
-    1035.0,
-    1020.5,
-    1013.85,
-    992.0,
-    997.0,
-    1023.4,
-    1020.0,
-    1062.1,
-    1088.0,
-    1110.0,
-    1161.2,
-    1130.7,
-    1168.0,
-    1153.35,
-    1153.8,
-    1166.0,
-    1163.0,
-    1123.15,
-    1146.5,
-    1185.0,
-    1161.0,
-    1148.1,
-    1128.2,
-    1167.4,
-    1181.4
-   ],
-   "spark_dates": [
-    "2026-08-12",
-    "2026-08-13",
-    "2026-08-14",
-    "2026-08-17",
-    "2026-08-18",
-    "2026-08-19",
-    "2026-08-20",
-    "2026-08-21",
-    "2026-08-24",
-    "2026-08-25",
-    "2026-08-26",
-    "2026-08-27",
-    "2026-08-28",
-    "2026-08-31",
-    "2026-09-01",
-    "2026-09-02",
-    "2026-09-03",
-    "2026-09-04",
-    "2026-09-07",
-    "2026-09-08",
-    "2026-09-09",
-    "2026-09-10",
-    "2026-09-11",
-    "2026-09-15",
-    "2026-09-16",
-    "2026-09-17",
-    "2026-09-18",
-    "2026-09-21",
-    "2026-09-22",
-    "2026-09-23",
-    "2026-09-24",
-    "2026-09-25",
-    "2026-09-28",
-    "2026-09-29",
-    "2026-09-30",
-    "2026-10-01",
-    "2026-10-05",
-    "2026-10-06",
-    "2026-10-07",
-    "2026-10-08",
-    "2026-10-09",
-    "2026-10-12",
-    "2026-10-13",
-    "2026-10-14",
-    "2026-10-15",
-    "2026-10-16",
-    "2026-10-19",
-    "2026-10-21",
-    "2026-10-22",
-    "2026-10-23",
-    "2026-10-26",
-    "2026-10-27",
-    "2026-10-28",
-    "2026-10-29",
-    "2026-10-30",
-    "2026-11-02",
-    "2026-11-03",
-    "2026-11-04",
-    "2026-11-05",
-    "2026-11-06"
-   ],
    "rank": 15
   },
   {
    "symbol": "NTPC.NS",
    "name": "NTPC",
    "currency": "INR",
-   "score": 59.3,
+   "score": 59.0,
    "action": "Hold / add on dips",
    "instruction": "Constructive. Hold existing positions; add only on a dip with the stop intact.",
    "components": {
@@ -4624,7 +4624,7 @@
      "max": 10
     },
     "news": {
-     "points": 11.8,
+     "points": 11.5,
      "max": 20
     }
    },
@@ -4666,11 +4666,11 @@
    },
    "rel_60d_pct": -6.71,
    "sentiment": {
-    "score": 0.18,
+    "score": 0.146,
     "n": 12,
-    "pos": 5,
+    "pos": 4,
     "neg": 0,
-    "neu": 7
+    "neu": 8
    },
    "news": [
     {
@@ -4737,13 +4737,6 @@
      "sentiment": 0.0
     },
     {
-     "title": "Amara Raja, CARE Ratings, Happiest Minds, NALCO, Amrutanjan Dividend Record Date: Last Day To Buy Shares To Qualify",
-     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNMHhzeVY2QS1ZWnJSZERabXFIdE43UzYtYjdSNFEzeW52eDlUdklxUmVzWS1veUVsa1FjQkpTZ1hOd19SZWVMSGxMNC1KTFA0b1F1OF8wX00zTWRQQWJrZW5EUzB2bHRrc24zUnFybXU4ZE45MjAtNW80ZjVTdndDakJ4WHNLaGpSS0JqNnMxQ1FNdTRHSktmbzFTN3hBZ0FUdkhHMGZWZXFzUENGempVeG14MzJfRWRuOTZFMjAtWEFTQ2FOZk1CZ3VtMV85UFpuZUEtNW54T1pwM3RZQ1FFTVpTaWZWZlBWaHfSAfIBQVVfeXFMUEtDME4tUDR2ZXNQbkFFLWdwZzhLeExaZTdjSkRLR2FNTmxFY3U4NFFpMVd2Nk15Sk5aYmRFWXVJSXJCNUlZbUpRWDJsY3c4QXduNEFqRWdySkhERFcwWlVvaTZqYmdlbXpRMzIxbklwNklUUmFXeHRKNy1CZEZOTjNJa1pINFg5REhla0ljVXdwLV9jX1NRMGRSN21qUHRzS0NfRGxXWEVPTzlLaS00MFZNakFyLWFNZTVqay1ORy1SOXpDUjRaQWxndUdNUlVxTElpejhReUx4dy1RRFV3cEkwN0N2TTNlNVZ1VDAxNHBjaHc?oc=5",
-     "source": "NDTV Profit",
-     "published": "2026-11-05T00:05:15+00:00",
-     "sentiment": 0.5
-    },
-    {
      "title": "Top Gainers & Losers Today, 5 November 2026 at 3:30 PM IST: Bajaj Finance Ltd Leads Gainers",
      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOdHd2WnFMYng0VFptcW1reFk2NWtaaVh4MzJLckMtVE93QmZ0bFRTU29Ham0yVDJ5dkI0eFFXOXlwR1JEQUlrRWJHTWo2LXRQYnRrRUFXUU9OYTctSFVyeUZyeU9VdmVCSmh0Vl9vbWs5bVNBdHlHX0tTQzhfenlKdVBR?oc=5",
      "source": "HDFC Sky",
@@ -4756,6 +4749,13 @@
      "source": "Univest",
      "published": "2026-11-06T10:05:07+00:00",
      "sentiment": 0.5
+    },
+    {
+     "title": "NTPC Green Energy (NSEI:NTPCGREEN) Stock Forecast & Analyst Predictions",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVFVPZGRKZFUyWFBMYWV1X045aHlLZ2Z5MENOYU5MNWRKMGNDbnlGQzZEUktaaTBIdUljbzVkbndqa1h3Z3UwTWJtd1RUWUw3YXZCQnRzR2tfcG9aRkRiaS1JeUU5aVJlWkxhbndacVEwYlY3V2RBT3N1Q1RzeTlkbmNBOWpYLVVsS0dtRnVxTjQ?oc=5",
+     "source": "Simply Wall St",
+     "published": "2026-11-01T07:00:00+00:00",
+     "sentiment": 0.0
     }
    ],
    "position": {
@@ -5479,7 +5479,7 @@
    "symbol": "HINDUNILVR.NS",
    "name": "Hindustan Unilever",
    "currency": "INR",
-   "score": 56.0,
+   "score": 56.3,
    "action": "Hold / add on dips",
    "instruction": "Constructive. Hold existing positions; add only on a dip with the stop intact.",
    "components": {
@@ -5500,7 +5500,7 @@
      "max": 10
     },
     "news": {
-     "points": 11.6,
+     "points": 11.9,
      "max": 20
     }
    },
@@ -5542,11 +5542,11 @@
    },
    "rel_60d_pct": -5.5,
    "sentiment": {
-    "score": 0.162,
+    "score": 0.189,
     "n": 12,
-    "pos": 6,
+    "pos": 7,
     "neg": 1,
-    "neu": 5
+    "neu": 4
    },
    "news": [
     {
@@ -5599,6 +5599,13 @@
      "sentiment": 0.0
     },
     {
+     "title": "Dividend Stocks To Watch This Week: Emami, Chambal Fertilisers, HUL, CAMS, GE Shipping, Star Cement, Shivalik Bimetal, And More",
+     "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOZmhHb1hITnRKa19BU3lRUm13bEtDRkNyQkVjUUVvMURMVjhod09wWnctTTBUNnlnaEJDWWVlcEhvX1pTTVcwRDU1X2V4X1ROejhBcDh1TTRKU2VRYmNyT0hvdlhacHduQmFMT0hxRWQ0QURnLVRra3V1MTR1U0RRUVNSclFHUUJtTHBMbng1SVktSy16UkV5NC1zRi16Y3BkMlRGTnk3R2JMclZQTExSUjhpR1l5ZUpIWUJYalplT01EYkppMDlDV2dtd202R1NGTHBXbzZzYWNhQUM2OUY0SXI3eHA2dXRMUzZRZ0l4WksySlhYSWfSAf4BQVVfeXFMTXVPTXV5WUk2YTJWcktFWnd5R0JkN18zR1luNGJEUTFEWjRjUHJJaXg0bmJyZDV5aGRETHR3RWloSVdQT1MxQ2xNbmVQZTJSMzhIWV9ZbGJLa0prWmpMOXlqYnRNSzVZRHBMVEVTdmM3NUZ3RVZOQlZJbE1nMUd3Vl9GTnZqbUVsaXgwUTVFS3FxV2NLNl9DM0ZfUHR0VkFtNWhBbk9RWTh6dkZyd3hNdjJoZ0NYZm9RSTBUa21aWjBXV0QxWFRIV1JvdTBFVGUzTFVJNDd5MXhrM0QxZWt1WlB0ZHlNLUMzLXd1WTVQZ3Q2a1ZTdDZwQmktUmJ4RlE?oc=5",
+     "source": "NDTV Profit",
+     "published": "2026-11-08T01:59:59+00:00",
+     "sentiment": 0.25
+    },
+    {
      "title": "Upcoming dividend, bonus, rights record date next week, 9-13 Nov: Dabur, RITES, CONCOR, HUL, ONGC, Emami among others",
      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOUGM0VXBFSDZ3clJjS09vVDlWaEV1TWVzem9tY0pKSHlBRXdnQ3BNTWQ5TFNPUlpLNkxKbHVYTUw2MEEzc1VweEExZ2VoN3hfRXdLd3o2dnlWSGE3MzhjZ1Zxd3E5MXNIclhmOHRmYmdEanhMbkZlcnFpNWhPcUE4S1lpd1h2MTdzdlY4NG1LZFZGVDZxSVNGMXo5UTdrZkN0VVBRLWdNdVNwVm85QVozX2dfUWJGY3NYdWFCcE4zbUFNb3k1QU12RjJKYzQ1S0Jtb2RqLTlCcWdDZTdBT3o0MDVmXzRSamtxcWF2bDkwNGwzUUZIeTc5NUduMUZYX0RXbFVVbTJOdlhPUdIBjwJBVV95cUxQc2h3T2p3T3cwSGhSQkVzcWtNVTU5NGx1OWxnQ2E4TnAyVlNTc0ZKX21YcTZlOFRfT1pTNEt4QTIyamIyWEtjd2ZOQXJrd0NOYi1rQ0VlOU0wY1lDekVRUzdYRmpIY0I5TW9oM0Y1Mm10d1otem5KWjFBWjUyN0tvenJYQUFpZUJqblhtdl95Zm9HM0ZldXdiRldLNThRRzE5YVRsbUI4YXNoUTJXSkVnMGFNVWY1dW02NEZ4RHRlUUJNb1pJLVAyYzFqZTlUQkQtMUR5NGNFeWRwZHl4VGVZYWMwZlF2U2Zqd0dXMjJVRm9VN0JmeUhLUjlkcG9WT0FIYkVybjEtaVRSUzBwZDNn?oc=5",
      "source": "Livemint",
@@ -5625,13 +5632,6 @@
      "source": "Equitymaster",
      "published": "2026-11-06T09:55:37+00:00",
      "sentiment": 0.5
-    },
-    {
-     "title": "HUL protects volumes as inflation squeezes gross margins",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMER2dXZZUDRGTGFZNlQyY3RwYVNrb1dkRVlZLUVSSVBfamt2MW85R25Jc0NiQVIzVy1jRVU0ZktMRG1ZMllpUUJTQkdoXzlWeVZOaEw5LUlBNmRvLUNaT29UbWplSk1zTmFLdXk1c2p2VF9BRnJrOHRHaUs3cENVemprYkJvODk0dFkwQWtGZEczSEhyWldyT2l0a2kyMENsMXNqV0lDODl4S0RMX1FSaXk5NkplQQ?oc=5",
-     "source": "Multibagg AI",
-     "published": "2026-11-05T11:27:35+00:00",
-     "sentiment": 0.0
     }
    ],
    "position": {
@@ -5839,7 +5839,7 @@
    },
    "rel_60d_pct": -11.15,
    "sentiment": {
-    "score": 0.215,
+    "score": 0.223,
     "n": 12,
     "pos": 6,
     "neg": 0,
@@ -5850,7 +5850,7 @@
      "title": "Maruti Suzuki Share Price",
      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1RNTd2UVdUcFQwTzlWUl8tX05yTHQ4c3JkeGRFUmZfRm9FMjVPTE1kRHRtel8zd2FidnF0cEVJR1ZzTV9tZmtqREd1V3pLTk9vY2NXSl9jZEpHeXpjaVlsRFVOelM1aTVNWWp5dXFvNA?oc=5",
      "source": "Upstox",
-     "published": "2026-11-06T23:49:09+00:00",
+     "published": "2026-11-06T01:47:30+00:00",
      "sentiment": 0.0
     },
     {
@@ -6079,11 +6079,11 @@
    "SUNPHARMA.NS",
    "HCLTECH.NS",
    "BAJFINANCE.NS",
-   "SBIN.NS",
    "M&M.NS",
+   "SBIN.NS",
    "TCS.NS",
-   "RELIANCE.NS",
    "INFY.NS",
+   "RELIANCE.NS",
    "NTPC.NS",
    "ITC.NS",
    "ADANIENT.NS",
