@@ -615,7 +615,8 @@ def ai_narrative(brief: dict) -> dict | None:
             "symbol": s["symbol"], "name": s["name"], "score": s["score"], "action": s["action"],
             "flags": s["flags"], "reasons_up": s["reasons_up"], "reasons_down": s["reasons_down"],
             "headlines": [h["title"] for h in s["news"]][:6],
-        } for s in brief["stocks"]],
+        } for s in brief["stocks"][:25]],
+        "picks": [{"symbol": p["symbol"], "entry": [p["entry_low"], p["entry_high"]], "stop": p["stop"]} for p in brief.get("picks", [])],
     }
     system = (
         "You are a sell-side-quality equity analyst writing a pre-market note for one retail "
@@ -655,19 +656,87 @@ def ai_narrative(brief: dict) -> dict | None:
 # --------------------------------------------------------------------------- #
 # Main pipeline                                                               #
 # --------------------------------------------------------------------------- #
-def analyze_symbol(entry: dict, hist: dict, news: list[dict], bench_ind: dict | None,
+import concurrent.futures as _cf  # noqa: E402
+
+SPARK_POINTS = 40
+
+
+def pick_eligible(ind: dict, flags: list[str], score: float, rel_60d: float | None,
+                  min_score: float = 65.0) -> bool:
+    """The rule behind 'Today's picks' (also used by backtest.py, so it stays testable).
+
+    Strong but not stretched: score above the bar, price above a rising 50-day average,
+    RSI in the healthy band, not extended, no bad-news cluster, and at least keeping pace
+    with the index over 60 days."""
+    if score < min_score:
+        return False
+    bad = ("Overbought", "Extended", "Negative news", "Moved", "Oversold", "Below 200DMA", "Thin volume")
+    if any(f.startswith(b) for f in flags for b in bad):
+        return False
+    r = ind.get("rsi14")
+    if r is None or not (45 <= r <= 68):
+        return False
+    if not ind.get("sma50") or ind["close"] <= ind["sma50"]:
+        return False
+    if ind.get("sma200") and ind["sma50"] <= ind["sma200"]:
+        return False
+    if rel_60d is not None and rel_60d < 0:
+        return False
+    return True
+
+
+def select_picks(stocks: list[dict], regime: dict, cfg: dict, max_picks: int = 5) -> tuple[list[dict], str]:
+    """Rank-ordered setups that pass pick_eligible plus a liquidity floor."""
+    if regime.get("state") == "risk-off":
+        return [], ("Market regime is risk-off (index below its averages or volatility elevated). "
+                    "No new buys are suggested; keep cash and let the list re-arm when the index recovers.")
+    min_turnover = cfg.get("min_turnover", 1e8)  # average daily traded value, in the quote currency
+    picks = []
+    for s in stocks:
+        ind = s["indicators"]
+        if (s.get("turnover") or 0) < min_turnover:
+            continue
+        if not pick_eligible(ind, s["flags"], s["score"], s.get("rel_60d_pct")):
+            continue
+        atr = ind.get("atr14") or 0
+        entry_low = max(ind.get("sma20") or 0, ind["close"] - atr)
+        picks.append({
+            "rank": s["rank"], "symbol": s["symbol"], "name": s["name"], "score": s["score"],
+            "close": ind["close"], "entry_low": round(min(entry_low, ind["close"]), 2), "entry_high": ind["close"],
+            "stop": s["position"]["stop"] if s.get("position") else None,
+            "target_2r": s["position"]["target_1r"] if s.get("position") else None,
+            "qty": s["position"]["qty"] if s.get("position") else None,
+            "why": s["reasons_up"][:3], "in_watchlist": s.get("in_watchlist", False),
+            "news_fetched": s.get("news_fetched", False),
+        })
+        if len(picks) >= max_picks:
+            break
+    note = ("Setups where trend, momentum and relative strength agree and the stock is not stretched. "
+            "Buy inside the entry zone, not above it; the stop is 2 ATR below the close. "
+            "This is a screen, not a forecast: the backtest panel shows how such setups did historically.")
+    if regime.get("state") == "neutral":
+        note = "Regime is neutral: take half the usual size. " + note
+    if not picks:
+        note = "Nothing passes the rule today: the strong names are extended and the rest lack trend. Patience is a position. " + note
+    return picks, note
+
+
+def analyze_symbol(entry: dict, hist: dict, news: list[dict] | None, bench_ind: dict | None,
                    regime: str, cfg: dict, now: dt.datetime) -> dict:
     ind = compute_indicators(hist)
-    sent = sentiment_summary(news, now)
+    sent = sentiment_summary(news or [], now)
     sc = score_stock(ind, sent, bench_ind)
     action, instruction = action_for(sc["score"], sc["flags"], regime)
     size = position_size(ind, cfg.get("capital", 500000), cfg.get("risk_per_trade_pct", 1.0),
                          cfg.get("max_position_pct", 10.0))
-    closes = hist["close"][-60:]
+    closes = hist["close"][-SPARK_POINTS:]
+    v, c = hist["volume"][-20:], hist["close"][-20:]
+    turnover = sum(a * b for a, b in zip(v, c)) / len(c) if c else None
     return {
         "symbol": entry["symbol"],
-        "name": entry.get("name") or hist.get("meta", {}).get("longName") or entry["symbol"],
+        "name": entry.get("name") or hist.get("meta", {}).get("longName") or hist.get("meta", {}).get("shortName") or entry["symbol"],
         "currency": hist.get("meta", {}).get("currency"),
+        "in_watchlist": bool(entry.get("in_watchlist")),
         "score": sc["score"],
         "action": action,
         "instruction": instruction,
@@ -677,12 +746,34 @@ def analyze_symbol(entry: dict, hist: dict, news: list[dict], bench_ind: dict | 
         "flags": sc["flags"],
         "indicators": {k: (round(v, 2) if isinstance(v, float) else v) for k, v in ind.items()},
         "rel_60d_pct": sc["rel_60d_pct"],
+        "turnover": round(turnover) if turnover else None,
         "sentiment": sent,
-        "news": news,
+        "news": news or [],
+        "news_fetched": news is not None,
         "position": size,
         "spark": [round(x, 2) for x in closes],
-        "spark_dates": hist["dates"][-60:],
+        "last_date": hist["dates"][-1],
     }
+
+
+def load_universe(cfg: dict, watchlist_path: Path) -> tuple[str, list[str]]:
+    ref = cfg.get("universe")
+    if not ref:
+        return "watchlist", []
+    path = (watchlist_path.parent / ref) if not Path(ref).is_absolute() else Path(ref)
+    if not path.exists():
+        return "watchlist", []
+    u = json.loads(path.read_text())
+    return u.get("name", path.stem), u.get("symbols", [])
+
+
+def prune_archives(out_dir: Path, keep_days: int) -> int:
+    cutoff = (dt.date.today() - dt.timedelta(days=keep_days)).isoformat()
+    n = 0
+    for f in out_dir.glob("brief-*.json"):
+        if f.stem[6:] < cutoff:
+            f.unlink(); n += 1
+    return n
 
 
 def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Path:
@@ -691,14 +782,22 @@ def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Pat
     now = dt.datetime.now(dt.timezone.utc)
     today = now.astimezone(IST).date().isoformat()
     errors: list[str] = []
+    workers = int(cfg.get("workers", 6))
+    news_top_n = int(cfg.get("news_top_n", 30))
+
+    # Universe = my stocks (always) + the index universe, de-duplicated, my entries keep their metadata.
+    entries: dict[str, dict] = {}
+    for e in cfg["stocks"]:
+        entries[e["symbol"]] = {**e, "in_watchlist": True}
+    uni_name, uni_syms = ("watchlist", []) if offline else load_universe(cfg, watchlist_path)
+    for sym in uni_syms:
+        entries.setdefault(sym, {"symbol": sym, "in_watchlist": False})
 
     def get_hist(sym: str) -> dict | None:
         if offline:
             return synthetic_history(sym)
         try:
-            h = fetch_yahoo_history(sym)
-            time.sleep(0.4)
-            return h
+            return fetch_yahoo_history(sym)
         except Exception as e:  # noqa: BLE001
             errors.append(f"{sym}: {e}")
             print(f"  ! {sym}: {e}", file=sys.stderr)
@@ -708,15 +807,13 @@ def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Pat
         if offline:
             return synthetic_news(query, seed)
         try:
-            items = fetch_google_news(query, market)
-            time.sleep(0.4)
-            return items
+            return fetch_google_news(query, market)
         except Exception as e:  # noqa: BLE001
             errors.append(f"news '{query}': {e}")
             print(f"  ! news '{query}': {e}", file=sys.stderr)
             return []
 
-    print(f"[{today}] benchmark {cfg.get('benchmark')} ...", file=sys.stderr)
+    print(f"[{today}] prices for {len(entries)} symbols + benchmark ({workers} workers) ...", file=sys.stderr)
     bench_hist = get_hist(cfg["benchmark"]) if cfg.get("benchmark") else None
     bench_ind = compute_indicators(bench_hist) if bench_hist else None
     vix_level = None
@@ -725,23 +822,45 @@ def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Pat
         if vh:
             vix_level = vh["close"][-1]
     regime = market_regime(bench_ind, vix_level)
+
+    hists: dict[str, dict] = {}
+    with _cf.ThreadPoolExecutor(max_workers=1 if offline else workers) as ex:
+        for sym, h in zip(entries, ex.map(get_hist, list(entries))):
+            if h and len(h["close"]) >= 30:
+                hists[sym] = h
+            elif h:
+                errors.append(f"{sym}: insufficient history")
+
+    # Pass 1: price-only score for everyone, to decide whose headlines are worth fetching.
+    prelim = []
+    for sym, h in hists.items():
+        ind = compute_indicators(h)
+        sc = score_stock(ind, {"score": 0.0, "n": 0, "pos": 0, "neg": 0, "neu": 0}, bench_ind)
+        prelim.append((sc["score"], sym))
+    prelim.sort(reverse=True)
+    news_set = {sym for _, sym in prelim[:news_top_n]} | {s for s, e in entries.items() if e["in_watchlist"] and s in hists}
+
     market_query = "Nifty Sensex stock market today" if market == "IN" else "stock market today Wall Street"
-    market_news = get_news(market_query, 7)
+    print(f"[{today}] headlines for {len(news_set)} symbols + market ...", file=sys.stderr)
+    news: dict[str, list[dict]] = {}
+    ordered = sorted(news_set)
+    with _cf.ThreadPoolExecutor(max_workers=1 if offline else max(2, workers // 2)) as ex:
+        futs = {ex.submit(get_news, market_query, 7): "__market__"}
+        for i, sym in enumerate(ordered):
+            e = entries[sym]
+            q = e.get("news") or e.get("name") or hists[sym].get("meta", {}).get("shortName") or sym.split(".")[0]
+            futs[ex.submit(get_news, q, i + 11)] = sym
+        for fut in _cf.as_completed(futs):
+            news[futs[fut]] = fut.result()
+    market_news = news.pop("__market__", [])
     market_sent = sentiment_summary(market_news, now)
 
-    stocks = []
-    for i, entry in enumerate(cfg["stocks"]):
-        print(f"  {entry['symbol']} ...", file=sys.stderr)
-        hist = get_hist(entry["symbol"])
-        if not hist or len(hist["close"]) < 30:
-            errors.append(f"{entry['symbol']}: insufficient history")
-            continue
-        news = get_news(entry.get("news") or entry.get("name") or entry["symbol"], i + 11)
-        stocks.append(analyze_symbol(entry, hist, news, bench_ind, regime["state"], cfg, now))
-
+    stocks = [analyze_symbol(entries[sym], hists[sym], news.get(sym), bench_ind, regime["state"], cfg, now)
+              for sym in hists]
     stocks.sort(key=lambda s: s["score"], reverse=True)
     for rank, s in enumerate(stocks, 1):
         s["rank"] = rank
+    picks, picks_note = select_picks(stocks, regime, cfg)
 
     brief = {
         "generated_at": now.isoformat(),
@@ -750,13 +869,18 @@ def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Pat
         "market": market,
         "config": {k: cfg.get(k) for k in ("benchmark", "volatility_index", "capital",
                                            "risk_per_trade_pct", "max_position_pct")},
+        "universe": {"name": uni_name, "size": len(entries), "scored": len(stocks),
+                     "news_fetched": sum(1 for s in stocks if s["news_fetched"]),
+                     "watchlist": [e["symbol"] for e in cfg["stocks"]]},
         "regime": regime,
         "benchmark": {
             "symbol": cfg.get("benchmark"),
             "indicators": {k: (round(v, 2) if isinstance(v, float) else v) for k, v in bench_ind.items()} if bench_ind else None,
-            "spark": [round(x, 2) for x in bench_hist["close"][-60:]] if bench_hist else [],
+            "spark": [round(x, 2) for x in bench_hist["close"][-SPARK_POINTS:]] if bench_hist else [],
             "vix": round(vix_level, 2) if vix_level is not None else None,
         },
+        "picks": picks,
+        "picks_note": picks_note,
         "market_news": market_news,
         "market_sentiment": market_sent,
         "stocks": stocks,
@@ -774,14 +898,19 @@ def run(watchlist_path: Path, out_dir: Path, offline: bool, use_ai: bool) -> Pat
         brief["ai"] = ai_narrative(brief)
 
     out_dir.mkdir(parents=True, exist_ok=True)
+    payload = json.dumps(brief, separators=(",", ":"), ensure_ascii=False)
     if offline:
         target = out_dir / "sample-brief.json"
-        target.write_text(json.dumps(brief, indent=1))
+        target.write_text(payload)
     else:
         target = out_dir / "latest.json"
-        target.write_text(json.dumps(brief, indent=1))
-        (out_dir / f"brief-{today}.json").write_text(json.dumps(brief, indent=1))
-    print(f"wrote {target} ({len(stocks)} stocks, regime {regime['state']}, {len(errors)} errors)", file=sys.stderr)
+        target.write_text(payload)
+        (out_dir / f"brief-{today}.json").write_text(payload)
+        pruned = prune_archives(out_dir, int(cfg.get("keep_archive_days", 60)))
+        if pruned:
+            print(f"pruned {pruned} old archive(s)", file=sys.stderr)
+    print(f"wrote {target} ({len(stocks)} stocks, {len(picks)} picks, regime {regime['state']}, "
+          f"{len(errors)} errors, {len(payload) // 1024} KB)", file=sys.stderr)
     return target
 
 

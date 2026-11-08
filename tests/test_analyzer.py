@@ -134,6 +134,12 @@ class EndToEnd(unittest.TestCase):
             self.assertTrue(all(0 <= s["score"] <= 100 for s in b["stocks"]))
             self.assertIn(b["regime"]["state"], ("risk-on", "neutral", "risk-off"))
             self.assertTrue(5 <= b["benchmark"]["vix"] <= 40)
+            self.assertIn("picks", b); self.assertIn("picks_note", b)
+            self.assertTrue(all(s["in_watchlist"] for s in b["stocks"]))
+            self.assertEqual(b["universe"]["scored"], 20)
+            for pk in b["picks"]:
+                self.assertLessEqual(pk["entry_low"], pk["entry_high"])
+                self.assertLess(pk["stop"], pk["entry_low"])
 
 
 if __name__ == "__main__":
@@ -225,3 +231,52 @@ class DeepDive(unittest.TestCase):
         self.assertNotIn("[TICKER]", prompts[0]["prompt"])
         self.assertNotIn("| FCF |", prompts[1]["data"].split("Quarterly")[1])  # quarterly FCF absent -> column dropped
         self.assertIn("₹", prompts[1]["data"])
+
+
+class Picks(unittest.TestCase):
+    def good(self):
+        return {"close": 110, "sma20": 107, "sma50": 100, "sma200": 90, "rsi14": 58, "atr14": 2.0}
+
+    def test_pick_eligible_rule(self):
+        g = self.good()
+        self.assertTrue(A.pick_eligible(g, [], 72, 3.0))
+        self.assertFalse(A.pick_eligible(g, [], 60, 3.0))                      # score below bar
+        self.assertFalse(A.pick_eligible(g, ["Overbought (RSI 72)"], 80, 3.0))  # stretched
+        self.assertFalse(A.pick_eligible(g, ["Extended 2.3 ATR above 20DMA"], 80, 3.0))
+        self.assertFalse(A.pick_eligible({**g, "rsi14": 72}, [], 80, 3.0))
+        self.assertFalse(A.pick_eligible({**g, "close": 95}, [], 80, 3.0))      # below 50DMA
+        self.assertFalse(A.pick_eligible({**g, "sma50": 85}, [], 80, 3.0))      # 50 below 200
+        self.assertFalse(A.pick_eligible(g, [], 80, -2.0))                     # lagging index
+        self.assertTrue(A.pick_eligible({**g, "sma200": None}, [], 80, None))  # short history tolerated
+
+    def test_select_picks_regime_and_liquidity(self):
+        stock = {"rank": 1, "symbol": "A.NS", "name": "A", "score": 80, "indicators": self.good(), "flags": [],
+                 "rel_60d_pct": 2.0, "turnover": 5e8, "position": {"stop": 106, "target_1r": 118, "qty": 10},
+                 "reasons_up": ["x", "y", "z", "w"]}
+        cfg = {"min_turnover": 1e8}
+        picks, note = A.select_picks([stock], {"state": "risk-on"}, cfg)
+        self.assertEqual(len(picks), 1); self.assertEqual(len(picks[0]["why"]), 3)
+        self.assertEqual(picks[0]["entry_low"], 108.0)  # max(sma20, close - atr) = max(107, 108)
+        picks, note = A.select_picks([stock], {"state": "risk-off"}, cfg)
+        self.assertEqual(picks, []); self.assertIn("risk-off", note)
+        thin = {**stock, "turnover": 1e6}
+        picks, _ = A.select_picks([thin], {"state": "risk-on"}, cfg)
+        self.assertEqual(picks, [])
+        _, note = A.select_picks([stock], {"state": "neutral"}, cfg)
+        self.assertTrue(note.startswith("Regime is neutral"))
+
+
+class Backtest(unittest.TestCase):
+    def test_price_only_score_and_buckets(self):
+        import backtest as B
+        h = A.synthetic_history("BT.NS", 400, seed=4)
+        a = B.arrays(h)
+        ind = B.ind_at(a, 350)
+        for k in ("close", "sma50", "sma200", "rsi14", "macd_hist", "atr14", "ext_atr"):
+            self.assertIsNotNone(ind[k], k)
+        score, flags, rel = B.price_only_score(ind, {"ret_60d_pct": 1.0})
+        self.assertTrue(0 <= score <= 100)
+        rows = [{"ex20": 1, "ex60": 2, "abs20": 1, "abs60": 3}, {"ex20": -1, "ex60": -2, "abs20": -1, "abs60": -1}]
+        s = B.summarize(rows)
+        self.assertEqual(s["n"], 2); self.assertEqual(s["excess_60d"]["hit_rate"], 50.0); self.assertEqual(s["excess_60d"]["mean"], 0.0)
+        self.assertEqual(B.summarize([]), {"n": 0})

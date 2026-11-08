@@ -95,6 +95,27 @@ main{padding-top:14px}
 .action .ic{width:22px;height:22px;border-radius:7px;display:grid;place-items:center;color:#fff;font-size:12px;flex:none}
 .action .ic.warn{color:#0b0b0b}
 .instr{font-size:13px;color:var(--ink-2)}
+.picks h2{font-size:15px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.picks h2 .n{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--wash);padding:2px 8px;border-radius:999px}
+.picks .note{font-size:13px;color:var(--ink-2);margin:6px 0 10px}
+.picks .ev{font-size:12.5px;border-left:3px solid var(--series);padding:4px 10px;margin:0 0 12px;color:var(--ink-2)}
+.picks .ev b{color:var(--ink)}
+.pickgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.pick{border:1px solid var(--border);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px;background:var(--page)}
+.pick .h{display:flex;gap:8px;align-items:baseline}
+.pick .h b{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:15px}
+.pick .h .sc{font-size:13px;font-weight:700;color:var(--good-text)}
+.pick .sym{font-size:12px;color:var(--ink-2);margin-top:-6px}
+.pick .z{display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;font-size:12.5px}
+.pick .z span{color:var(--muted);font-size:11px;display:block}
+.pick .z b{font-weight:600;font-variant-numeric:tabular-nums}
+.pick ul{list-style:none;font-size:12.5px;color:var(--ink-2);display:grid;gap:2px}
+.pick ul li::before{content:"·";margin-right:6px}
+.pick .links{display:flex;gap:10px;font-size:12px;font-weight:600}
+.pick .links a{color:var(--series);text-decoration:none}
+.star{color:var(--warn);font-size:13px;margin-left:4px}
+.more{display:block;margin:12px auto 0;padding:9px 16px;border-radius:10px;border:1px solid var(--border);background:var(--surface);font-weight:600;font-size:13px}
+button.field[aria-pressed="true"]{background:var(--ink);color:var(--page);border-color:var(--ink)}
 .action .dive{margin-left:auto;font-size:12px;font-weight:600;color:var(--series);text-decoration:none;padding:3px 8px;border-radius:999px;background:var(--wash)}
 .action .dive:hover{text-decoration:underline}
 .spark{width:100%;height:60px;display:block}
@@ -167,6 +188,8 @@ footer details{margin-top:6px}
 
   <section class="tiles" id="tiles" aria-label="Summary by action"></section>
 
+  <section class="card picks hidden" id="picks" style="margin-top:12px"></section>
+
   <section class="card ai hidden" id="ai"></section>
 
   <div class="controls">
@@ -174,6 +197,7 @@ footer details{margin-top:6px}
       <button id="viewCards" aria-pressed="true">Cards</button>
       <button id="viewTable" aria-pressed="false">Table</button>
     </div>
+    <button class="field" id="mine" aria-pressed="false" title="Only the stocks in your watchlist">★ My stocks</button>
     <label class="field">Capital ₹ <input id="capital" type="number" min="1000" step="1000" inputmode="numeric"></label>
     <label class="field">Risk % <input id="risk" type="number" min="0.1" max="5" step="0.1" style="width:56px"></label>
     <label class="field"><input id="q" type="search" placeholder="Search stock…" aria-label="Search stock"></label>
@@ -199,7 +223,7 @@ const ACT = {
   'Avoid / reduce':    {cls:'crit',  color:'var(--crit)',   glyph:'▼'},
 };
 const REGIME = {'risk-on':'var(--good)','neutral':'var(--warn)','risk-off':'var(--crit)','unknown':'var(--muted)'};
-let brief = null, filter = 'all', view = 'cards', query = '';
+let brief = null, filter = 'all', view = 'cards', query = '', mine = false, showAll = false, backtest = null;
 let capital = 0, riskPct = 1, maxPosPct = 10, dives = {};
 
 /* ---------- theme ---------- */
@@ -288,7 +312,7 @@ function renderTiles(){
 
 function visible(){
   const q = query.trim().toLowerCase();
-  return brief.stocks.filter(s => (filter === 'all' || s.action === filter) &&
+  return brief.stocks.filter(s => (filter === 'all' || s.action === filter) && (!mine || s.in_watchlist) &&
     (!q || s.symbol.toLowerCase().includes(q) || (s.name||'').toLowerCase().includes(q)));
 }
 
@@ -306,7 +330,7 @@ function card(s){
   return `<article class="card stock" data-sym="${esc(s.symbol)}">
     <div class="top">
       <span class="rank">#${s.rank}</span>
-      <div class="nm"><b>${esc(s.name)}</b><span>${esc(s.symbol)}</span></div>
+      <div class="nm"><b>${esc(s.name)}${s.in_watchlist ? '<span class="star" title="In your watchlist">★</span>' : ''}</b><span>${esc(s.symbol)}</span></div>
       <div class="px"><b>${c}${fmtN(ind.close)}</b><span class="${(ind.change_1d_pct||0) >= 0 ? 'up' : 'dn'}">${fmtP(ind.change_1d_pct)} today</span></div>
     </div>
     <div class="meter" title="Composite score 0–100: trend ${s.components?.trend?.points}/30, momentum ${s.components?.momentum?.points}/25, relative strength ${s.components?.relative_strength?.points}/15, volume ${s.components?.volume?.points}/10, news ${s.components?.news?.points}/20">
@@ -335,7 +359,7 @@ function card(s){
       <div><span>Outlay</span><b>${c}${fmtI(p.value)}</b></div>
       <div><span>Risk / 2R target</span><b>${c}${fmtI(p.risk)} · ${c}${fmtN(p.target, 0)}</b></div>
     </div>` : ''}
-    <details class="news"><summary>${(s.news||[]).length} headlines ${sentBar(s.sentiment)}</summary>
+    <details class="news"><summary>${s.news_fetched === false ? 'Headlines not fetched (outside the top ' + (brief.universe ? 'ranks' : '') + ' for news)' : (s.news||[]).length + ' headlines'} ${sentBar(s.sentiment)}</summary>
       <ul>${(s.news||[]).map(n => `<li><span class="s ${n.sentiment > 0.1 ? 'p' : n.sentiment < -0.1 ? 'n' : ''}"></span>
         <div><a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a><small>${esc(n.source || '')} ${n.source ? '·' : ''} ${ago(n.published)}</small></div></li>`).join('') || '<li>No recent headlines found.</li>'}</ul>
     </details>
@@ -347,7 +371,13 @@ function renderList(){
   const cards = $('#cards'), table = $('#table');
   cards.classList.toggle('hidden', view !== 'cards'); table.classList.toggle('hidden', view !== 'table');
   if (!list.length) { cards.innerHTML = table.innerHTML = '<div class="empty">Nothing matches this filter.</div>'; return; }
-  if (view === 'cards') { cards.innerHTML = list.map(card).join(''); return; }
+  if (view === 'cards') {
+    const cap = 40, narrowed = showAll || query.trim() || filter !== 'all' || mine;
+    const shown = narrowed ? list : list.slice(0, cap);
+    cards.innerHTML = shown.map(card).join('') + (shown.length < list.length ? `<button class="more" id="more" style="grid-column:1/-1">Show all ${list.length} stocks</button>` : '');
+    const m = $('#more'); if (m) m.onclick = () => { showAll = true; renderList(); };
+    return;
+  }
   table.innerHTML = `<table><thead><tr>
     <th>#</th><th>Stock</th><th>Price</th><th>1d</th><th>Score</th><th>Action</th><th>RSI</th><th>vs 50DMA</th><th>vs 200DMA</th><th>vs index 60d</th><th>News</th><th>Stop</th><th>Qty</th><th>Flags</th>
     </tr></thead><tbody>${list.map(s => {
@@ -362,6 +392,22 @@ function renderList(){
         <td>${p ? c + fmtN(p.stop) : '–'}</td><td>${p ? fmtI(p.qty) : '–'}</td>
         <td style="white-space:normal;text-align:left;max-width:220px;font-size:12px;color:var(--ink-2)">${(s.flags||[]).map(esc).join(', ')}</td></tr>`;
     }).join('')}</tbody></table>`;
+}
+
+function renderPicks(){
+  const el = $('#picks'); const picks = brief.picks || [];
+  el.classList.remove('hidden');
+  const bt = backtest && backtest.pick_rule && backtest.pick_rule.n ? backtest : null;
+  const ev = bt ? `<div class="ev">Evidence, not prophecy. Backtest ${esc(bt.from.slice(0,4))}–${esc(bt.to.slice(0,4))}, ${bt.symbols} stocks, ${bt.observations.toLocaleString('en-IN')} monthly observations: setups passing this rule beat ${esc(bt.benchmark)} over the next 60 days <b>${bt.pick_rule.excess_60d.hit_rate}%</b> of the time, average excess <b>${bt.pick_rule.excess_60d.mean > 0 ? '+' : ''}${bt.pick_rule.excess_60d.mean}%</b> (all stocks: ${bt.all.excess_60d.hit_rate}%, ${bt.all.excess_60d.mean > 0 ? '+' : ''}${bt.all.excess_60d.mean}%). Survivorship bias and no costs: read it as a tilt, not an edge you can bank.</div>` : '';
+  el.innerHTML = `<h2>Today's picks <span class="n">${picks.length} of ${brief.universe ? brief.universe.scored : brief.stocks.length} pass the rule</span></h2>
+    <div class="note">${esc(brief.picks_note || '')}</div>${ev}` + (picks.length ? `<div class="pickgrid">${picks.map(pk => {
+      const s = brief.stocks.find(x => x.symbol === pk.symbol) || {}; const p = sizeFor(s) || {}; const c = cur(s);
+      return `<div class="pick"><div class="h"><b>${esc(pk.name)}${pk.in_watchlist ? '<span class="star">★</span>' : ''}</b><span class="sc">${Math.round(pk.score)}</span></div><div class="sym">#${pk.rank} · ${esc(pk.symbol)}</div>
+        <div class="z"><div><span>Entry zone</span><b>${c}${fmtN(pk.entry_low)} – ${c}${fmtN(pk.entry_high)}</b></div><div><span>Stop (2 ATR)</span><b>${c}${fmtN(pk.stop)}</b></div>
+          <div><span>2R target</span><b>${c}${fmtN(pk.target_2r)}</b></div><div><span>Qty for your capital</span><b>${p.qty != null ? fmtI(p.qty) : fmtI(pk.qty)}${p.value ? ' <small style="color:var(--muted)">' + c + fmtI(p.value) + '</small>' : ''}</b></div></div>
+        <ul>${(pk.why||[]).map(w => `<li>${esc(w)}</li>`).join('')}</ul>
+        <div class="links"><a href="#" data-sym="${esc(pk.symbol)}" class="jump">See card</a>${dives[pk.symbol] ? `<a href="report.html?symbol=${encodeURIComponent(pk.symbol)}">Deep dive →</a>` : ''}</div></div>`; }).join('')}</div>` : '');
+  el.querySelectorAll('a.jump').forEach(a => a.onclick = e => { e.preventDefault(); query = a.dataset.sym; $('#q').value = query; renderList(); const t = document.querySelector('.stock'); if (t) t.scrollIntoView({behavior:'smooth', block:'start'}); });
 }
 
 function renderAI(){
@@ -385,7 +431,7 @@ function renderMarket(){
 function renderFoot(){
   const errs = brief.errors || [];
   $('#foot').innerHTML = `<div>${esc(brief.disclaimer || '')}</div>
-    <div>Generated ${new Date(brief.generated_at).toLocaleString('en-IN')} · benchmark ${esc(brief.config?.benchmark||'')} · ${brief.stocks.length} stocks scored.</div>
+    <div>Generated ${new Date(brief.generated_at).toLocaleString('en-IN')} · benchmark ${esc(brief.config?.benchmark||'')} · ${brief.stocks.length} stocks scored${brief.universe ? ` from ${esc(brief.universe.name)}, headlines fetched for ${brief.universe.news_fetched} (top ranks plus your watchlist)` : ''}.</div>
     ${errs.length ? `<details><summary>${errs.length} data errors this run</summary><ul style="margin:6px 0 0 16px">${errs.map(e => `<li>${esc(e)}</li>`).join('')}</ul></details>` : ''}`;
 }
 
@@ -393,13 +439,15 @@ function banner(kind, html){ const b = $('#banner'); b.className = 'banner ' + k
 
 function renderAll(){
   $('#date').textContent = new Date(brief.date + 'T00:00:00').toLocaleDateString('en-IN', {weekday:'short', day:'numeric', month:'short', year:'numeric'});
-  renderRegime(); renderTiles(); renderAI(); renderList(); renderMarket(); renderFoot();
+  if (brief.universe) $('#date').textContent += ` · ${brief.universe.name} (${brief.universe.scored} scored)`;
+  renderRegime(); renderTiles(); renderPicks(); renderAI(); renderList(); renderMarket(); renderFoot();
 }
 
 /* ---------- controls ---------- */
 $('#viewCards').onclick = () => { view = 'cards'; $('#viewCards').setAttribute('aria-pressed','true'); $('#viewTable').setAttribute('aria-pressed','false'); renderList(); };
 $('#viewTable').onclick = () => { view = 'table'; $('#viewTable').setAttribute('aria-pressed','true'); $('#viewCards').setAttribute('aria-pressed','false'); renderList(); };
 $('#q').oninput = e => { query = e.target.value; renderList(); };
+$('#mine').onclick = () => { mine = !mine; $('#mine').setAttribute('aria-pressed', mine); renderList(); };
 $('#capital').onchange = e => { capital = +e.target.value || capital; try { localStorage.setItem('sa_capital', capital); } catch (x) {} renderList(); };
 $('#risk').onchange = e => { riskPct = Math.min(5, Math.max(0.1, +e.target.value || riskPct)); e.target.value = riskPct; try { localStorage.setItem('sa_risk', riskPct); } catch (x) {} renderList(); };
 
@@ -420,6 +468,7 @@ async function load(){
       try { capital = +localStorage.getItem('sa_capital') || capital; riskPct = +localStorage.getItem('sa_risk') || riskPct; } catch (e) {}
       $('#capital').value = capital; $('#risk').value = riskPct;
       try { const di = await fetch('data/deepdive/index.json', {cache:'no-store'}); if (di.ok) dives = await di.json(); } catch (e) { dives = {}; }
+      try { const bt = await fetch('data/backtest.json', {cache:'no-store'}); if (bt.ok) backtest = await bt.json(); } catch (e) { backtest = null; }
       if (brief.sample) banner('warn', `<b>Sample data.</b><span>This is a synthetic demo brief so you can see the layout. Run <code>python3 analyze.py</code> or enable the GitHub Actions schedule to replace it with a live brief.</span>`);
       else if (url !== candidates[0] && !custom) banner('warn', `<b>Showing fallback.</b><span>${esc(candidates[0])} could not be loaded.</span>`);
       else {

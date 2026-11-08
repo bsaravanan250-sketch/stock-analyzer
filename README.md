@@ -1,10 +1,11 @@
 # Stock Analyzer: a daily, rules-based brief
 
 Every weekday morning before the market opens, this repository pulls free public data
-from the web, scores each stock on your watchlist, checks whether the overall
-market is worth being in, and publishes a ranked brief with a concrete action,
-a stop-loss and a position size for each name. The dashboard (`index.html`)
-renders it on your phone or laptop.
+from the web, scores every stock in the NIFTY 200 plus your own watchlist,
+checks whether the overall market is worth being in, and publishes a ranked
+brief with a concrete action, a stop-loss and a position size for each name,
+plus a short list of "Today's picks" and the backtested evidence behind that
+rule. The dashboard (`index.html`) renders it on your phone or laptop.
 
 **What it is:** a disciplined screener plus a news digest. It tells you which
 names on your list have trend, momentum, relative strength, volume and headlines
@@ -18,7 +19,8 @@ candidate to research, not an order to place.
 ## Quick start
 
 ```bash
-python3 analyze.py            # live run: writes data/latest.json and data/brief-YYYY-MM-DD.json
+python3 analyze.py            # live run: scores the universe, writes data/latest.json and a dated archive
+python3 backtest.py           # optional: refresh the evidence panel (data/backtest.json)
 python3 -m http.server 8080   # then open http://localhost:8080/
 ```
 
@@ -39,6 +41,8 @@ that the dashboard falls back to when no live brief exists yet.
    against the headlines. Without the key the brief is still complete.
 
 You can also trigger a run any time from the Actions tab (workflow_dispatch).
+Dated archives are pruned after `keep_archive_days` (default 60) so the repo
+stays small.
 
 ## How a stock is scored (0 to 100)
 
@@ -100,12 +104,44 @@ capped at `max_position_pct` of capital in one name (default 10%). Change
 capital in the dashboard and the quantities recompute. Change the defaults in
 `watchlist.json`.
 
-## Customising the watchlist
+## Universe, watchlist and "Today's picks"
 
-Edit `watchlist.json`. Yahoo Finance symbols: NSE is `TICKER.NS`, BSE is
-`TICKER.BO`, US is the plain ticker. For a US list set `"market": "US"`,
-`"benchmark": "^GSPC"` and `"volatility_index": "^VIX"`. The `news` field is
-the phrase searched on Google News.
+- **Universe** (`universe.json`, about 220 NIFTY 200 symbols): every name is
+  priced and scored daily, concurrently, in well under a minute. Headlines are
+  fetched only for the top `news_top_n` (default 30) by price-only score plus
+  your watchlist, to stay polite to the news feed; other names score the news
+  component as neutral and the card says so. Constituents change twice a year;
+  a symbol that stops resolving is logged under `errors`, not fatal. Swap the
+  file for NIFTY 100 or 500 if you want a narrower or wider net.
+- **Watchlist** (`stocks` in `watchlist.json`): your own names. Always scored,
+  always get headlines, marked with a star, and filterable with "My stocks".
+- **Today's picks:** up to five names that pass a stricter rule than the score
+  alone: score 65+, price above a 50-day average that is itself above the
+  200-day, RSI 45 to 68, not extended, no bad-news cluster, not lagging the
+  index over 60 days, and average daily turnover above `min_turnover` (₹10 Cr).
+  Each shows an entry zone (20-day average to close), a 2 ATR stop, a 2R target
+  and a quantity for your capital. In a risk-off regime the list is empty by
+  design; in neutral it tells you to halve size.
+
+This is a screen, not a forecast. Which is why the next section exists.
+
+## Backtest: what the score has been worth
+
+`backtest.py` re-scores every universe stock at monthly points over the last
+four years with the same price rules (news excluded) and measures the next 20
+and 60 trading days against NIFTY. Results land in `data/backtest.json` and the
+headline numbers appear above the picks. A weekly GitHub Action refreshes it.
+
+Read it honestly: the picks rule has shown a modest positive tilt with a hit
+rate only a little above a coin flip, which means a few strong winners carry
+the average. The sample uses today's constituents (survivorship bias flatters
+it), ignores costs, and the windows overlap. It is enough to justify the rule
+as a filter and the stop as non-negotiable; it is not enough to size up.
+
+Yahoo Finance symbols: NSE is `TICKER.NS`, BSE is `TICKER.BO`, US is the plain
+ticker. For a US set-up use `"market": "US"`, `"benchmark": "^GSPC"`,
+`"volatility_index": "^VIX"` and a US universe file. The `news` field is the
+phrase searched on Google News.
 
 ## Data sources and their limits
 

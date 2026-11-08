@@ -1,0 +1,34 @@
+name: Weekly backtest
+
+on:
+  schedule:
+    # Sundays 08:37 IST (03:07 UTC): refresh the evidence panel shown next to the picks.
+    - cron: "7 3 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-backtest
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run backtest
+        run: python3 backtest.py > /dev/null
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/backtest.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Weekly backtest $(TZ=Asia/Kolkata date +%F)"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
