@@ -1,313 +1,313 @@
 {
- "generated_at": "2026-11-15T10:44:32.308527+00:00",
+ "generated_at": "2026-11-22T11:11:07.388158+00:00",
  "benchmark": "^NSEI",
  "symbols": 217,
- "observations": 9171,
- "from": "2022-12-01",
- "to": "2026-08-14",
+ "observations": 9175,
+ "from": "2022-12-07",
+ "to": "2026-08-24",
  "step_days": 21,
  "all": {
-  "n": 9171,
+  "n": 9175,
   "excess_20d": {
-   "mean": 1.16,
-   "median": 0.31,
-   "hit_rate": 52.0,
-   "n": 9171
+   "mean": 1.0,
+   "median": 0.26,
+   "hit_rate": 51.7,
+   "n": 9175
   },
   "excess_60d": {
-   "mean": 3.44,
-   "median": 1.21,
-   "hit_rate": 53.9,
-   "n": 9171
+   "mean": 3.34,
+   "median": 1.14,
+   "hit_rate": 53.7,
+   "n": 9175
   },
   "abs_20d": {
-   "mean": 1.62,
-   "median": 0.95,
-   "hit_rate": 55.0,
-   "n": 9171
+   "mean": 1.49,
+   "median": 0.76,
+   "hit_rate": 54.0,
+   "n": 9175
   },
   "abs_60d": {
-   "mean": 4.93,
-   "median": 2.65,
-   "hit_rate": 57.3,
-   "n": 9171
+   "mean": 4.77,
+   "median": 2.75,
+   "hit_rate": 57.5,
+   "n": 9175
   }
  },
  "by_bucket": {
   "0-39": {
-   "n": 2220,
+   "n": 2256,
    "excess_20d": {
-    "mean": 0.61,
-    "median": -0.03,
-    "hit_rate": 49.8,
-    "n": 2220
+    "mean": 0.71,
+    "median": 0.29,
+    "hit_rate": 51.6,
+    "n": 2256
    },
    "excess_60d": {
-    "mean": 2.66,
-    "median": 1.06,
-    "hit_rate": 53.8,
-    "n": 2220
+    "mean": 2.8,
+    "median": 1.09,
+    "hit_rate": 53.5,
+    "n": 2256
    },
    "abs_20d": {
-    "mean": 0.76,
-    "median": 0.26,
-    "hit_rate": 51.8,
-    "n": 2220
+    "mean": 1.04,
+    "median": 0.65,
+    "hit_rate": 53.5,
+    "n": 2256
    },
    "abs_60d": {
-    "mean": 3.29,
-    "median": 1.37,
-    "hit_rate": 53.6,
-    "n": 2220
+    "mean": 3.66,
+    "median": 2.04,
+    "hit_rate": 56.1,
+    "n": 2256
    }
   },
   "40-54": {
-   "n": 1394,
+   "n": 1441,
    "excess_20d": {
-    "mean": 0.54,
-    "median": 0.01,
-    "hit_rate": 50.0,
-    "n": 1394
+    "mean": 0.51,
+    "median": -0.31,
+    "hit_rate": 48.4,
+    "n": 1441
    },
    "excess_60d": {
-    "mean": 2.52,
-    "median": 0.01,
-    "hit_rate": 50.1,
-    "n": 1394
+    "mean": 3.1,
+    "median": 1.32,
+    "hit_rate": 54.5,
+    "n": 1441
    },
    "abs_20d": {
-    "mean": 0.93,
-    "median": 0.53,
-    "hit_rate": 52.5,
-    "n": 1394
+    "mean": 1.06,
+    "median": 0.28,
+    "hit_rate": 51.4,
+    "n": 1441
    },
    "abs_60d": {
-    "mean": 3.67,
-    "median": 1.61,
-    "hit_rate": 54.7,
-    "n": 1394
+    "mean": 4.69,
+    "median": 3.01,
+    "hit_rate": 57.9,
+    "n": 1441
    }
   },
   "55-69": {
-   "n": 1657,
+   "n": 1645,
    "excess_20d": {
-    "mean": 1.08,
-    "median": 0.54,
-    "hit_rate": 52.8,
-    "n": 1657
+    "mean": 0.76,
+    "median": 0.13,
+    "hit_rate": 51.2,
+    "n": 1645
    },
    "excess_60d": {
-    "mean": 3.0,
-    "median": 0.83,
-    "hit_rate": 53.2,
-    "n": 1657
+    "mean": 2.92,
+    "median": 0.07,
+    "hit_rate": 50.2,
+    "n": 1645
    },
    "abs_20d": {
-    "mean": 1.7,
-    "median": 1.29,
-    "hit_rate": 56.4,
-    "n": 1657
+    "mean": 1.34,
+    "median": 0.53,
+    "hit_rate": 53.3,
+    "n": 1645
    },
    "abs_60d": {
-    "mean": 4.78,
-    "median": 2.59,
-    "hit_rate": 57.6,
-    "n": 1657
+    "mean": 4.39,
+    "median": 1.93,
+    "hit_rate": 55.4,
+    "n": 1645
    }
   },
   "70-100": {
-   "n": 3900,
+   "n": 3833,
    "excess_20d": {
-    "mean": 1.73,
-    "median": 0.59,
-    "hit_rate": 53.6,
-    "n": 3900
+    "mean": 1.46,
+    "median": 0.54,
+    "hit_rate": 53.3,
+    "n": 3833
    },
    "excess_60d": {
-    "mean": 4.41,
-    "median": 1.86,
-    "hit_rate": 55.6,
-    "n": 3900
+    "mean": 3.93,
+    "median": 1.57,
+    "hit_rate": 55.1,
+    "n": 3833
    },
    "abs_20d": {
-    "mean": 2.32,
-    "median": 1.4,
-    "hit_rate": 57.1,
-    "n": 3900
+    "mean": 1.98,
+    "median": 1.24,
+    "hit_rate": 55.6,
+    "n": 3833
    },
    "abs_60d": {
-    "mean": 6.37,
-    "median": 3.89,
-    "hit_rate": 60.2,
-    "n": 3900
+    "mean": 5.62,
+    "median": 3.58,
+    "hit_rate": 59.0,
+    "n": 3833
    }
   }
  },
  "pick_rule": {
-  "n": 1762,
+  "n": 1691,
   "excess_20d": {
-   "mean": 1.58,
-   "median": 0.49,
-   "hit_rate": 52.3,
-   "n": 1762
+   "mean": 1.21,
+   "median": 0.48,
+   "hit_rate": 52.9,
+   "n": 1691
   },
   "excess_60d": {
-   "mean": 4.86,
-   "median": 2.01,
-   "hit_rate": 56.5,
-   "n": 1762
+   "mean": 3.74,
+   "median": 1.54,
+   "hit_rate": 55.2,
+   "n": 1691
   },
   "abs_20d": {
-   "mean": 2.03,
-   "median": 1.14,
-   "hit_rate": 55.0,
-   "n": 1762
+   "mean": 1.57,
+   "median": 0.68,
+   "hit_rate": 53.7,
+   "n": 1691
   },
   "abs_60d": {
-   "mean": 6.63,
-   "median": 4.08,
-   "hit_rate": 61.1,
-   "n": 1762
+   "mean": 5.27,
+   "median": 3.44,
+   "hit_rate": 58.5,
+   "n": 1691
   }
  },
  "pick_rule_by_year": {
   "2022": {
-   "n": 73,
+   "n": 29,
    "excess_20d": {
-    "mean": -0.39,
-    "median": -0.43,
-    "hit_rate": 45.2,
-    "n": 73
+    "mean": 1.15,
+    "median": 0.41,
+    "hit_rate": 58.6,
+    "n": 29
    },
    "excess_60d": {
-    "mean": -1.39,
-    "median": 0.57,
-    "hit_rate": 50.7,
-    "n": 73
+    "mean": -0.22,
+    "median": 1.4,
+    "hit_rate": 58.6,
+    "n": 29
    },
    "abs_20d": {
-    "mean": -3.25,
-    "median": -3.4,
-    "hit_rate": 27.4,
-    "n": 73
+    "mean": -1.64,
+    "median": -2.38,
+    "hit_rate": 20.7,
+    "n": 29
    },
    "abs_60d": {
-    "mean": -8.1,
-    "median": -6.59,
-    "hit_rate": 27.4,
-    "n": 73
+    "mean": -6.89,
+    "median": -5.27,
+    "hit_rate": 27.6,
+    "n": 29
    }
   },
   "2023": {
-   "n": 495,
+   "n": 551,
    "excess_20d": {
-    "mean": 2.89,
-    "median": 1.72,
-    "hit_rate": 57.2,
-    "n": 495
+    "mean": 1.86,
+    "median": 0.76,
+    "hit_rate": 54.8,
+    "n": 551
    },
    "excess_60d": {
-    "mean": 10.12,
-    "median": 5.85,
-    "hit_rate": 64.8,
-    "n": 495
+    "mean": 6.92,
+    "median": 4.86,
+    "hit_rate": 62.1,
+    "n": 551
    },
    "abs_20d": {
-    "mean": 4.29,
-    "median": 2.95,
-    "hit_rate": 64.0,
-    "n": 495
+    "mean": 2.99,
+    "median": 2.01,
+    "hit_rate": 59.7,
+    "n": 551
    },
    "abs_60d": {
-    "mean": 16.13,
-    "median": 11.12,
-    "hit_rate": 79.0,
-    "n": 495
+    "mean": 11.21,
+    "median": 8.16,
+    "hit_rate": 72.6,
+    "n": 551
    }
   },
   "2024": {
-   "n": 610,
+   "n": 541,
    "excess_20d": {
-    "mean": 2.31,
-    "median": 0.85,
-    "hit_rate": 53.4,
-    "n": 610
+    "mean": 1.28,
+    "median": 0.42,
+    "hit_rate": 51.9,
+    "n": 541
    },
    "excess_60d": {
-    "mean": 3.78,
-    "median": 1.48,
-    "hit_rate": 54.6,
-    "n": 610
+    "mean": 2.77,
+    "median": 0.07,
+    "hit_rate": 50.6,
+    "n": 541
    },
    "abs_20d": {
-    "mean": 3.06,
-    "median": 1.84,
-    "hit_rate": 58.0,
-    "n": 610
+    "mean": 1.88,
+    "median": 1.01,
+    "hit_rate": 55.6,
+    "n": 541
    },
    "abs_60d": {
-    "mean": 6.08,
-    "median": 4.06,
-    "hit_rate": 60.8,
-    "n": 610
+    "mean": 4.85,
+    "median": 2.82,
+    "hit_rate": 56.0,
+    "n": 541
    }
   },
   "2025": {
-   "n": 343,
+   "n": 341,
    "excess_20d": {
-    "mean": -0.22,
-    "median": -0.81,
-    "hit_rate": 45.5,
-    "n": 343
+    "mean": 0.29,
+    "median": -0.07,
+    "hit_rate": 49.6,
+    "n": 341
    },
    "excess_60d": {
-    "mean": 2.76,
-    "median": 0.96,
-    "hit_rate": 53.4,
-    "n": 343
+    "mean": 2.06,
+    "median": 1.31,
+    "hit_rate": 54.5,
+    "n": 341
    },
    "abs_20d": {
-    "mean": 0.21,
-    "median": 0.23,
+    "mean": 0.85,
+    "median": 0.36,
     "hit_rate": 51.0,
-    "n": 343
+    "n": 341
    },
    "abs_60d": {
-    "mean": 2.48,
-    "median": 1.34,
-    "hit_rate": 55.7,
-    "n": 343
+    "mean": 1.97,
+    "median": 0.86,
+    "hit_rate": 54.0,
+    "n": 341
    }
   },
   "2026": {
-   "n": 241,
+   "n": 229,
    "excess_20d": {
-    "mean": 0.2,
-    "median": 0.24,
-    "hit_rate": 51.5,
-    "n": 241
+    "mean": 0.83,
+    "median": 0.81,
+    "hit_rate": 55.0,
+    "n": 229
    },
    "excess_60d": {
-    "mean": 1.67,
-    "median": 0.14,
+    "mean": 1.44,
+    "median": 0.02,
     "hit_rate": 50.2,
-    "n": 241
+    "n": 229
    },
    "abs_20d": {
-    "mean": -1.02,
-    "median": -1.42,
-    "hit_rate": 42.7,
-    "n": 241
+    "mean": -1.07,
+    "median": -1.76,
+    "hit_rate": 42.8,
+    "n": 229
    },
    "abs_60d": {
-    "mean": -1.16,
-    "median": -3.55,
-    "hit_rate": 43.2,
-    "n": 241
+    "mean": -1.54,
+    "median": -4.92,
+    "hit_rate": 41.5,
+    "n": 229
    }
   }
  },
- "pick_rule_share_pct": 19.2,
+ "pick_rule_share_pct": 18.4,
  "caveats": [
   "Survivorship bias: today's index constituents only; failures that left the index are missing, which flatters results.",
   "No transaction costs, slippage or taxes; close-to-close on adjusted prices.",
