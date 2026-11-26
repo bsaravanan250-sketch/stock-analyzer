@@ -16,6 +16,13 @@ is to stop you buying stretched stocks, averaging down into broken ones, or
 sizing a trade so large that one loss hurts. Treat every "Accumulate" as a
 candidate to research, not an order to place.
 
+## Portfolio site
+
+`portfolio/` holds a separate streaming-style personal portfolio (intro, profile
+picker, resume, achievements, skills, projects, journey). All content lives in
+`portfolio/data.js`; see `portfolio/README.md`. It deploys with the dashboard at
+`https://<user>.github.io/<repo>/portfolio/`.
+
 ## Quick start
 
 ```bash

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Series · Portfolio</title>
+  <meta name="description" content="A streaming-style developer portfolio: resume, achievements, skills, projects and journey, one episode at a time.">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- 1. Opening: the "tudum" name card -->
+  <div id="intro" class="intro" aria-hidden="true">
+    <div class="intro__beam"></div>
+    <div class="intro__name" id="intro-name"></div>
+    <div class="intro__tag" id="intro-tag"></div>
+    <button class="intro__skip" id="intro-skip" type="button">Skip intro</button>
+  </div>
+
+  <!-- 2. Who's watching? -->
+  <div id="profiles" class="profiles" hidden>
+    <h1 class="profiles__title">Who's watching?</h1>
+    <div class="profiles__grid" id="profiles-grid"></div>
+    <p class="profiles__note" id="profiles-note"></p>
+  </div>
+
+  <!-- 3. The site -->
+  <div id="app" class="app" hidden>
+    <header class="nav" id="nav">
+      <a class="nav__logo" href="#home" aria-label="Home"><span class="nav__n" id="nav-initial">N</span><span class="nav__word">SERIES</span></a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#home" class="is-active">Home</a>
+        <a href="#resume">Resume</a>
+        <a href="#achievements">Moments</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Originals</a>
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#picks">Top Picks</a>
+      </nav>
+      <div class="nav__right">
+        <a class="btn btn--ghost btn--sm" id="nav-contact" href="#contact">Let's build</a>
+        <button class="nav__avatar" id="nav-avatar" type="button" title="Switch profile" aria-label="Switch profile"></button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="hero__media">
+          <img class="hero__img" id="hero-img" alt="" src="">
+          <div class="hero__fade"></div>
+          <div class="hero__stat" id="hero-stat"></div>
+        </div>
+        <div class="hero__body">
+          <div class="kicker kicker--logo"><span class="nav__n" id="hero-initial">N</span> SERIES</div>
+          <h1 class="hero__title" id="hero-title"></h1>
+          <div class="hero__sub" id="hero-tagline"></div>
+          <div class="hero__meta" id="hero-meta"></div>
+          <div class="hero__role" id="hero-role"></div>
+          <p class="hero__text" id="hero-summary"></p>
+          <div class="hero__actions">
+            <button class="btn btn--light" id="play-intro" type="button">▶&nbsp; Play Intro</button>
+            <a class="btn btn--ghost" id="hero-resume" href="#resume">ⓘ&nbsp; View Resume</a>
+            <a class="btn btn--icon" href="#about" aria-label="About me" title="About me">i</a>
+          </div>
+        </div>
+        <div class="hero__row">
+          <div class="row-head"><h2 class="row-title">Continue Exploring</h2><span class="row-hint" id="profile-hint"></span></div>
+          <div class="rail" id="episodes-rail" data-rail></div>
+        </div>
+      </section>
+
+      <!-- Resume -->
+      <section class="section" id="resume">
+        <div class="section__head"><span class="kicker">The Screenplay</span><h2 class="section__title">The Full Story</h2></div>
+        <div class="resume">
+          <article class="paper" id="paper"></article>
+          <aside class="resume__side">
+            <h3 class="side__title">Every episode, on one page.</h3>
+            <p class="side__text">Education, training, projects, achievements and certifications, in the order a recruiter reads them.</p>
+            <a class="btn btn--light btn--block" id="resume-view" href="#" target="_blank" rel="noopener">▶&nbsp; View Resume</a>
+            <a class="btn btn--ghost btn--block" id="resume-download" href="#" download>⤓&nbsp; Download Resume</a>
+            <div class="side__stats" id="resume-stats"></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Achievements -->
+      <section class="section" id="achievements">
+        <div class="section__head"><span class="kicker">Awards Season</span><h2 class="section__title">Top Moments</h2></div>
+        <div class="rail rail--moments" id="moments-rail" data-rail></div>
+        <div class="row-head row-head--sub"><h3 class="row-title row-title--sm" id="cert-title">Certified</h3><div class="issuers" id="issuers"></div></div>
+        <div class="rail rail--certs" id="certs-rail" data-rail></div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="section__head"><span class="kicker">Genres</span><h2 class="section__title">My Skill Universe</h2></div>
+        <div class="skills">
+          <ul class="skills__cats" id="skill-cats" role="tablist"></ul>
+          <div class="skills__panel">
+            <p class="skills__hint">Hover or tap a skill to see which Originals it appears in.</p>
+            <div class="skills__grid" id="skill-grid" role="tabpanel"></div>
+            <div class="skills__used" id="skill-used" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="section__head"><span class="kicker">Originals</span><h2 class="section__title">The Originals</h2></div>
+        <div class="rail rail--projects" id="projects-rail" data-rail></div>
+        <div class="progress"><span class="progress__label">Originals</span><div class="progress__bar"><i id="projects-progress"></i></div></div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="section__head"><span class="kicker">The Pilot</span><h2 class="section__title">About Me</h2></div>
+        <div class="about">
+          <div class="about__media">
+            <div class="about__glow"></div>
+            <img id="about-img" alt="" src="">
+            <div class="about__caption"><span class="kicker">Starring</span><strong id="about-name"></strong></div>
+          </div>
+          <div class="about__body">
+            <blockquote class="about__quote" id="about-quote"></blockquote>
+            <cite class="about__cite" id="about-cite"></cite>
+            <div class="facts" id="about-facts"></div>
+            <div class="chips" id="about-chips"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Journey -->
+      <section class="section" id="journey">
+        <div class="section__head"><span class="kicker" id="journey-kicker">Seasons</span><h2 class="section__title">My Journey</h2><span class="row-hint">Every stage of the series. Pick a season to see its episodes.</span></div>
+        <div class="seasons" id="seasons" role="tablist"></div>
+        <div class="season" id="season-panel"></div>
+      </section>
+
+      <!-- Top picks -->
+      <section class="section" id="picks">
+        <div class="section__head"><span class="kicker">For you · from the series</span><h2 class="section__title" id="picks-title">Top Picks</h2></div>
+        <div class="rail rail--picks" id="picks-rail" data-rail></div>
+      </section>
+
+      <!-- Footer / contact -->
+      <footer class="outro" id="contact">
+        <span class="kicker">The Next Episode</span>
+        <h2 class="outro__title">To Be Continued…</h2>
+        <div class="outro__name" id="outro-name"></div>
+        <div class="outro__role" id="outro-role"></div>
+        <div class="outro__actions" id="outro-actions"></div>
+        <div class="outro__links">
+          <button class="linklike" id="watch-again" type="button">↻ Watch again</button>
+          <button class="linklike" id="replay-intro" type="button">▶ Replay opening</button>
+        </div>
+        <div class="outro__logo"><span class="nav__n" id="outro-initial">N</span> SERIES</div>
+        <p class="outro__note" id="outro-note"></p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
