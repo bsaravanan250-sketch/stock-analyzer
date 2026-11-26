@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Control Tower · Saravanan B</title>
+  <meta name="description" content="Saravanan B, Supply Chain Analyst. Eight years of automotive supply chain, packaging and process automation, told as an assembly line.">
+  <meta name="theme-color" content="#0a0c10">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Boot sequence -->
+  <div id="boot" class="boot" aria-hidden="true">
+    <svg class="boot__cluster" viewBox="0 0 400 240" aria-hidden="true">
+      <defs><linearGradient id="arc" x1="0" x2="1"><stop offset="0" stop-color="#ffb000" stop-opacity=".2"/><stop offset="1" stop-color="#ffb000"/></linearGradient></defs>
+      <path class="boot__track" d="M40 200 A160 160 0 0 1 360 200" />
+      <path class="boot__arc" d="M40 200 A160 160 0 0 1 360 200" />
+      <g class="boot__ticks" id="boot-ticks"></g>
+      <g class="boot__needle" id="boot-needle"><line x1="200" y1="200" x2="200" y2="60" /><circle cx="200" cy="200" r="9" /></g>
+      <text class="boot__num" x="200" y="150" text-anchor="middle" id="boot-num">0</text>
+      <text class="boot__unit" x="200" y="172" text-anchor="middle">HRS / WK RETURNED</text>
+    </svg>
+    <pre class="boot__log" id="boot-log" aria-live="polite"></pre>
+    <div class="boot__name" id="boot-name"></div>
+    <button class="boot__skip" id="boot-skip" type="button">Skip boot</button>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top"><span class="nav__mono">CT</span><span>Control Tower</span></a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#line">The Line</a><a href="#bom">BOM</a><a href="#work">Work Orders</a><a href="#routes">Routes</a><a href="#log">Shift Log</a><a href="#contact">Dispatch</a>
+    </nav>
+    <div class="nav__status"><span class="dot dot--ok"></span><span class="mono" id="clock">LIVE · CHENNAI</span></div>
+    <a class="btn btn--amber btn--sm" id="nav-cv" href="#" download>Download CV</a>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <div class="eyebrow"><span class="mono" id="hero-eyebrow"></span></div>
+          <h1 class="hero__name" id="hero-name"></h1>
+          <p class="hero__tag mono" id="hero-tag"></p>
+          <p class="hero__text" id="hero-summary"></p>
+          <div class="hero__actions">
+            <a class="btn btn--amber" href="#line">Start the line <span class="arrow">↓</span></a>
+            <a class="btn btn--ghost" id="hero-cv" href="#" target="_blank" rel="noopener">View CV</a>
+          </div>
+        </div>
+        <figure class="plate">
+          <div class="plate__hazard"></div>
+          <img id="hero-photo" alt="" src="">
+          <figcaption class="plate__tag mono"><span>ID · SCA · CHN</span><span id="plate-role"></span></figcaption>
+        </figure>
+      </div>
+      <div class="kpis" id="kpis"></div>
+      <div class="ticker" aria-hidden="true"><div class="ticker__track" id="ticker"></div></div>
+    </section>
+
+    <!-- The Line -->
+    <section class="line" id="line">
+      <div class="line__sticky">
+        <div class="line__head">
+          <div class="section-label"><span class="mono">SEC 01</span> The Line</div>
+          <div class="line__station mono"><span id="line-counter">STATION 01 / 06</span><span id="line-part">Fitting: Chassis</span></div>
+          <div class="line__progress"><i id="line-bar"></i></div>
+        </div>
+        <div class="line__stage">
+          <div class="car" id="car">
+            <svg viewBox="0 0 520 230" aria-label="Vehicle being assembled">
+              <defs>
+                <linearGradient id="paint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc840"/><stop offset="1" stop-color="#e08a00"/></linearGradient>
+                <linearGradient id="glassg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9fd8ff" stop-opacity=".55"/><stop offset="1" stop-color="#2b5f7a" stop-opacity=".6"/></linearGradient>
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <g class="car__layer car__chassis" data-part="chassis">
+                <rect x="58" y="150" width="404" height="16" rx="4"/>
+                <rect x="100" y="140" width="60" height="12" rx="3"/><rect x="360" y="140" width="60" height="12" rx="3"/>
+                <line x1="130" y1="166" x2="130" y2="178"/><line x1="390" y1="166" x2="390" y2="178"/>
+              </g>
+              <g class="car__layer car__body" data-part="body">
+                <path class="car__shell" d="M60 160 L60 122 Q60 100 92 96 L150 90 L198 50 Q208 40 230 40 L330 40 Q356 40 372 60 L402 92 L450 100 Q472 104 472 126 L472 160 Z"/>
+                <path class="car__sill" d="M60 160 L472 160" />
+                <path class="car__door" d="M258 44 L254 150 M345 46 L352 150" />
+                <circle class="car__handle" cx="300" cy="110" r="3"/><circle class="car__handle" cx="392" cy="112" r="3"/>
+              </g>
+              <g class="car__layer car__glass" data-part="glass">
+                <path d="M164 92 L204 54 L246 50 L244 92 Z"/>
+                <path d="M258 50 L332 50 L352 92 L256 92 Z"/>
+              </g>
+              <g class="car__layer car__wheels" data-part="wheels">
+                <g class="wheel" style="transform-origin:130px 174px"><circle cx="130" cy="174" r="40"/><circle class="rim" cx="130" cy="174" r="22"/><path class="spokes" d="M130 152v44M108 174h44M114 158l32 32M146 158l-32 32"/></g>
+                <g class="wheel" style="transform-origin:390px 174px"><circle cx="390" cy="174" r="40"/><circle class="rim" cx="390" cy="174" r="22"/><path class="spokes" d="M390 152v44M368 174h44M374 158l32 32M406 158l-32 32"/></g>
+              </g>
+              <g class="car__layer car__lights" data-part="lights">
+                <ellipse class="head" cx="464" cy="120" rx="8" ry="6"/><path class="beam" d="M472 112 L520 96 L520 146 L472 128 Z"/>
+                <rect class="tail" x="58" y="118" width="10" height="12" rx="2"/>
+              </g>
+            </svg>
+            <div class="car__shadow"></div>
+          </div>
+          <div class="belt"><div class="belt__rollers" id="belt"></div></div>
+          <div class="line__track" id="line-track"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOM -->
+    <section class="section" id="bom">
+      <div class="section__head">
+        <div class="section-label"><span class="mono">SEC 02</span> Bill of Materials</div>
+        <h2 class="section__title">Every part on the build</h2>
+        <p class="section__sub">Skills as a BOM. Qty is depth out of five. "Where used" points at the work orders each part went into.</p>
+      </div>
+      <div class="filters" id="bom-filters" role="tablist"></div>
+      <div class="table-wrap">
+        <table class="bom" id="bom-table">
+          <thead><tr><th class="mono">Part No.</th><th>Description</th><th>Category</th><th>Qty / 5</th><th>Where used</th></tr></thead>
+          <tbody id="bom-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Work orders -->
+    <section class="section" id="work">
+      <div class="section__head">
+        <div class="section-label"><span class="mono">SEC 03</span> Work Orders</div>
+        <h2 class="section__title">The automation cell, and the programmes around it</h2>
+        <p class="section__sub">Automation tools in production plus the three delivered programmes the BOM points at. Hours per week are the CV's own estimates; work orders without a stated figure are listed without one.</p>
+      </div>
+      <div class="work">
+        <div class="work__cards" id="work-cards"></div>
+        <aside class="work__side">
+          <div class="panel">
+            <h3 class="panel__title">Hours returned per week</h3>
+            <div class="meters" id="meters"></div>
+            <div class="meters__total mono"><span>Total stated</span><strong id="meters-total">0</strong></div>
+          </div>
+          <div class="panel">
+            <h3 class="panel__title" id="takt-title"></h3>
+            <div class="meters" id="takt"></div>
+            <p class="panel__note">One run of the validation cycle. The tool did not shave the task, it removed it.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Routes -->
+    <section class="section" id="routes">
+      <div class="section__head">
+        <div class="section-label"><span class="mono">SEC 04</span> Route Map</div>
+        <h2 class="section__title">Where the work has shipped, and where it ships next</h2>
+        <p class="section__sub">Plotted on a plain graticule. Amber routes are delivered programmes; green routes are the next destination.</p>
+      </div>
+      <div class="routes">
+        <div class="map-wrap"><svg class="map" id="map" viewBox="0 0 1000 520" role="img" aria-label="Route map from Chennai"></svg>
+          <div class="map__legend mono"><span><i class="sw sw--delivered"></i>Delivered</span><span><i class="sw sw--hub"></i>Hub</span><span><i class="sw sw--next"></i>Next destination</span></div>
+        </div>
+        <ul class="manifest" id="manifest"></ul>
+      </div>
+    </section>
+
+    <!-- Shift log -->
+    <section class="section" id="log">
+      <div class="section__head">
+        <div class="section-label"><span class="mono">SEC 05</span> Shift Log</div>
+        <h2 class="section__title">2011 to now, one entry per shift</h2>
+      </div>
+      <ol class="log" id="log-list"></ol>
+    </section>
+
+    <!-- Dispatch -->
+    <footer class="dispatch" id="contact">
+      <div class="dispatch__card">
+        <div class="section-label"><span class="mono">SEC 06</span> Dispatch</div>
+        <h2 class="dispatch__title">Ready to ship.</h2>
+        <div class="dispatch__meta mono" id="dispatch-meta"></div>
+        <div class="dispatch__actions" id="dispatch-actions"></div>
+      </div>
+      <p class="dispatch__foot mono" id="foot"></p>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -16,7 +16,12 @@ is to stop you buying stretched stocks, averaging down into broken ones, or
 sizing a trade so large that one loss hurts. Treat every "Accumulate" as a
 candidate to research, not an order to place.
 
-## Portfolio site
+## Portfolio sites
+
+`control-tower/` is an assembly-line themed portfolio built for an automotive
+supply chain background: a scroll-driven production line, BOM, work orders,
+route map and shift log. Content in `control-tower/data.js`; see its README.
+
 
 `portfolio/` holds a separate streaming-style personal portfolio (intro, profile
 picker, resume, achievements, skills, projects, journey). All content lives in
