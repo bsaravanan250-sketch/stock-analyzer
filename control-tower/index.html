@@ -42,6 +42,7 @@
   <main id="top">
     <!-- Hero -->
     <section class="hero">
+      <svg class="blueprint" viewBox="0 0 640 262" aria-hidden="true"><path d="M44 196 V150 Q44 136 58 132 L120 124 L190 118 L225 72 Q240 58 270 56 L390 56 Q420 58 436 74 L470 112 L560 124 Q590 128 594 148 V196 Q594 204 584 204 H522 A52 52 0 0 0 418 204 H222 A52 52 0 0 0 118 204 H54 Q44 204 44 196 Z M196 116 L228 74 Q240 64 268 64 H294 V116 Z M306 64 H390 L394 116 H304 Z M402 64 Q420 64 434 80 L462 114 H402 Z M302 72 L298 198 M398 72 L404 198 M62 152 Q320 140 582 154"/><circle cx="170" cy="200" r="42"/><circle cx="170" cy="200" r="27"/><circle cx="470" cy="200" r="42"/><circle cx="470" cy="200" r="27"/><path d="M0 230 H640 M320 0 V262" opacity=".4"/></svg>
       <div class="hero__grid">
         <div class="hero__copy">
           <div class="eyebrow"><span class="mono" id="hero-eyebrow"></span></div>
@@ -72,35 +73,98 @@
           <div class="line__progress"><i id="line-bar"></i></div>
         </div>
         <div class="line__stage">
+          <svg class="factory" id="factory" viewBox="0 0 2400 700" preserveAspectRatio="xMinYMax slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd27a" stop-opacity=".22"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></linearGradient>
+              <pattern id="mesh" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M0 12h24M12 0v24" stroke="rgba(255,255,255,.08)" stroke-width="1"/></pattern>
+            </defs>
+            <!-- overhead gantry -->
+            <rect class="f-beam" x="0" y="40" width="2400" height="18"/><rect class="f-beam" x="0" y="96" width="2400" height="6"/>
+            <g class="f-truss"><path d="M0 58 L60 96 L120 58 L180 96 L240 58 L300 96 L360 58 L420 96 L480 58 L540 96 L600 58 L660 96 L720 58 L780 96 L840 58 L900 96 L960 58 L1020 96 L1080 58 L1140 96 L1200 58 L1260 96 L1320 58 L1380 96 L1440 58 L1500 96 L1560 58 L1620 96 L1680 58 L1740 96 L1800 58 L1860 96 L1920 58 L1980 96 L2040 58 L2100 96 L2160 58 L2220 96 L2280 58 L2340 96 L2400 58"/></g>
+            <!-- lamps -->
+            <g class="f-lamps">
+              <g transform="translate(300 102)"><rect x="-2" y="0" width="4" height="40"/><path class="shade" d="M-34 40 H34 L24 60 H-24 Z"/><path class="cone" d="M-24 60 H24 L140 600 H-140 Z"/></g>
+              <g transform="translate(900 102)"><rect x="-2" y="0" width="4" height="40"/><path class="shade" d="M-34 40 H34 L24 60 H-24 Z"/><path class="cone" d="M-24 60 H24 L140 600 H-140 Z"/></g>
+              <g transform="translate(1500 102)"><rect x="-2" y="0" width="4" height="40"/><path class="shade" d="M-34 40 H34 L24 60 H-24 Z"/><path class="cone" d="M-24 60 H24 L140 600 H-140 Z"/></g>
+              <g transform="translate(2100 102)"><rect x="-2" y="0" width="4" height="40"/><path class="shade" d="M-34 40 H34 L24 60 H-24 Z"/><path class="cone" d="M-24 60 H24 L140 600 H-140 Z"/></g>
+            </g>
+            <!-- columns + mesh panels -->
+            <g class="f-cols"><rect x="120" y="58" width="22" height="560"/><rect x="760" y="58" width="22" height="560"/><rect x="1400" y="58" width="22" height="560"/><rect x="2040" y="58" width="22" height="560"/></g>
+            <rect class="f-mesh" x="0" y="300" width="2400" height="180" fill="url(#mesh)"/>
+            <!-- robot arms -->
+            <g class="robot" transform="translate(560 618)"><rect class="base" x="-40" y="-26" width="80" height="26" rx="4"/><g class="arm1"><rect x="-14" y="-200" width="28" height="180" rx="8"/><g class="arm2" transform="translate(0 -196)"><rect x="-10" y="-10" width="150" height="20" rx="8"/><circle cx="0" cy="0" r="14"/><g class="tool" transform="translate(146 0)"><circle r="10"/><path d="M8 6 L30 24 M8 -6 L30 -24"/></g></g></g></g>
+            <g class="robot robot--b" transform="translate(1760 618) scale(-1 1)"><rect class="base" x="-40" y="-26" width="80" height="26" rx="4"/><g class="arm1"><rect x="-14" y="-200" width="28" height="180" rx="8"/><g class="arm2" transform="translate(0 -196)"><rect x="-10" y="-10" width="150" height="20" rx="8"/><circle cx="0" cy="0" r="14"/><g class="tool" transform="translate(146 0)"><circle r="10"/><path d="M8 6 L30 24 M8 -6 L30 -24"/></g></g></g></g>
+            <!-- floor -->
+            <g class="f-floor"><path d="M0 620 H2400"/><path d="M0 660 H2400" opacity=".5"/><path d="M0 700 H2400" opacity=".3"/>
+              <path d="M0 620 L-200 700 M300 620 L200 700 M600 620 L560 700 M900 620 L900 700 M1200 620 L1240 700 M1500 620 L1580 700 M1800 620 L1920 700 M2100 620 L2260 700 M2400 620 L2600 700" opacity=".4"/></g>
+          </svg>
           <div class="car" id="car">
-            <svg viewBox="0 0 520 230" aria-label="Vehicle being assembled">
+            <svg viewBox="0 0 640 262" aria-label="Vehicle being assembled">
               <defs>
-                <linearGradient id="paint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc840"/><stop offset="1" stop-color="#e08a00"/></linearGradient>
-                <linearGradient id="glassg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9fd8ff" stop-opacity=".55"/><stop offset="1" stop-color="#2b5f7a" stop-opacity=".6"/></linearGradient>
-                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                <linearGradient id="paint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd166"/><stop offset=".45" stop-color="#ffb000"/><stop offset="1" stop-color="#c76f00"/></linearGradient>
+                <linearGradient id="primer" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a5260"/><stop offset="1" stop-color="#2b313b"/></linearGradient>
+                <linearGradient id="glassg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bfe6ff" stop-opacity=".7"/><stop offset=".5" stop-color="#4f8db0" stop-opacity=".55"/><stop offset="1" stop-color="#1d3f55" stop-opacity=".75"/></linearGradient>
+                <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff2c2" stop-opacity=".45"/><stop offset="1" stop-color="#fff2c2" stop-opacity="0"/></linearGradient>
+                <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6ebf2"/><stop offset=".5" stop-color="#8a93a3"/><stop offset="1" stop-color="#d7dde6"/></linearGradient>
+                <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
               </defs>
+
+              <!-- 1 · chassis: frame, suspension, engine, exhaust -->
               <g class="car__layer car__chassis" data-part="chassis">
-                <rect x="58" y="150" width="404" height="16" rx="4"/>
-                <rect x="100" y="140" width="60" height="12" rx="3"/><rect x="360" y="140" width="60" height="12" rx="3"/>
-                <line x1="130" y1="166" x2="130" y2="178"/><line x1="390" y1="166" x2="390" y2="178"/>
+                <path class="exhaust" d="M300 196 H120 M80 196 H66" /><rect class="muffler" x="80" y="190" width="42" height="12" rx="6"/>
+                <rect class="frame" x="62" y="176" width="516" height="16" rx="5"/>
+                <rect class="frame frame--x" x="96" y="168" width="48" height="10" rx="3"/><rect class="frame frame--x" x="496" y="168" width="48" height="10" rx="3"/>
+                <path class="spring" d="M170 150 l8 5 -16 5 16 5 -16 5 16 5 -8 5 M470 150 l8 5 -16 5 16 5 -16 5 16 5 -8 5"/>
+                <g class="engine"><rect x="486" y="124" width="74" height="52" rx="6"/><path d="M496 136h54M496 148h54M496 160h54"/><circle cx="476" cy="150" r="10"/></g>
+                <line class="axle" x1="170" y1="192" x2="170" y2="206"/><line class="axle" x1="470" y1="192" x2="470" y2="206"/>
               </g>
+
+              <!-- 2 · body shell -->
               <g class="car__layer car__body" data-part="body">
-                <path class="car__shell" d="M60 160 L60 122 Q60 100 92 96 L150 90 L198 50 Q208 40 230 40 L330 40 Q356 40 372 60 L402 92 L450 100 Q472 104 472 126 L472 160 Z"/>
-                <path class="car__sill" d="M60 160 L472 160" />
-                <path class="car__door" d="M258 44 L254 150 M345 46 L352 150" />
-                <circle class="car__handle" cx="300" cy="110" r="3"/><circle class="car__handle" cx="392" cy="112" r="3"/>
+                <path class="car__shell" d="M44 196 V150 Q44 136 58 132 L120 124 L190 118 L225 72 Q240 58 270 56 L390 56 Q420 58 436 74 L470 112 L560 124 Q590 128 594 148 V196 Q594 204 584 204 H522 A52 52 0 0 0 418 204 H222 A52 52 0 0 0 118 204 H54 Q44 204 44 196 Z"/>
+                <path class="car__arch" d="M522 204 A52 52 0 0 0 418 204 M222 204 A52 52 0 0 0 118 204"/>
+                <path class="car__crease" d="M62 152 Q320 140 582 154"/>
+                <path class="car__skirt" d="M112 192 H540"/>
+                <path class="car__seam" d="M302 72 L298 198 M398 72 L404 198 M190 118 L186 196"/>
+                <rect class="car__handle" x="322" y="138" width="20" height="6" rx="3"/><rect class="car__handle" x="420" y="138" width="20" height="6" rx="3"/>
+                <path class="car__bumper" d="M44 178 H70 V204 H54 Q44 204 44 196 Z M568 178 H594 V196 Q594 204 584 204 H568 Z"/>
+                <path class="car__grille" d="M574 186 H590 M574 192 H590 M574 198 H590"/>
+                <g class="car__mirror"><path d="M462 112 L470 104 H486 V116 H470 Z"/><path d="M462 112 L456 118"/></g>
+                <circle class="car__cap" cx="96" cy="146" r="6"/>
+                <path class="car__sillchrome" d="M120 124 L190 118"/>
+                <path class="car__highlight" d="M232 72 Q320 60 420 70 L440 84 Q320 76 226 86 Z"/>
               </g>
-              <g class="car__layer car__glass" data-part="glass">
-                <path d="M164 92 L204 54 L246 50 L244 92 Z"/>
-                <path d="M258 50 L332 50 L352 92 L256 92 Z"/>
-              </g>
+
+              <!-- 3 · wheels -->
               <g class="car__layer car__wheels" data-part="wheels">
-                <g class="wheel" style="transform-origin:130px 174px"><circle cx="130" cy="174" r="40"/><circle class="rim" cx="130" cy="174" r="22"/><path class="spokes" d="M130 152v44M108 174h44M114 158l32 32M146 158l-32 32"/></g>
-                <g class="wheel" style="transform-origin:390px 174px"><circle cx="390" cy="174" r="40"/><circle class="rim" cx="390" cy="174" r="22"/><path class="spokes" d="M390 152v44M368 174h44M374 158l32 32M406 158l-32 32"/></g>
+                <g class="wheel" style="transform-origin:170px 200px"><circle class="tyre" cx="170" cy="200" r="42"/><circle class="rim" cx="170" cy="200" r="27"/><path class="spokes" d="M170 200 L170 176 M170 200 L193 193 M170 200 L184 219 M170 200 L156 219 M170 200 L147 193"/><circle class="hub" cx="170" cy="200" r="6"/></g>
+                <path class="caliper" d="M186 184 A22 22 0 0 1 192 206"/>
+                <g class="wheel" style="transform-origin:470px 200px"><circle class="tyre" cx="470" cy="200" r="42"/><circle class="rim" cx="470" cy="200" r="27"/><path class="spokes" d="M470 200 L470 176 M470 200 L493 193 M470 200 L484 219 M470 200 L456 219 M470 200 L447 193"/><circle class="hub" cx="470" cy="200" r="6"/></g>
+                <path class="caliper" d="M486 184 A22 22 0 0 1 492 206"/>
               </g>
+
+              <!-- 4 · paint is a state on the body (is-painted) -->
+              <g class="car__layer car__paint" data-part="paint"></g>
+
+              <!-- 5 · glass -->
+              <g class="car__layer car__glass" data-part="glass">
+                <path d="M196 116 L228 74 Q240 64 268 64 H294 V116 Z"/>
+                <path d="M306 64 H390 L394 116 H304 Z"/>
+                <path d="M402 64 Q420 64 434 80 L462 114 H402 Z"/>
+                <path class="car__reflect" d="M212 112 L246 70 M226 112 L258 72 M318 112 L326 68 M408 70 L444 112"/>
+              </g>
+
+              <!-- 6 · lights -->
               <g class="car__layer car__lights" data-part="lights">
-                <ellipse class="head" cx="464" cy="120" rx="8" ry="6"/><path class="beam" d="M472 112 L520 96 L520 146 L472 128 Z"/>
-                <rect class="tail" x="58" y="118" width="10" height="12" rx="2"/>
+                <path class="beam" d="M594 134 L640 108 V176 L594 160 Z"/>
+                <path class="head" d="M558 126 L594 142 V158 L560 150 Z"/><path class="drl" d="M562 148 L592 156"/>
+                <rect class="tail" x="44" y="138" width="16" height="22" rx="3"/><rect class="tail tail--low" x="44" y="178" width="12" height="6" rx="2"/>
+                <circle class="indicator" cx="478" cy="110" r="3"/>
+              </g>
+
+              <!-- weld sparks -->
+              <g class="sparks" id="sparks">
+                <circle r="2.5"/><circle r="2"/><circle r="3"/><circle r="2"/><circle r="2.5"/><circle r="2"/><circle r="3"/><circle r="2"/><circle r="2.5"/><circle r="2"/>
               </g>
             </svg>
             <div class="car__shadow"></div>
@@ -178,6 +242,30 @@
     <!-- Dispatch -->
     <footer class="dispatch" id="contact">
       <div class="dispatch__card">
+        <svg class="port" viewBox="0 0 1200 520" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">
+          <defs><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b3b55" stop-opacity=".9"/><stop offset="1" stop-color="#0a1620"/></linearGradient>
+          <linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0c0f14"/><stop offset=".3" stop-color="#0c0f14" stop-opacity=".92"/><stop offset=".62" stop-color="#0c0f14" stop-opacity="0"/></linearGradient></defs>
+          <!-- crane -->
+          <g class="p-crane"><path d="M700 440 V120 H1180 M740 440 V120 M700 160 H1180 M700 120 L640 60 H1180 M820 120 L820 440 M860 120 L860 440" /><rect x="690" y="440" width="60" height="18"/><rect x="810" y="440" width="60" height="18"/>
+            <g class="trolley"><rect x="900" y="104" width="60" height="22" rx="3"/><path d="M930 126 V210"/><rect x="890" y="210" width="80" height="34" rx="2"/></g></g>
+          <!-- container stacks on quay -->
+          <g class="p-stack">
+            <rect x="330" y="400" width="120" height="40"/><rect x="330" y="360" width="120" height="40"/><rect x="330" y="320" width="120" height="40" class="hi"/>
+            <rect x="460" y="400" width="120" height="40" class="hi"/><rect x="460" y="360" width="120" height="40"/>
+            <rect x="590" y="400" width="100" height="40"/><rect x="590" y="360" width="100" height="40" class="hi"/><rect x="590" y="320" width="100" height="40"/><rect x="590" y="280" width="100" height="40"/>
+            <path class="ribs" d="M345 400v40M360 400v40M375 400v40M390 400v40M405 400v40M420 400v40M435 400v40 M345 360v40M360 360v40M375 360v40M390 360v40M405 360v40M420 360v40M435 360v40 M475 400v40M490 400v40M505 400v40M520 400v40M535 400v40M550 400v40M565 400v40 M605 320v40M620 320v40M635 320v40M650 320v40M665 320v40M680 320v40"/>
+          </g>
+          <!-- quay edge + sea -->
+          <rect class="p-quay" x="0" y="440" width="1200" height="14"/>
+          <rect x="0" y="454" width="1200" height="66" fill="url(#sea)"/>
+          <path class="p-wave" d="M0 470 Q30 462 60 470 T120 470 T180 470 T240 470 T300 470 T360 470 T420 470 T480 470 T540 470 T600 470 T660 470 T720 470 T780 470 T840 470 T900 470 T960 470 T1020 470 T1080 470 T1140 470 T1200 470 T1260 470 T1320 470"/>
+          <!-- ship -->
+          <g class="p-ship"><path class="hull" d="M860 460 L1240 460 L1220 500 L880 500 Z"/><path class="hull hull--line" d="M870 470 H1230"/>
+            <rect x="900" y="420" width="60" height="40" class="box hi"/><rect x="960" y="420" width="60" height="40" class="box"/><rect x="1020" y="420" width="60" height="40" class="box"/><rect x="1080" y="420" width="60" height="40" class="box hi"/>
+            <rect x="900" y="380" width="60" height="40" class="box"/><rect x="960" y="380" width="60" height="40" class="box hi"/><rect x="1020" y="380" width="60" height="40" class="box"/>
+            <rect x="1150" y="380" width="50" height="80" class="bridge"/><rect x="1160" y="360" width="30" height="20" class="bridge"/><path d="M1168 360 V340" class="mast"/><circle cx="1168" cy="338" r="3" class="mastlight"/></g>
+          <rect x="0" y="0" width="1200" height="520" fill="url(#fade)"/>
+        </svg>
         <div class="section-label"><span class="mono">SEC 06</span> Dispatch</div>
         <h2 class="dispatch__title">Ready to ship.</h2>
         <div class="dispatch__meta mono" id="dispatch-meta"></div>

@@ -104,13 +104,19 @@
         <ul>${s.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
       </article>`).join("");
 
-    const section = $("line"), car = $("car"), bar = $("line-bar"), counter = $("line-counter"), partEl = $("line-part"), belt = $("belt");
+    const section = $("line"), car = $("car"), bar = $("line-bar"), counter = $("line-counter"), partEl = $("line-part"), belt = $("belt"), factory = $("factory");
     const cards = [...track.children];
     const layers = {}; car.querySelectorAll(".car__layer").forEach((l) => { layers[l.dataset.part] = l; });
     const wheels = car.querySelectorAll(".wheel");
     const mobile = () => window.matchMedia("(max-width: 900px)").matches;
 
-    function setActive(idx) {
+    let sparkT = null;
+    function setActive(idx, prev) {
+      if (prev === undefined) prev = activeIdx;
+      if (idx > prev && idx >= 0 && !reduced) {
+        car.classList.remove("is-sparking"); void car.offsetWidth; car.classList.add("is-sparking");
+        clearTimeout(sparkT); sparkT = setTimeout(() => car.classList.remove("is-sparking"), 800);
+      }
       cards.forEach((c, i) => c.classList.toggle("is-active", i === idx));
       PART_ORDER.forEach((p, i) => { if (layers[p]) layers[p].classList.toggle("is-fitted", i <= idx); });
       car.classList.toggle("is-painted", idx >= PART_ORDER.indexOf("paint"));
@@ -136,11 +142,12 @@
       if (Math.abs(target - current) < 0.5) current = target;
       track.style.transform = `translate3d(${-current}px,0,0)`;
       belt.style.backgroundPosition = `${-current * 0.6}px 0`;
+      if (factory) factory.style.transform = `translate3d(${-current * 0.22}px,0,0)`;
       wheels.forEach((w) => { w.style.transform = `rotate(${current * 0.5}deg)`; });
       const vw = window.innerWidth; let best = -1, bestD = Infinity;
       cards.forEach((c, i) => { const cx = c.offsetLeft + c.offsetWidth / 2 - current; const d = Math.abs(cx - vw / 2); if (d < bestD) { bestD = d; best = i; } });
       if (bestD > vw * 0.45) best = -1;
-      if (best !== activeIdx) { activeIdx = best; setActive(best); }
+      if (best !== activeIdx) { const prev = activeIdx; activeIdx = best; setActive(best, prev); }
       raf = current === target ? null : requestAnimationFrame(frame);
     }
 
@@ -152,7 +159,7 @@
     function phone() {
       track.style.transform = ""; belt.style.backgroundPosition = "";
       const io = new IntersectionObserver((es) => es.forEach((en) => {
-        if (en.isIntersecting) { const i = +en.target.dataset.i; if (i > activeIdx || true) { activeIdx = i; setActive(i); } }
+        if (en.isIntersecting) { const i = +en.target.dataset.i; const prev = activeIdx; activeIdx = i; setActive(i, prev); }
       }), { rootMargin: "-40% 0px -45% 0px" });
       cards.forEach((c) => io.observe(c));
     }
