@@ -12,7 +12,7 @@ Everything on the page comes from **`data.js`**. Open it and replace:
 | Field | What it drives |
 | --- | --- |
 | `name`, `shortName`, `initial`, `tagline`, `role` | Intro, hero, nav logo, footer, "Top Picks" title |
-| `photo` | Hero, About and the "Me" profile tile. Drop `assets/portrait.jpg` and point this at it. A portrait around 1200×1500 px with the face in the upper half works best. |
+| `photo` | Hero, About and the "Me" profile tile. A 4:5 portrait around 1200×1500 px with a transparent or dark background and the face in the upper half works best. |
 | `email`, `links`, `resumeUrl` | Contact buttons and the resume buttons. Put a PDF at `assets/resume.pdf`. |
 | `hero` | Badges, summary and the small stat card. |
 | `profiles` | The four *Who's watching?* tiles. `first` is the section each profile leads with. |

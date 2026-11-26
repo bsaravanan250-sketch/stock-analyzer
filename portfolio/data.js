@@ -11,7 +11,7 @@ window.PORTFOLIO = {
   initial: "S",
   tagline: "The Series",
   role: "Supply Chain Analyst · SAP EWM · Process Automation",
-  photo: "assets/portrait.svg",          // swap for assets/portrait.jpg
+  photo: "assets/portrait.webp",
   location: "Chennai, India",
   email: "bsaravanan250@gmail.com",
   resumeUrl: "assets/resume.pdf",
