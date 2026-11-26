@@ -86,7 +86,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .intro__name {
   position: relative; font-family: var(--display);
-  font-size: clamp(56px, 16vw, 200px); letter-spacing: .04em; line-height: .9;
+  font-size: clamp(40px, min(16vw, 180vw / var(--len, 9)), 200px); letter-spacing: .04em; line-height: .9; white-space: nowrap;
   color: #fff; display: flex;
   text-shadow: 0 0 40px rgba(229,9,20,.5), 0 0 2px #fff;
 }
@@ -196,7 +196,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero__stat strong { display: block; font-family: var(--display); font-size: 26px; letter-spacing: .04em; color: #fff; }
 .hero__body { padding: 120px var(--gutter) 40px; max-width: 760px; }
 .hero__title {
-  font-family: var(--display); font-size: clamp(64px, 11vw, 150px); line-height: .9; letter-spacing: .02em;
+  font-family: var(--display); font-size: clamp(44px, min(11vw, 105vw / var(--len, 9)), 150px); line-height: .9; letter-spacing: .02em; white-space: nowrap;
   margin: 10px 0 6px; text-shadow: 0 6px 40px rgba(0,0,0,.6);
 }
 .hero__title .is-accent { color: var(--red); text-shadow: 0 0 30px rgba(229,9,20,.6); }

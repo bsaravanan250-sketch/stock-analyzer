@@ -1,33 +1,34 @@
 /* =====================================================================
    PORTFOLIO CONTENT
    This is the only file you need to edit. Every section of the site is
-   rendered from this object. Replace the placeholder text, drop your
-   photo at assets/portrait.jpg (and set `photo` below), and you're done.
+   rendered from this object. Built from Saravanan B's CV (Nov 2026).
+   Photo: drop assets/portrait.jpg and set `photo` below.
    ===================================================================== */
 window.PORTFOLIO = {
   /* ---------- identity ---------- */
-  name: "Your Name",               // shown in the intro, hero and footer
-  shortName: "Your Name",          // used in "Your Name's Top Picks"
-  initial: "Y",                    // the logo letter top-left (Netflix "N")
+  name: "Saravanan B",
+  shortName: "Saravanan",
+  initial: "S",
   tagline: "The Series",
-  role: "Full-Stack Developer · AI / ML · Python",
-  photo: "assets/portrait.svg",    // swap for assets/portrait.jpg
-  location: "Hyderabad, India",
-  email: "you@example.com",
-  resumeUrl: "#",                  // link to a PDF, e.g. assets/resume.pdf
+  role: "Supply Chain Analyst · SAP EWM · Process Automation",
+  photo: "assets/portrait.svg",          // swap for assets/portrait.jpg
+  location: "Chennai, India",
+  email: "bsaravanan250@gmail.com",
+  resumeUrl: "assets/resume.pdf",
   links: {
-    linkedin: "https://www.linkedin.com/in/your-handle",
-    github: "https://github.com/your-handle",
+    linkedin: "https://linkedin.com/in/saravanan-b",
+    github: "https://github.com/bsaravanan250-sketch",
   },
 
   /* ---------- hero ---------- */
   hero: {
-    badges: ["AI/ML", "2023 – Present", "B.Tech CSE", "3 Originals", "12 Certifications"],
+    badges: ["8 Years", "Ford GTBC, Chennai", "17 Automations", "$0.7M Saved", "EU Blue Card eligible"],
     summary:
-      "A B.Tech Computer Science student and full-stack developer building " +
-      "data-driven tools, trading research systems and multi-tenant web apps " +
-      "with Python, JavaScript, React and Node.js.",
-    stat: { label: "CGPA", value: "9.1" },
+      "Supply Chain Analyst with 8 years across supply chain management, packaging development, " +
+      "procurement and process automation. Designed and deployed 17 automation solutions in VBA, " +
+      "Power Automate, SQL/BigQuery and Alteryx, owned the business side of an SAP EWM rollout for " +
+      "2 plants, and delivered $0.7M in packaging cost savings.",
+    stat: { label: "Hrs saved / week", value: "66+" },
     match: "98% Match",
   },
 
@@ -35,216 +36,277 @@ window.PORTFOLIO = {
      Each profile re-orders the Continue Exploring row so the right
      episode plays first. `first` is the id of the section to lead with. */
   profiles: [
-    { id: "me",        name: "Me",        kind: "photo", color: "#b20710", blurb: "The full series, in order",         first: "resume" },
-    { id: "recruiter", name: "Recruiter", kind: "glyph", glyph: "R",   color: "#0e7490", blurb: "Resume, achievements & skills first", first: "resume" },
-    { id: "developer", name: "Developer", kind: "glyph", glyph: "</>", color: "#15803d", blurb: "Projects, stack & GitHub first",     first: "projects" },
-    { id: "creative",  name: "Creative",  kind: "glyph", glyph: "✦",   color: "#b45309", blurb: "The story and the highlights first", first: "journey" },
+    { id: "me",        name: "Me",             kind: "photo", color: "#b20710", blurb: "The full series, in order",            first: "resume" },
+    { id: "recruiter", name: "Recruiter",      kind: "glyph", glyph: "R",   color: "#0e7490", blurb: "Resume, credentials & skills first",  first: "resume" },
+    { id: "manager",   name: "Hiring Manager", kind: "glyph", glyph: "★",   color: "#b45309", blurb: "Savings, rollouts & impact first",     first: "achievements" },
+    { id: "engineer",  name: "Engineer",       kind: "glyph", glyph: "</>", color: "#15803d", blurb: "Automation tools & the stack first",   first: "projects" },
   ],
 
   /* ---------- Continue Exploring (episode cards under the hero) ---------- */
   episodes: [
-    { id: "resume",       n: "01", title: "The Full Story",   sub: "Resume · 1 page",      theme: "violet" },
-    { id: "achievements", n: "02", title: "My Achievements",  sub: "Awards · 5 moments",   theme: "crimson" },
-    { id: "skills",       n: "03", title: "My Skills",        sub: "Genres · 7 categories", theme: "teal" },
-    { id: "projects",     n: "04", title: "My Projects",      sub: "Originals · 3 titles", theme: "ember" },
-    { id: "journey",      n: "05", title: "My Journey",       sub: "4 seasons",            theme: "gold" },
+    { id: "resume",       n: "01", title: "The Full Story",   sub: "Resume · 1 page",          theme: "violet" },
+    { id: "achievements", n: "02", title: "My Achievements",  sub: "Impact · 6 moments",       theme: "crimson" },
+    { id: "skills",       n: "03", title: "My Skills",        sub: "Genres · 6 categories",    theme: "teal" },
+    { id: "projects",     n: "04", title: "My Automations",   sub: "Originals · 8 tools",      theme: "ember" },
+    { id: "journey",      n: "05", title: "My Journey",       sub: "5 seasons · 2011 → now",   theme: "gold" },
   ],
 
   /* ---------- Resume: "The Full Story" ---------- */
   resume: {
-    fullName: "Your Full Legal Name",
-    contact: ["you@example.com", "+91 90000 00000", "linkedin.com/in/your-handle", "github.com/your-handle"],
+    fullName: "Saravanan B",
+    contact: ["bsaravanan250@gmail.com", "Chennai, India", "linkedin.com/in/saravanan-b", "Open to relocation: DE · NL · LU · PL"],
     education: [
-      { title: "Your Engineering College, City", sub: "B.Tech Computer Science · CGPA 9.1", when: "2023 – 2027" },
-      { title: "Your Junior College, City",      sub: "MPC · 95%",                           when: "2021 – 2023" },
+      { title: "PGP, Digital Supply Chain Management", sub: "Simplilearn, in collaboration with Purdue University", when: "2022" },
+      { title: "MBA, Operations Management",           sub: "Saveetha Engineering College, Chennai",               when: "2015 – 2017" },
+      { title: "B.E., Computer Engineering",            sub: "Loyola Institute of Technology, Chennai",            when: "2011 – 2015" },
     ],
     experience: [
       {
-        title: "Software Engineering Intern · Company Name",
-        when: "May 2025 – Jul 2025",
+        title: "Supply Chain Analyst · Ford Global Technical & Business Center, Chennai",
+        when: "Mar 2021 – Present",
         bullets: [
-          "Built a rules-based equity screener that scores 200+ stocks daily on trend, momentum, relative strength and volume.",
-          "Shipped a GitHub Actions pipeline that publishes a pre-market brief to GitHub Pages every weekday at 08:45 IST.",
-          "Wrote a walk-forward backtest to validate the ranking rule before it reached the dashboard.",
+          "Restructured and automated Supplier Onboarding on the Ford Portal into a fully automated pipeline with no manual handoffs.",
+          "Owned business-side delivery of the SAP EWM rollout for 2 plants: requirements, process mapping, 60 test cases, UAT with 10 users, go-live.",
+          "Delivered $0.7M in packaging cost savings at Struandale Engine Plant (South Africa) and eliminated 100% of single-use plastic packaging.",
+          "Built a Supplier Risk Analysis scorecard and mapped N-Tier suppliers through COVID-19, the China lockdown and the semiconductor shortage.",
+          "Built a Tableau dashboard that auto-generates Semiconductor Value Stream Mapping reports for senior management.",
+          "Assisted on 3 Lean Six Sigma Green Belt projects; authored management-recognised documentation for 4 critical processes.",
+        ],
+      },
+      {
+        title: "Packaging Engineer · Glovis India Private Limited, Chennai",
+        when: "Apr 2018 – Mar 2021",
+        bullets: [
+          "P&F and export cost calculations for all destinations by Incoterms; ECOs, BOM verification and per-car profit analysis.",
+          "2% per-car cost saving by optimising packing quantities; INR 28,000 saved across 60 car sets through vanning efficiency.",
+          "Vendor sourcing, negotiation, SOB fixing and capacity evaluation; initiated the Hyundai WIA returnable packing programme.",
         ],
       },
     ],
     projects: [
-      { title: "Stock Analyzer", sub: "Python, GitHub Actions, vanilla JS" },
-      { title: "Project Two",    sub: "React, Node.js, PostgreSQL" },
-      { title: "Project Three",  sub: "Python, FastAPI, Docker" },
+      { title: "Validation Tool",              sub: "VBA · 1 week → 1 hour, ~40x productivity gain" },
+      { title: "Supplier Meeting Auto-Scheduler", sub: "Power Automate · 12 countries, time-zone lookup" },
+      { title: "DB2 → BigQuery KPI Migration",  sub: "SQL / BigQuery · weekly receiving-mix KPI per plant" },
+      { title: "Logistics Route Mapping Tool",  sub: "HTML · supplier-to-plant routes and chokepoints" },
     ],
     skills: [
-      { label: "Languages", items: "Python, JavaScript, TypeScript, Java, SQL" },
-      { label: "Frontend",  items: "React, HTML, CSS, Tailwind" },
-      { label: "Backend",   items: "Node.js, Express, FastAPI, REST" },
-      { label: "Infra & Tools", items: "Git, GitHub Actions, Docker, Linux, AWS" },
-      { label: "Databases", items: "PostgreSQL, MongoDB, SQLite" },
+      { label: "Automation", items: "VBA (Advanced), Power Automate, Power Query, Alteryx" },
+      { label: "Data & SQL", items: "SQL & Google BigQuery, Microsoft Excel (Advanced), Python (basics)" },
+      { label: "Analytics & BI", items: "Tableau, Power BI distribution, KPI reporting" },
+      { label: "Systems", items: "SAP EWM, HTML, Google Places API, SharePoint" },
+      { label: "Domain", items: "Supply chain, packaging development (OEM, Tier-1, CKD/SKD/IPO), procurement, strategic sourcing, supplier risk (N-Tier), inventory control, process design & UAT" },
+      { label: "Languages", items: "English (fluent), Tamil (native)" },
     ],
-    certifications: "NPTEL Data Structures (Elite), AWS Cloud Practitioner, Oracle Java SE, Coursera ML Specialization, and 8 more.",
+    certifications: "Tableau Certified (2022) · PGP Digital Supply Chain Management, Simplilearn / Purdue University (2022).",
     achievements: [
-      "Selected for a national-level tech fellowship (top 2% of applicants).",
-      "Semi-finalist, inter-college hackathon 2025.",
-      "600+ problems solved on LeetCode and GeeksforGeeks.",
+      "17 automation solutions deployed, saving an estimated 66+ hours of manual work every week.",
+      "$0.7M packaging cost savings and 100% elimination of single-use plastic packaging.",
+      "Business-side owner of the SAP EWM rollout for 2 plants, requirements through go-live.",
     ],
     stats: [
-      { value: "9.1", label: "CGPA" },
-      { value: "3",   label: "Originals" },
-      { value: "12",  label: "Certifications" },
+      { value: "8",    label: "Years" },
+      { value: "17",   label: "Automations" },
+      { value: "$0.7M", label: "Saved" },
     ],
   },
 
   /* ---------- Achievements: "Top Moments" ---------- */
   moments: [
-    { tag: "National Selection", title: "Tech Fellow",        org: "Fellowship Programme 2025", text: "Selected through a national competition covering DSA, system design and a build round.", link: "#" },
-    { tag: "Semi-Finalist",      title: "Hackathon 2025",     org: "Inter-college, 1,200 teams",  text: "Shipped a working trading-research tool in 36 hours; placed in the top 20.", link: "#" },
-    { tag: "Branch Topper",      title: "CSE Rank 1",         org: "B.Tech, Semesters I – IV",    text: "Highest CGPA in the branch for four consecutive semesters.", link: "" },
-    { tag: "Competitive Coding", title: "600+ Problems Solved", org: "LeetCode · GfG · Codeforces", text: "Consistent daily practice; 5-star rating in Python on HackerRank.", link: "#" },
-    { tag: "Open Source",        title: "40+ Merged PRs",     org: "GitHub",                      text: "Contributions to developer tooling and data libraries.", link: "#" },
+    { tag: "Cost Savings",        title: "$0.7M Saved",          org: "Struandale Engine Plant, South Africa", text: "Packaging efficiency improvements delivered $0.7M in savings and removed every piece of single-use plastic packaging.", link: "" },
+    { tag: "Automation",          title: "17 Tools Shipped",     org: "VBA · Power Automate · BigQuery · Alteryx", text: "Seventeen automation solutions in production, including a validation tool that turned a one-week cycle into one hour.", link: "" },
+    { tag: "ERP Rollout",         title: "SAP EWM, 2 Plants",    org: "Business-side owner",               text: "Froze requirements, mapped inbound, outbound and internal flows, wrote 60 test cases, led UAT with 10 users, supported go-live.", link: "" },
+    { tag: "Sustainability",      title: "Zero Single-Use Plastic", org: "100% elimination",               text: "A landmark packaging milestone for the plant, achieved alongside the cost programme rather than at its expense.", link: "" },
+    { tag: "Crisis Response",     title: "N-Tier Risk Map",      org: "COVID-19 · China lockdown · chip shortage", text: "Built a Supplier Risk Analysis scorecard and mapped N-Tier suppliers to keep lines running through three global disruptions.", link: "" },
+    { tag: "Recognition",         title: "Process Documentation", org: "4 critical processes",            text: "Management-recognised documentation, plus support on 3 Lean Six Sigma Green Belt projects.", link: "" },
   ],
+  credentialsLabel: "Credentials",
   certifications: [
-    { issuer: "NPTEL",    title: "Data Structures & Algorithms (Elite)", link: "#" },
-    { issuer: "NPTEL",    title: "Introduction to Machine Learning",     link: "#" },
-    { issuer: "AWS",      title: "Cloud Practitioner",                    link: "#" },
-    { issuer: "Oracle",   title: "Java SE 17 Developer",                  link: "#" },
-    { issuer: "Coursera", title: "Deep Learning Specialization",          link: "#" },
-    { issuer: "Google",   title: "Data Analytics Professional",           link: "#" },
-    { issuer: "Cisco",    title: "Networking Basics",                     link: "#" },
-    { issuer: "MongoDB",  title: "Associate Developer",                   link: "#" },
-    { issuer: "HackerRank", title: "Python (5 stars)",                    link: "#" },
-    { issuer: "freeCodeCamp", title: "Responsive Web Design",             link: "#" },
-    { issuer: "Microsoft", title: "Azure Fundamentals AZ-900",            link: "#" },
-    { issuer: "Infosys",  title: "Springboard: Python Foundations",       link: "#" },
+    { issuer: "Tableau",    title: "Tableau Certified (2022)",                               link: "" },
+    { issuer: "Purdue · Simplilearn", title: "PGP, Digital Supply Chain Management (2022)",  link: "" },
+    { issuer: "Saveetha",   title: "MBA, Operations Management (2015 – 2017)",               link: "" },
+    { issuer: "Loyola IT",  title: "B.E., Computer Engineering (2011 – 2015)",               link: "" },
   ],
 
   /* ---------- Skills: "My Skill Universe" ----------
      `used` lists project titles the skill appears in; shown on hover. */
   skillGroups: [
-    { name: "Languages", sub: "Python is the primary language", skills: [
-      { name: "Python",     mono: "Py", used: ["Stock Analyzer", "Project Three"] },
-      { name: "JavaScript", mono: "JS", used: ["Stock Analyzer", "Project Two"] },
-      { name: "TypeScript", mono: "TS", used: ["Project Two"] },
-      { name: "Java",       mono: "Jv", used: [] },
-      { name: "SQL",        mono: "SQL", used: ["Project Two"] },
+    { name: "Automation", sub: "Where most of the hours come back", skills: [
+      { name: "VBA (Advanced)",  mono: "VB", used: ["Validation Tool", "EWM Cost Calculation Tool"] },
+      { name: "Power Automate",  mono: "PA", used: ["RPA Robot Replacement", "Supplier Meeting Auto-Scheduler", "Supplier Recommit Intake", "Power BI Distribution"] },
+      { name: "Power Query",     mono: "PQ", used: ["EWM Cost Calculation Tool"] },
+      { name: "Alteryx",         mono: "Ax", used: [] },
+      { name: "RPA → cloud flows", mono: "⟳", used: ["RPA Robot Replacement"] },
     ]},
-    { name: "Frontend", sub: "Interfaces & the web platform", skills: [
-      { name: "React",   mono: "Re", used: ["Project Two"] },
-      { name: "HTML5",   mono: "H5", used: ["Stock Analyzer"] },
-      { name: "CSS3",    mono: "C3", used: ["Stock Analyzer"] },
-      { name: "Tailwind", mono: "Tw", used: ["Project Two"] },
+    { name: "Data & SQL", sub: "Large-scale pulls and KPI reporting", skills: [
+      { name: "Google BigQuery", mono: "BQ", used: ["DB2 → BigQuery KPI Migration"] },
+      { name: "SQL",             mono: "SQL", used: ["DB2 → BigQuery KPI Migration"] },
+      { name: "Excel (Advanced)", mono: "Xl", used: ["Validation Tool", "Supplier Meeting Auto-Scheduler"] },
+      { name: "Python (basics)", mono: "Py", used: ["Stock Analyzer"] },
+      { name: "SharePoint trackers", mono: "SP", used: ["Supplier Recommit Intake"] },
     ]},
-    { name: "Backend", sub: "Server-side logic", skills: [
-      { name: "Node.js",  mono: "No", used: ["Project Two"] },
-      { name: "Express",  mono: "Ex", used: ["Project Two"] },
-      { name: "FastAPI",  mono: "FA", used: ["Project Three"] },
-      { name: "REST APIs", mono: "{}", used: ["Project Two", "Project Three"] },
+    { name: "Analytics & BI", sub: "Dashboards management actually reads", skills: [
+      { name: "Tableau",         mono: "Tb", used: ["Semiconductor VSM Dashboard"] },
+      { name: "Power BI",        mono: "PB", used: ["Power BI Distribution"] },
+      { name: "KPI design",      mono: "KP", used: ["DB2 → BigQuery KPI Migration", "EWM Cost Calculation Tool"] },
+      { name: "Value Stream Mapping", mono: "VS", used: ["Semiconductor VSM Dashboard"] },
     ]},
-    { name: "Infra & Tools", sub: "Shipping & architecture", skills: [
-      { name: "Git",            mono: "Gt", used: ["Stock Analyzer", "Project Two", "Project Three"] },
-      { name: "GitHub Actions", mono: "GA", used: ["Stock Analyzer"] },
-      { name: "Docker",         mono: "Dk", used: ["Project Three"] },
-      { name: "Linux",          mono: "Lx", used: ["Stock Analyzer"] },
-      { name: "AWS",            mono: "AW", used: [] },
-      { name: "Postman",        mono: "Pm", used: ["Project Two"] },
+    { name: "Systems & Web", sub: "ERP and the tools around it", skills: [
+      { name: "SAP EWM",         mono: "SAP", used: ["SAP EWM Rollout", "EWM Cost Calculation Tool"] },
+      { name: "HTML",            mono: "H5", used: ["Address Validator", "Logistics Route Mapping Tool", "Stock Analyzer"] },
+      { name: "Google Places API", mono: "GP", used: ["Address Validator"] },
+      { name: "Ford Supplier Portal", mono: "FP", used: ["Supplier Onboarding Automation"] },
+      { name: "GitHub Actions",  mono: "GA", used: ["Stock Analyzer"] },
     ]},
-    { name: "Databases", sub: "Indexing & normalisation", skills: [
-      { name: "PostgreSQL", mono: "Pg", used: ["Project Two"] },
-      { name: "MongoDB",    mono: "Mg", used: [] },
-      { name: "SQLite",     mono: "Sq", used: ["Project Three"] },
-    ]},
-    { name: "CS Fundamentals", sub: "The foundations", skills: [
-      { name: "DSA",             mono: "DS", used: [] },
-      { name: "OOP",             mono: "OO", used: [] },
-      { name: "DBMS",            mono: "DB", used: [] },
-      { name: "Operating Systems", mono: "OS", used: [] },
-      { name: "Networks",        mono: "CN", used: [] },
-      { name: "System Design",   mono: "SD", used: ["Project Two"] },
+    { name: "Supply Chain", sub: "The domain under the tooling", skills: [
+      { name: "Packaging Development", mono: "Pk", used: ["Struandale Packaging Programme"] },
+      { name: "P&F & Export Costing",  mono: "Ex", used: [] },
+      { name: "Procurement & Sourcing", mono: "Pr", used: ["Supplier Onboarding Automation"] },
+      { name: "Supplier Risk (N-Tier)", mono: "Rk", used: ["Supplier Recommit Intake"] },
+      { name: "Inventory Control",      mono: "In", used: ["SAP EWM Rollout"] },
+      { name: "Process Design & UAT",   mono: "UA", used: ["SAP EWM Rollout"] },
+      { name: "Lean Six Sigma",         mono: "6σ", used: [] },
     ]},
     { name: "Interests", sub: "Coming soon to the series", skills: [
-      { name: "Quant Finance", mono: "Qf", used: ["Stock Analyzer"] },
-      { name: "LLM Apps",      mono: "LL", used: [] },
-      { name: "Data Viz",      mono: "Dv", used: ["Stock Analyzer"] },
+      { name: "Quant screening", mono: "Qs", used: ["Stock Analyzer"] },
+      { name: "LLM-assisted ops", mono: "AI", used: [] },
+      { name: "Python, properly", mono: "Py", used: [] },
     ]},
   ],
 
   /* ---------- Projects: "Originals" ---------- */
   projects: [
     {
-      title: "Stock Analyzer",
-      kicker: "Python · GitHub Actions · Vanilla JS",
+      title: "Validation Tool",
+      kicker: "VBA · Excel",
       theme: "crimson",
-      icon: "chart",
-      text: "A daily, rules-based brief for the NIFTY 200. Scores every stock on trend, momentum, relative strength, volume and headlines, checks the market regime, and publishes a ranked dashboard with stop-loss and position size for each name.",
-      tags: ["Python", "GitHub Actions", "Backtesting", "GitHub Pages"],
-      link: "../",
-      repo: "https://github.com/your-handle/stock-analyzer",
+      icon: "bolt",
+      text: "Compressed a one-week manual validation cycle into one hour. Roughly a 40x productivity gain and about 35 hours of analyst time returned every week.",
+      tags: ["VBA", "Excel", "≈ 35 hrs/week"],
+      link: "",
+      repo: "",
     },
     {
-      title: "Project Two",
-      kicker: "React · Node.js · PostgreSQL",
-      theme: "gold",
-      icon: "card",
-      text: "A full-stack web app with role-based auth, a REST API and a relational schema designed around the real workflow of its users. Replace this with your own project.",
-      tags: ["React", "Node.js", "PostgreSQL", "JWT"],
-      link: "#",
-      repo: "#",
+      title: "Supplier Onboarding Automation",
+      kicker: "Ford Supplier Portal · Process Redesign",
+      theme: "ember",
+      icon: "box",
+      text: "Redesigned the end-to-end supplier onboarding workflow and removed every manual handoff. Now runs as a fully automated pipeline.",
+      tags: ["Process design", "Automation", "Procurement"],
+      link: "",
+      repo: "",
     },
     {
-      title: "Project Three",
-      kicker: "Python · FastAPI · Docker",
+      title: "SAP EWM Rollout",
+      kicker: "SAP EWM · 2 Plants · Business Owner",
       theme: "teal",
       icon: "shield",
-      text: "An API service packaged with Docker, with automated tests and a CI pipeline. Replace this with your own project.",
-      tags: ["FastAPI", "Docker", "pytest", "CI"],
-      link: "#",
-      repo: "#",
+      text: "Froze requirements with warehouse stakeholders, mapped inbound, outbound and internal processes, authored 60 test cases, led UAT with 10 users and supported go-live.",
+      tags: ["SAP EWM", "UAT", "Go-live"],
+      link: "",
+      repo: "",
+    },
+    {
+      title: "Logistics Route Mapping Tool",
+      kicker: "HTML · Interactive Dashboard",
+      theme: "violet",
+      icon: "map",
+      text: "Maps supplier-to-plant logistics routes and transit chokepoints on one interactive screen. Replaced the manual route-analysis process entirely.",
+      tags: ["HTML", "Logistics", "≈ 6 hrs/week"],
+      link: "",
+      repo: "",
+    },
+    {
+      title: "DB2 → BigQuery KPI Migration",
+      kicker: "SQL · Google BigQuery",
+      theme: "gold",
+      icon: "chart",
+      text: "Rebuilt legacy DB2 ASN-receipt queries in BigQuery to power a weekly receiving-method-mix KPI for every plant.",
+      tags: ["BigQuery", "SQL", "≈ 6 hrs/week"],
+      link: "",
+      repo: "",
+    },
+    {
+      title: "Supplier Meeting Auto-Scheduler",
+      kicker: "Power Automate · Teams",
+      theme: "teal",
+      icon: "bolt",
+      text: "Books supplier Teams meetings straight from Excel across 12 countries, with time-zone lookup and automatic slot fallback.",
+      tags: ["Power Automate", "12 countries", "≈ 5 hrs/week"],
+      link: "",
+      repo: "",
+    },
+    {
+      title: "Address Validator",
+      kicker: "HTML · Google Places API",
+      theme: "ember",
+      icon: "map",
+      text: "Validates, standardises and geocodes supplier addresses at scale so downstream logistics data starts clean.",
+      tags: ["Google Places API", "Data quality", "≈ 6 hrs/week"],
+      link: "",
+      repo: "",
+    },
+    {
+      title: "Stock Analyzer",
+      kicker: "Personal Project · Python · GitHub Actions",
+      theme: "crimson",
+      icon: "chart",
+      text: "A self-publishing daily brief for the NIFTY 200: scores every stock on trend, momentum, relative strength and volume, checks the market regime, and posts a ranked dashboard with stop-loss and position size.",
+      tags: ["Python", "GitHub Actions", "Backtesting"],
+      link: "../",
+      repo: "https://github.com/bsaravanan250-sketch/stock-analyzer",
     },
   ],
 
   /* ---------- About: "The Pilot" ---------- */
   about: {
     quote:
-      "A B.Tech Computer Science student and full-stack developer who likes " +
-      "systems that run on their own: screeners that publish themselves, " +
-      "pipelines that test themselves, and interfaces that explain themselves.",
+      "I look for the week-long manual cycle nobody questions any more, and turn it " +
+      "into an hour. Eight years in supply chain taught me where those cycles hide; " +
+      "VBA, Power Automate and BigQuery are how I remove them.",
     facts: [
-      { label: "Now",       value: "B.Tech CSE · CGPA 9.1", sub: "Your Engineering College" },
-      { label: "Primary languages", value: "Python", sub: "with JavaScript & SQL" },
-      { label: "Experience", value: "Software Engineering Intern", sub: "May 2025 – Jul 2025" },
-      { label: "Based in",  value: "Hyderabad, India", sub: "Open to remote" },
-      { label: "Focus",     value: "Data tools · Trading research · Web apps", sub: "" },
+      { label: "Now",             value: "Supply Chain Analyst", sub: "Ford Global Technical & Business Center, Chennai" },
+      { label: "Primary tools",   value: "VBA · Power Automate · BigQuery", sub: "plus Alteryx, Tableau, SAP EWM" },
+      { label: "Experience",      value: "8 years", sub: "Supply chain, packaging, procurement, automation" },
+      { label: "Based in",        value: "Chennai, India", sub: "Open to relocation: Germany, Netherlands, Luxembourg, Poland" },
+      { label: "Availability",    value: "60-day notice", sub: "EU Blue Card eligible" },
+      { label: "Education",       value: "MBA Operations · PGP Digital SCM", sub: "B.E. Computer Engineering" },
     ],
-    chips: ["System Design", "Quant Research", "Machine Learning", "Open Source"],
+    chips: ["Process Automation", "SAP EWM", "Supplier Risk", "Packaging", "Lean Six Sigma", "English · Tamil"],
   },
 
   /* ---------- Journey: seasons ---------- */
   seasons: [
-    { n: "01", title: "The Beginning", when: "2021 – 2023", episodes: [
-      { title: "First line of code", text: "Started with Python in junior college, built small scripts to automate homework and track expenses.", when: "2021" },
-      { title: "Chose engineering", text: "Cleared entrance exams and joined B.Tech Computer Science.", when: "2023" },
+    { n: "01", title: "Foundations", when: "2011 – 2017", episodes: [
+      { title: "B.E., Computer Engineering", text: "Loyola Institute of Technology, Chennai. The engineering habit of asking how a process actually works starts here.", when: "2011 – 2015" },
+      { title: "MBA, Operations Management", text: "Saveetha Engineering College. Supply chain, operations and the business side of the plant floor.", when: "2015 – 2017" },
     ]},
-    { n: "02", title: "Enter Data & ML", when: "2023 – 2024", episodes: [
-      { title: "Fell for data", text: "First ML course, first Kaggle notebook, first time a model beat the baseline.", when: "2023" },
-      { title: "Competitive coding", text: "Started daily DSA practice. 600+ problems later it is a habit.", when: "2024" },
+    { n: "02", title: "The Packaging Years", when: "2018 – 2021", episodes: [
+      { title: "Packaging Engineer at Glovis India", text: "P&F and export costing by Incoterms, ECOs, BOM verification and per-car profit analysis for CKD exports.", when: "Apr 2018" },
+      { title: "First savings", text: "2% per-car cost saving from packing quantities; INR 28,000 across 60 car sets from vanning efficiency.", when: "2019" },
+      { title: "Sourcing lead", text: "Vendor negotiation, SOB fixing, capacity evaluation. Initiated the Hyundai WIA returnable packing programme and handled KIA export costing.", when: "2020" },
     ]},
-    { n: "03", title: "Learning to Build", when: "2024 – 2025", episodes: [
-      { title: "Full-stack basics", text: "React, Node.js and PostgreSQL. Shipped the first deployed project.", when: "2024" },
-      { title: "Hackathon season", text: "Semi-finalist at an inter-college hackathon with a 36-hour build.", when: "2025" },
+    { n: "03", title: "Enter Ford", when: "2021 – 2022", episodes: [
+      { title: "Supply Chain Analyst, Ford GTBC Chennai", text: "Joined in the middle of COVID-19 and the China lockdown. First job: alternative-sourcing plans and supplier coordination.", when: "Mar 2021" },
+      { title: "The semiconductor shortage", text: "Built a Supplier Risk Analysis scorecard, mapped N-Tier suppliers, and shipped a Tableau dashboard auto-generating VSM reports for senior management.", when: "2021 – 2022" },
+      { title: "$0.7M at Struandale", text: "Packaging efficiency programme at the South Africa engine plant: $0.7M saved and 100% of single-use plastic eliminated.", when: "2022" },
+      { title: "PGP, Digital Supply Chain Management", text: "Simplilearn with Purdue University. Tableau Certified the same year.", when: "2022" },
     ]},
-    { n: "04", title: "Building Real Products", when: "2025 – Present", episodes: [
-      { title: "Stock Analyzer", text: "A self-publishing daily market brief with a backtested ranking rule, live on GitHub Pages.", when: "2025" },
-      { title: "Internship", text: "Software Engineering Intern: pipelines, dashboards and a lot of code review.", when: "2025" },
+    { n: "04", title: "The Automation Era", when: "2023 – Present", episodes: [
+      { title: "17 automation solutions", text: "VBA, Power Automate, SQL/BigQuery and Alteryx. The validation tool alone returns about 35 hours a week.", when: "2023 →" },
+      { title: "SAP EWM rollout, 2 plants", text: "Business-side owner from requirements through 60 test cases, UAT with 10 users and go-live.", when: "2024" },
+      { title: "Supplier Onboarding, fully automated", text: "Redesigned the Ford Portal workflow end to end and removed every manual handoff.", when: "2025" },
+      { title: "Power Platform at scale", text: "Supplier Recommit Intake flows (~100 mails/week with 48-hour reminders) and weekly Power BI KPI delivery to 25 plants.", when: "2025" },
     ]},
     { n: "05", title: "What's Next", when: "2026 →", episodes: [
-      { title: "Season finale", text: "Looking for a software or data engineering role where I can own a system end to end.", when: "2026" },
+      { title: "Season finale: Europe", text: "Looking for a supply chain analytics or process automation role in Germany, the Netherlands, Luxembourg or Poland. EU Blue Card eligible, 60-day notice.", when: "2026" },
     ]},
   ],
 
   /* ---------- Top Picks ---------- */
   picks: [
-    { n: "E01", title: "The Builder",   theme: "crimson", text: "Stock Analyzer: a market screener that scores 200 stocks every morning and publishes itself.", tags: ["Python", "CI/CD", "Backtest"], target: "projects" },
-    { n: "E02", title: "The Architect", theme: "gold",    text: "Project Two: auth, REST API and a relational schema designed around real user workflows.", tags: ["React", "Node.js", "PostgreSQL"], target: "projects" },
-    { n: "E03", title: "The Fellow",    theme: "teal",    text: "Selected for a national-level tech fellowship, top 2% of applicants.", tags: ["Achievement", "2025"], target: "achievements" },
+    { n: "E01", title: "The Automator", theme: "crimson", text: "One week of manual validation became one hour. Seventeen tools later, about 66 hours a week no longer exist.", tags: ["VBA", "Power Automate", "BigQuery"], target: "projects" },
+    { n: "E02", title: "The Saver",     theme: "gold",    text: "$0.7M in packaging savings at Struandale, with single-use plastic taken to zero in the same programme.", tags: ["Packaging", "Sustainability"], target: "achievements" },
+    { n: "E03", title: "The Owner",     theme: "teal",    text: "SAP EWM for two plants, carried from frozen requirements to go-live on the business side.", tags: ["SAP EWM", "UAT", "Go-live"], target: "achievements" },
   ],
 
   footer: {

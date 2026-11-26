@@ -12,6 +12,9 @@
     play: "&#9654;",
     chart: '<svg viewBox="0 0 200 120" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 100 L50 70 L80 85 L120 40 L150 55 L190 15"/><path d="M150 15h40v40" opacity=".6"/><g opacity=".35"><path d="M10 110h180"/><path d="M10 10v100"/></g><g fill="#fff" stroke="none"><circle cx="120" cy="40" r="4"/><circle cx="190" cy="15" r="4"/></g></svg>',
     card: '<svg viewBox="0 0 200 130" fill="none" stroke="#fff" stroke-width="3"><rect x="10" y="15" width="180" height="100" rx="12"/><path d="M10 45h180" stroke-width="12" opacity=".6"/><rect x="28" y="80" width="50" height="12" rx="3" opacity=".7"/><circle cx="160" cy="88" r="10" opacity=".7"/><circle cx="146" cy="88" r="10" opacity=".7"/></svg>',
+    bolt: '<svg viewBox="0 0 160 200" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"><path d="M95 8 20 112h55l-12 80 80-112H88z"/><path d="M60 150l-30 40M118 20l24-10" opacity=".5"/></svg>',
+    box: '<svg viewBox="0 0 200 180" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"><path d="M100 10 190 50v80l-90 40-90-40V50z"/><path d="M10 50l90 40 90-40M100 90v80" /><path d="M55 30l90 40" opacity=".5"/></svg>',
+    map: '<svg viewBox="0 0 200 170" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"><path d="M10 40l60-25 60 25 60-25v115l-60 25-60-25-60 25z"/><path d="M70 15v115M130 40v115" opacity=".5"/><path d="M40 110c30-50 60-20 90-60" stroke-dasharray="6 6"/><circle cx="40" cy="110" r="6" fill="#fff"/><circle cx="130" cy="50" r="6" fill="#fff"/></svg>',
     shield: '<svg viewBox="0 0 160 190" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"><path d="M80 8 150 34v56c0 44-32 78-70 92C42 168 10 134 10 90V34z"/><path d="M80 30 128 48v42c0 30-22 54-48 64-26-10-48-34-48-64V48z" opacity=".5"/><path d="M52 96l18 18 40-44" stroke-width="5"/></svg>',
   };
 
@@ -32,6 +35,7 @@
       k++;
       return `<span style="--i:${i}"${cls}>${esc(ch)}</span>`;
     }).join("");
+    $("intro-name").style.setProperty("--len", Math.max(6, name.length));
     $("intro-tag").textContent = D.tagline;
   }
 
@@ -159,6 +163,7 @@
       if (ch === " ") return " ";
       const out = k === accent ? `<span class="is-accent">${esc(ch)}</span>` : esc(ch); k++; return out;
     }).join("");
+    $("hero-title").style.setProperty("--len", Math.max(6, name.length));
     $("hero-tagline").textContent = D.tagline;
     $("hero-meta").innerHTML = [`<span class="match">${esc(D.hero.match)}</span>`]
       .concat(D.hero.badges.map((b, i) => i === 0 ? `<span class="badge">${esc(b)}</span>` : `<span>${esc(b)}</span>`))
@@ -222,7 +227,7 @@
         <p class="moment__text">${esc(m.text)}</p>
         ${m.link ? `<a class="moment__link" href="${esc(m.link)}" target="_blank" rel="noopener">View certificate ↗</a>` : ""}
       </article>`).join("");
-    $("cert-title").textContent = `Certified · ${D.certifications.length} credentials`;
+    $("cert-title").textContent = `${D.credentialsLabel || "Certified"} · ${D.certifications.length}`;
     const issuers = [...new Set(D.certifications.map((c) => c.issuer))];
     $("issuers").innerHTML = issuers.map((i) => `<span>${esc(i)}</span>`).join("");
     $("certs-rail").innerHTML = D.certifications.map((c, i) => `

@@ -14,13 +14,13 @@ Everything on the page comes from **`data.js`**. Open it and replace:
 | `name`, `shortName`, `initial`, `tagline`, `role` | Intro, hero, nav logo, footer, "Top Picks" title |
 | `photo` | Hero, About and the "Me" profile tile. Drop `assets/portrait.jpg` and point this at it. A portrait around 1200×1500 px with the face in the upper half works best. |
 | `email`, `links`, `resumeUrl` | Contact buttons and the resume buttons. Put a PDF at `assets/resume.pdf`. |
-| `hero` | Badges, summary and the small stat card (CGPA by default). |
+| `hero` | Badges, summary and the small stat card. |
 | `profiles` | The four *Who's watching?* tiles. `first` is the section each profile leads with. |
 | `episodes` | The *Continue Exploring* cards. `id` must match a section id. |
 | `resume` | The one-page resume card. |
-| `moments`, `certifications` | *Top Moments* cards and the *Certified* row. |
+| `moments`, `certifications`, `credentialsLabel` | *Top Moments* cards and the credentials row. |
 | `skillGroups` | *My Skill Universe*. `used` lists project titles shown on hover. |
-| `projects` | *The Originals*. `icon` is `chart`, `card` or `shield`; `theme` is `crimson`, `gold`, `teal`, `violet` or `ember`. |
+| `projects` | *The Originals*. `icon` is `chart`, `card`, `shield`, `bolt`, `box` or `map`; `theme` is `crimson`, `gold`, `teal`, `violet` or `ember`. |
 | `about`, `seasons`, `picks`, `footer` | About, Journey, Top Picks and the footer note. |
 
 The third letter of the name is highlighted red in the intro and hero. Change
